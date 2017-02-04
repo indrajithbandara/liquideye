@@ -1,0 +1,37 @@
+---
+sitemap: false
+---
+
+$body-color         : #fff;
+$black              : #161616;
+$link-color         : #000;
+$underline_link_color : #b4e7f8;
+
+$base-font: caption;
+$base-font-size-tiny: 14px;
+$base-font-size-min: 17px;
+$base-font-size-bp1: 18px;
+$base-font-size-max: 19px;
+$base-line-height: 1.5;
+
+$border-radius: 5px;
+$vertical-space: 2.5rem;
+$vertical-space-small: 1rem;
+
+$mediaMinWidth: 460px;
+$mediaBp1Width: 800px;
+$mediaMaxWidth: 1260px;
+
+// $ettings
+
+@import "cmq";
+@import "base";
+@import "pages";
+@import "header";
+@import "slideshow";
+@import "thumbs";
+@import "footer";
+@import "svg";
+@import "rooms";
+@import "instagram";
+@import "image-grid";// flex classes

@@ -1,0 +1,10 @@
+.bizhours {
+  width: calc(100% - 2rem);
+  span {
+    margin-right: 1rem;
+    display: block;
+    @include media( "screen", ">minWidth") {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.thumbs {
+  max-width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  @include media( "screen", ">minWidth") {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    padding-bottom: 2rem;
+    @include media( "screen", ">minWidth") {
+      max-width: 250px;
+      padding-bottom: 0;
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  }
+}
+figcaption {
+  font-size: $base-font-size-tiny*1.2;
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    font-size: $base-font-size-min*1.5;
+    padding-left: .5rem;
+    text-align: left;
+  }
+  @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1*1.5;}
+  @include media( "screen", ">maxWidth") {font-size: $base-font-size-max*1.5;}
+
+}

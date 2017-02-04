@@ -1,0 +1,45 @@
+
+
+.bookingdotcom {
+  width: 180px;
+  height: 70px;
+}
+
+.tripadvisor {
+  height: 100px;
+  margin-bottom: .5rem;
+}
+.event_time svg,
+.event_location svg,
+.bookingdetails svg,
+.roomsdetails svg{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top:.5rem;
+}
+
+
+
+.social_links svg {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+
+.footer svg,
+.insta_title svg,
+.us .footer svg {
+  position: static;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  margin-right: 5px;
+}
+
+.ess_qr.paragraph .qr {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}

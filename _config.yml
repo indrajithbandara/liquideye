@@ -1,0 +1,32 @@
+
+title: Liquid Eye
+title_long: Liquid Eye Water Housing Systems
+slogan: Rock Solid yet Light as a Feather!
+email: rokmabox@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Liquid Eye produces light and strong water housing systems. Whether you are a beginner or a seasoned photographer LiquidEye have a waterhousing solution to suit your needs.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "liquideye.junglestar.org" # the base hostname & protocol for your site, e.g. http://example.com
+github_url: "https://toybreaker.github.io/liquideye/"
+github_username:  toybreaker
+repository: toybreaker/liquideye
+instagram: liquideyewaterhousings
+facebook: LiquidEyeWaterHousingSystem
+twitter_username: LiquidEye_whs
+twitter_creator: rokmatwit
+
+google:
+  youtube: /user/LiquidEyeWHS/videos
+  analytics: UA-32074745-1
+  verification: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
+
+# Build settings
+markdown: kramdown
+gems:
+ - jekyll-mentions
+ - jekyll-redirect-from
+ - jekyll-sitemap
+ - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

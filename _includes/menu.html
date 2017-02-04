@@ -1,0 +1,11 @@
+<ul class="menu group">
+
+  {% for menuitem in site.data.menu %}
+    {% if page.url contains menuitem.link %}
+      <li><a href="{{ site.baseurl }}/{{menuitem.name}}/" class="active">{{menuitem.name}}</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}/{{menuitem.link}}/">{{menuitem.name}}</a></li>
+    {% endif %}
+  {% endfor %}
+
+</ul>

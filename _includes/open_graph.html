@@ -1,0 +1,56 @@
+<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@{{ site.twitter }}">
+
+	{% if site.twitter_creator %}
+	<meta name="twitter:creator" content="@{{ site.twitter_creator }}">
+	{% else %}
+	<meta name="twitter:creator" content="@rokmatwit">
+	{% endif %}
+
+	{% if page.preview_image %}
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ page.preview_image }}">
+	{% else %}
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+	{% endif %}
+
+	{% if page.layout == 'home' %}
+	<meta name="twitter:title" content="{{ site.title_long }} - {{ site.url | replace:'http://','' }}">
+	{% else %}
+	<meta name="twitter:title" content="{{ site.title_long }} - {{ page.title | upcase }}">
+	{% endif %}
+
+	{% if page.layout == 'home' %}
+	<meta name="twitter:description" content="{{ site.description }}">
+	{% else %}
+	<meta name="twitter:description" content="{{ page.description }}">
+	{% endif %}
+
+
+
+<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="fr_FR" />
+	<meta property="og:type" content="article">
+
+	{% if page.layout == 'home' %}
+	<meta property="og:title" content="{{ site.title_long }} - {{ site.url | replace:'http://','' }}">
+	{% else %}
+	<meta property="og:title" content="{{ site.title_long }} - {{ page.title | upcase }}">
+	{% endif %}
+
+	{% if page.preview_image %}
+	<meta property="og:image" content="{{ site.url }}/assets/p/{{ page.preview_image }}">
+	{% else %}
+	<meta property="og:image" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+	{% endif %}
+
+	{% if page.layout == 'home' %}
+	<meta property="og:description" content="{{ site.description }}">
+	{% else %}
+	<meta property="og:description" content="{{ page.description }}">
+	{% endif %}
+
+	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+	<meta property="og:site_name" content="{{ site.title_long }}">

@@ -1,0 +1,281 @@
+.slideshow {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  &.slideshow-padding {
+    padding-bottom: 40px;
+  }
+  .slideshow-slide-list {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    &.slideshow-float .slideshow-slide {
+      position: relative;
+      float: left;
+    }
+  }
+}
+
+.slideshow-slide {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .slideshow-caption {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+
+/* ------ INDICATORS ------*/
+.slideshow-indicators {
+  position: absolute;
+  bottom: 5px;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  list-style: none;
+  .slideshow-indicator {
+    display: inline-block;
+    font-size: 0;
+    height: 30px;
+    width: 30px;
+    &.slideshow-number-indicator {
+      font-size: 16px;
+      line-height: 30px;
+      width: auto;
+      .slideshow-slide-number {
+        width: 20px;
+        text-align: right;
+      }
+    }
+  }
+  &:not(.slideshow-show-number) {
+    .slideshow-indicator.slideshow-number-indicator {
+      display: none;
+    }
+  }
+  &.slideshow-show-number {
+    .slideshow-indicator.slideshow-dot-indicator {
+      display: none;
+    }
+  }
+}
+
+.slideshow-indicator-btn {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 10px;
+    left: 10px;
+    top: 10px;
+    background-color: #999999;
+    border-radius: 50%;
+  }
+  &:hover::after, &:focus::after, &.slideshow-current::after {
+    background-color: #303030;
+  }
+}
+
+
+
+/* ------ PLAY/PAUSE & NAV BUTTONS ------*/
+.slideshow-play-btn, .slideshow-nav-btn {
+  display: block;
+  position: absolute;
+  top: 50%!important;
+  padding: 0;
+  /* background-color: rgba(20,20,20,0.4);*/
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &.slideshow-bottom {
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 35px;
+    background-color: transparent;
+  }
+  &:not(.slideshow-bottom):hover, &:not(.slideshow-bottom):focus {
+    background-color: transparent;
+    /* background-color: rgba(20,20,20,0.75);*/
+  }
+}
+
+
+
+/* ------ PLAY/PAUSE BUTTON ------*/
+.slideshow-play-btn {
+  width: 39px;
+  height: 39px;
+  &:not(.slideshow-bottom) {
+    bottom: 25px;
+    right: 25px;
+    border-radius: 3px;
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 8px;
+    background-color: #BBBBBB;
+    top: 7px;
+  }
+  &::before {
+    left: 9px;
+  }
+  &::after {
+    right: 9px;
+  }
+  &:hover, &:focus {
+    &::before, &::after {
+      background-color: #EEEEEE;
+    }
+  }
+  &.slideshow-bottom {
+    &:hover, &:focus {
+      &::before, &::after {
+        background-color: #303030;
+      }
+    }
+    &::before, &::after {
+      background-color: #999999;
+    }
+    &::before {
+      left: 7px;
+    }
+    &::after {
+      right: 7px;
+    }
+    &.slideshow-paused {
+      &::before {
+        border-left: 21px solid #999999;
+        background-color: transparent;
+      }
+      &:hover, &:focus {
+        &::before, &::after {
+          border-left-color: #303030;
+        }
+      }
+    }
+  }
+  &.slideshow-paused {
+    &::before {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+      border-left: 21px solid #BBBBBB;
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+    }
+    &:hover, &:focus {
+      &::before, &::after {
+        border-left-color: #EEEEEE;
+      }
+    }
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.slideshow-padding .slideshow-play-btn:not(.slideshow-bottom) {
+  bottom: 75px;
+}
+
+
+
+/* ------ NAV ARROWS ------*/
+.slideshow-nav-btn {
+  height: 55px;
+  width: 40px;
+  &.slideshow-prev {
+    &::before, &::after {
+      right: 18px;
+    }
+    &:not(.slideshow-bottom) {
+      left: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+  &.slideshow-next {
+    &::before, &::after {
+      left: 18px;
+    }
+    &:not(.slideshow-bottom) {
+      right: 0;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+  &.slideshow-next, &.slideshow-prev {
+    &::before {
+      -webkit-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+    }
+    &::after {
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+    }
+  }
+  &.slideshow-next::before, &.slideshow-prev::after {
+    top: 11px;
+  }
+  &.slideshow-next::after, &.slideshow-prev::before {
+    bottom: 11px;
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 5px;
+    background-color: #BBBBBB;
+  }
+  &:hover, &:focus {
+    &::before, &::after {
+      background-color: #EEEEEE;
+    }
+  }
+  &.slideshow-bottom {
+    &::before, &::after {
+      background-color: #999999;
+    }
+    &:hover, &:focus {
+      &::before, &::after {
+        background-color: #303030;
+      }
+    }
+    &.slideshow-next::before, &.slideshow-prev::after {
+      top: 4px;
+    }
+    &.slideshow-next::after, &.slideshow-prev::before {
+      bottom: 4px;
+    }
+  }
+}
+
+/* */
+/* .demo {*/
+/*   height:50%;*/
+/* }*/
