@@ -2,13 +2,16 @@
   <div class="container">
     <div class="inner">
 
-      <h1 itemprop="name">{{ site.title }}</h1>
+      <p class="footer_logo">
+        {% include svg/use.html id="icn--liquideye_logo" class="liquideye_logo" %}
+      </p>
 
       <p class="instagram paragraph">
         <a class="link-underline" title="{{ site.instagram }}" href="https://instagram.com/{{ site.instagram }}">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
             <use xlink:href="#icn--instagram"></use>
           </svg>
+          <span>{{ site.instagram }}</span>
         </a>
       </p>
 
@@ -17,14 +20,16 @@
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
             <use xlink:href="#icn--facebook"></use>
           </svg>
+          <span>{{ site.facebook }}</span>
         </a>
       </p>
 
       <p class="youtube paragraph">
-        <a class="link-underline" title="{{ site.google.youtube }}" href="https://www.youtube.com/{{ site.google.youtube }}">
+        <a class="link-underline" title="{{ site.google.youtube }}" href="https://www.youtube.com/user/{{ site.google.youtube }}/videos">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
             <use xlink:href="#icn--youtube"></use>
           </svg>
+          <span>{{ site.google.youtube }}</span>
         </a>
       </p>
 
@@ -33,6 +38,7 @@
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
             <use xlink:href="#icn--twitter"></use>
           </svg>
+          <span>{{ site.twitter_username }}</span>
         </a>
       </p>
 

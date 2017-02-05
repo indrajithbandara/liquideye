@@ -153,14 +153,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 2;
   @include media( "screen", ">minWidth") {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.25;
   }
-  @include media( "screen", ">bp1Width") {font-size: 1.7rem;}
-  @include media( "screen", ">maxWidth") {font-size: 1.85rem;}
+  @include media( "screen", ">bp1Width") {font-size: 1.6rem;}
+  @include media( "screen", ">maxWidth") {font-size: 1.75rem;}
 }
 h2 {
   /* margin-top: 2.5rem;*/

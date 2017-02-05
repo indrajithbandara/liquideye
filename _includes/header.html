@@ -1,9 +1,10 @@
 <div class="header group">
   <div class="container">
 
-    <a class="logoblock no_underline" href="{{ site.baseurl }}/" title="home">
+    <a class="logoblock no_underline" href="{{ site.baseurl }}/" title="{{ site.title }} | home">
       {% include svg/use.html id="icn--liquideye_logo" class="liquideye_logo" %}
-      <h1 class="no_underline">{{ site.slogan }}</h1>
+      <h1 class="no_underline">
+        <span class=hide>{{ site.title_long }} </span>{{ site.slogan }}</h1>
     </a>
 
     {% include menu.html %}
