@@ -2,13 +2,13 @@
 sitemap: false
 ---
 
-$body-color         : #fff;
-$black              : #161616;
-$link-color         : #000;
+$body-color           : #fff;
+$black                : #161616;
+$link-color           : #000;
 $underline_link_color : #b4e7f8;
 
-$brand_blue: #3a81c1;
-$brand_yellow: #fff200;
+$brand_blue           : #3a81c1;
+$brand_yellow         : #fff200;
 
 $base-font: caption;
 $base-font-size-tiny: 15px;
@@ -25,7 +25,6 @@ $mediaMinWidth: 460px;
 $mediaBp1Width: 800px;
 $mediaMaxWidth: 1260px;
 
-// $ettings
 
 @import "cmq";
 @import "base";
@@ -35,6 +34,4 @@ $mediaMaxWidth: 1260px;
 @import "thumbs";
 @import "footer";
 @import "svg";
-@import "rooms";
 @import "instagram";
-@import "image-grid";// flex classes

@@ -45,7 +45,7 @@
   width: 100%;
   text-align: center;
   @include media( "screen", ">minWidth") {
-    padding-top: 1rem;
+    //padding-top: 1rem;
     margin: 0;
     display: -webkit-box;
     display: flex;
@@ -63,7 +63,8 @@
   li {
     display: inline;
     a {
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
+      font-size: 18px;
       min-height: 22px;
       padding-top: 14px;
       padding-bottom: 6px;
