@@ -4,19 +4,15 @@
   margin: 0;
 }
 
-.footer svg:not(.liquideye_logo),
+.footer svg:not(.liquideye_logo):not(.qr_liquideye_co),
 .insta_title svg,
 .us .footer svg {
   position: static;
   width: 30px;
   height: 30px;
   min-width: 30px;
-  margin-right: 5px;
+  margin-right: 0;
 }
-
-.liquideye_logo {
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  margin-bottom: 2rem;
+.qr_liquideye_co {
+ height: 100px;
 }

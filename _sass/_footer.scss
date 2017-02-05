@@ -39,5 +39,22 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    a {
+      padding-bottom: 5px;
+      padding-right: 5px;
+    }
+  }
+  .liquideye_logo {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+  }
+  .qr.paragraph {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    margin-left: 5px;
   }
 }
