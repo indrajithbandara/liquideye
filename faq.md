@@ -1,6 +1,6 @@
 ---
 layout: page
-title: faq
+title: frequently asked questions
 permalink: /frequently-asked-questions/
 ---
 {% capture faq %}{% include editables/faq-text.md %}{% endcapture %}
