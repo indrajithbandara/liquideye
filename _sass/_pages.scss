@@ -79,24 +79,70 @@ em { color: lighten($black, 30%);}
 
 .testimonial {
   margin-bottom: $vertical-space;
+  @include media( "screen", ">minWidth"){
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include media( "screen", ">bp1Width"){
+    flex-wrap: nowrap;
+  }
+}
+.testimonial_header {
+  padding-bottom: $vertical-space-small;
+  @include media( "screen", ">minWidth", "<bp1Width"){
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @include media( "screen", ">bp1Width"){
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+.testimonial_name {
+  width: auto;
+  margin-bottom: 0;
 }
 
 .testimonial_photo {
   margin-bottom: $vertical-space-small;
+  @include media( "screen", ">minWidth", "<bp1Width") {
+    min-width: 250px;
+    max-width: 250px;
+    padding-right: $vertical-space-small;
+  }
+  @include media( "screen", ">bp1Width"){
+    min-width: 300px;
+    max-width: 300px;
+    margin-left: $vertical-space-small;
+    margin-right: $vertical-space-small;
+  }
 }
 .testimonial_contacts {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  @include media( "screen", ">bp1Width"){
+    flex-direction: column;
+  }
 }
 
-.testimonial_name {
-
-}
 .testimonial_website,
 .testimonial_instagram,
 .testimonial_email {
-  margin-left: $vertical-space-small;
+  margin-left: $vertical-space-small/2;
+  margin-right: $vertical-space-small/2;
+  @include media( "screen", ">bp1Width"){
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.testimonial_quote {
+  @include media( "screen", ">minWidth", "<bp1Width") {
+    width: calc(100% - 250px);
+  }
 }
 
 .box {
