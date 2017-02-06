@@ -1,6 +1,7 @@
 em { color: lighten($black, 30%);}
 
-.team .photographer  {
+.team .photographer,
+.about .photographer  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,9 +9,9 @@ em { color: lighten($black, 30%);}
   @include media( "screen", ">minWidth"){
     flex-direction: row;
   }
-  &:hover .photographer_face {
-    border: 5px solid $brand_blue;
-  }
+}
+.team .photographer:hover .photographer_face {
+  border: 5px solid $brand_blue;
 }
 .team_photographer .photographer {
   @include media( "screen", ">minWidth"){

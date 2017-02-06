@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-  <body class="page">
+  <body class="about">
 
     {% include svg/defs.html %}
 
@@ -14,8 +14,18 @@
 
       {% include header.html %}
 
-      <div class="container content">
-        {{ content }}
+      <div class="container content photographer">
+
+        <div class="photographer_face">
+          <img src="{{ site.baseurl }}/assets/team/philippe-chevodian.jpg" alt="Philippe Chevodian">
+        </div>
+        <div class="photographer_text">
+          <p class="photographer_intro">{{ content }}</p>
+          {% if page.quote %}
+          <p class="photographer_quote">{{ page.quote }}</p>
+          {% endif %}
+        </div>
+
       </div>
 
       {% include footer.html %}
