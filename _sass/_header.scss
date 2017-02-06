@@ -2,8 +2,8 @@
   background-color: white;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: .5rem;
-  margin-top: 1rem;
+  margin-bottom: $vertical-space-small;
+  margin-top: $vertical-space-small;
   @include media( "screen", ">minWidth") {
     margin-top: 0;
   }
@@ -41,8 +41,8 @@
 }
 .menu {
   display: block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: $vertical-space-small;
+  margin-bottom: $vertical-space-small;
   width: 100%;
   text-align: center;
   @include media( "screen", ">minWidth") {
@@ -71,7 +71,7 @@
       padding-bottom: 6px;
       display: block;
       color: black;
-      margin-right: 1rem;
+      margin-right: $vertical-space-small;
       line-height: 1;
       border-bottom: 2px solid transparent;
       white-space: nowrap;

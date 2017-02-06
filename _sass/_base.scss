@@ -67,26 +67,24 @@ a {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
-  margin-right: .25rem;
-  margin-left: .25rem;
-  @include media( "screen", ">minWidth") {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
+  margin-bottom: $vertical-space-small;
+  // margin-right: .25rem;
+  // @include media( "screen", ">minWidth") {
+  //   margin-right: .75rem;
+  // }
 }
 
 
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $vertical-space-small;
   list-style-type: none;
 }
 dt {font-weight: 400;}
-dd {margin-bottom: .5rem;}
+dd {margin-bottom: $vertical-space-small;}
 hr {
   position: relative;
-  margin: 1.5rem 0;
+  margin: $vertical-space 0;
   border: 0;
   border-bottom: 1px solid $black;
 }
@@ -94,7 +92,7 @@ hr {
 /*// Quotes*/
 blockquote {
   padding: 0;
-  padding-left: 1rem;
+  padding-left: $vertical-space-small;
   margin: 0;
   color: #7a7a7a;
   border-left: .25rem solid ;
@@ -112,7 +110,7 @@ img {
 
 /* Tables*/
 table {
-  margin-bottom: 1rem;
+  margin-bottom: $vertical-space-small;
   width: 100%;
   border: 1px solid ;
   border-collapse: collapse;
@@ -163,15 +161,12 @@ h1 {
   @include media( "screen", ">maxWidth") {font-size: 1.75rem;}
 }
 h2 {
-  /* margin-top: 2.5rem;*/
   font-size: 1.5rem;
 }
 h3 {
-  /* margin-top: 1.5rem;*/
   font-size: 1.25rem;
 }
 h4, h5, h6 {
-  /* margin-top: 1rem;*/
   font-size: 1rem;
 }
 
@@ -183,34 +178,9 @@ h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: $vertical-space-small;
+  padding-right: $vertical-space-small;
   max-width: 1000px;
-  .booking{
-    @include media( "screen", ">minWidth") {
-      margin-top: $vertical-space;
-    }
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    > * {
-      margin-left: .5rem;
-      margin-right: .5rem;
-    }
-    svg {
-      height: 40px;
-      @include media( "screen", ">minWidth") {
-        margin-top: $vertical-space-small/2;
-      }
-      @include media( "screen", ">bp1Width") {
-        height: 100px;
-      }
-    }
-  }
 }
 
 .content {
@@ -224,7 +194,7 @@ h4, h5, h6 {
   max-width: none;
   .about & {
     max-width: 1000px;
-    margin-top: $vertical-space*2;
+    margin-top: $vertical-space;
   }
 }
 .center {

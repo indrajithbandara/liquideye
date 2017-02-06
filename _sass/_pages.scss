@@ -4,17 +4,18 @@ em { color: lighten($black, 30%);}
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: $vertical-space;
   @include media( "screen", ">minWidth"){
     flex-direction: row;
   }
   &:hover .photographer_face {
     border: 5px solid $brand_blue;
   }
-  p { margin-left: 0;}
 }
 .team_photographer .photographer {
-  align-items: flex-start;
+  @include media( "screen", ">minWidth"){
+    align-items: flex-start;
+  }
 }
 .photographer_face {
   border: 5px solid transparent;
