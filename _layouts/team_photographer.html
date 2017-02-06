@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-  <body class="team_photographer">
+  <body class="team team_photographer">
 
     {% include svg/defs.html %}
 
@@ -14,8 +14,19 @@
 
       {% include header.html %}
 
-      <div class="container content">
-        {{ content }}
+      <div class="container content photographer">
+        <div class="photographer_face">
+          <img src="{{ site.baseurl }}/assets/team/{{ page.name | slugify: 'pretty' }}.jpg" alt="{{ page.name }}">
+        </div>
+        <div class="photographer_text">
+          <h2 class="photographer_name">
+            {{ page.name }}
+          </h2>
+          <p class="photographer_intro">{{ content }}</p>
+          {% if page.quote %}
+          <p class="photographer_quote">{{ page.quote }}</p>
+          {% endif %}
+        </div>
       </div>
 
       {% include footer.html %}

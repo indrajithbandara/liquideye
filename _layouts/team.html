@@ -18,7 +18,7 @@
         <!-- team-looper -->
         <div class="looper" >
           {% for photographer in site.team %}
-            <a class="looper__link " href="{{ photographer.url | prepend: site.baseurl }}">
+            <a class="looper__link photographer" href="{{ photographer.url | prepend: site.baseurl }}">
               <div class="photographer_face">
                 <img src="{{ site.baseurl }}/assets/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
               </div>

@@ -1,6 +1,6 @@
 em { color: lighten($black, 30%);}
 
-.team .looper__link {
+.team .photographer  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,10 @@ em { color: lighten($black, 30%);}
   &:hover .photographer_face {
     border: 5px solid $brand_blue;
   }
-
+  p { margin-left: 0;}
+}
+.team_photographer .photographer {
+  align-items: flex-start;
 }
 .photographer_face {
   border: 5px solid transparent;
