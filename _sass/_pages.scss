@@ -2,21 +2,39 @@ em { color: lighten($black, 30%);}
 
 .team .looper__link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
+  @include media( "screen", ">minWidth"){
+    flex-direction: row;
+  }
+  &:hover .photographer_face {
+    border: 5px solid $brand_blue;
+  }
+
 }
 .photographer_face {
-border-radius: 50%;
-height: 200px;
-width: 200px;
-min-height: 200px;
-min-width: 200px;
-overflow: hidden;
-margin-right: 2rem;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  overflow: hidden;
+  margin-bottom: $vertical-space;;
+  @include media( "screen", ">minWidth"){
+    margin-right: $vertical-space;
+  }
+
 }
 .photographer_name {
   text-transform: capitalize;
   margin-top: 0;
+  text-align: center;
+  width: 100%;
+  @include media( "screen", ">minWidth"){
+    text-align: left;
+  }
 }
 .photographer_text {
   display: flex;
