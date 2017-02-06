@@ -19,9 +19,7 @@
           <img src="{{ site.baseurl }}/assets/team/{{ page.name | slugify: 'pretty' }}.jpg" alt="{{ page.name }}">
         </div>
         <div class="photographer_text">
-          <h2 class="photographer_name">
-            {{ page.name }}
-          </h2>
+          <h2 class="photographer_name">{{ page.name }}</h2>
           <p class="photographer_intro">{{ content }}</p>
           {% if page.quote %}
           <p class="photographer_quote">{{ page.quote }}</p>

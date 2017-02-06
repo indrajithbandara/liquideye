@@ -1,6 +1,6 @@
 ---
 layout: testimonials
-name: jéremy lage
+name: jeremy lage
 job:  
 website:
 instagram:

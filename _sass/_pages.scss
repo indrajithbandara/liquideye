@@ -10,7 +10,7 @@ em { color: lighten($black, 30%);}
     flex-direction: row;
   }
 }
-.team .photographer:hover .photographer_face {
+.team a:hover .photographer_face {
   border: 5px solid $brand_blue;
 }
 .team_photographer .photographer {
@@ -32,7 +32,7 @@ em { color: lighten($black, 30%);}
   }
 
 }
-.photographer_name {
+.photographer_name, .testimonial_name {
   text-transform: capitalize;
   margin-top: 0;
   text-align: center;
@@ -50,20 +50,23 @@ em { color: lighten($black, 30%);}
   margin-left: 0;
   margin-right: 0;
 }
-.photographer_quote {
+.photographer_quote,
+.testimonial_quote {
   font-style: italic;
 }
-.photographer_quote:before {
+.photographer_quote:before,
+.testimonial_quote:before {
   content: open-quote;
   font-size: 300%;
   line-height: 1px!important;
   display: inline;
   position: relative;
   top: 22px;
-  padding-right: .5rem;
+  padding-right: 1rem;
   color: lighten($black, 60%);
 }
-.photographer_quote:after {
+.photographer_quote:after,
+.testimonial_quote:after {
   content: close-quote;
   font-size: 300%;
   line-height: 1px!important;
@@ -74,6 +77,27 @@ em { color: lighten($black, 30%);}
   color: lighten($black, 60%);
 }
 
+.testimonial {
+  margin-bottom: $vertical-space;
+}
+
+.testimonial_photo {
+  margin-bottom: $vertical-space-small;
+}
+.testimonial_contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.testimonial_name {
+
+}
+.testimonial_website,
+.testimonial_instagram,
+.testimonial_email {
+  margin-left: $vertical-space-small;
+}
 
 .box {
   display: -webkit-box;

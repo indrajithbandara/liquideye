@@ -1,6 +1,6 @@
 ---
 layout: testimonials
-name: clément philippon
+name: clement philippon
 job:  
 website: http://www.chacal-prod.com/
 instagram:

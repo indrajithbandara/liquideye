@@ -1,6 +1,6 @@
 ---
 layout: testimonials
-name: stéphane fournet
+name: stephane fournet
 job:  
 website:
 instagram:

@@ -32,5 +32,6 @@ exclude:
   - Gemfile.lock
 
 collections:
- team:
+  testimonials:
+  team:
    output: true

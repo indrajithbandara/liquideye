@@ -1,6 +1,6 @@
 ---
 layout: testimonials
-name: vincent dunogué
+name: vincent dunogue
 job:  
 website: http://www.flickr.com/photos/photo974/sets/72157622280303683/
 instagram:

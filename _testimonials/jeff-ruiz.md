@@ -1,6 +1,6 @@
 ---
 layout: testimonials
-name: jean-françois "jeff" ruiz
+name: jeff ruiz
 job:  
 website: http://www.jeffruiz-photographies.com/
 instagram:
