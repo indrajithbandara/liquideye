@@ -30,3 +30,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+ team:
+   output: true

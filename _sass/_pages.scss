@@ -1,4 +1,57 @@
-em { color: lighten($black, 40%);}
+em { color: lighten($black, 30%);}
+
+.team .looper__link {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.photographer_face {
+border-radius: 50%;
+height: 200px;
+width: 200px;
+min-height: 200px;
+min-width: 200px;
+overflow: hidden;
+margin-right: 2rem;
+}
+.photographer_name {
+  text-transform: capitalize;
+  margin-top: 0;
+}
+.photographer_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.photographer_quote, .photographer_intro {
+  margin-left: 0;
+  margin-right: 0;
+}
+.photographer_quote {
+  font-style: italic;
+}
+.photographer_quote:before {
+  content: open-quote;
+  font-size: 300%;
+  line-height: 1px!important;
+  display: inline;
+  position: relative;
+  top: 22px;
+  padding-right: .5rem;
+  color: lighten($black, 60%);
+}
+.photographer_quote:after {
+  content: close-quote;
+  font-size: 300%;
+  line-height: 1px!important;
+  display: inline-block;
+  position: relative;
+  top: 22px;
+  padding-left: .5rem;
+  color: lighten($black, 60%);
+}
+
+
 .box {
   display: -webkit-box;
   display: flex;
@@ -51,48 +104,10 @@ em { color: lighten($black, 40%);}
   padding: .25rem;
 }
 
-.skateschool,
-.pizza{
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-}
-
-.pizza {
-  flex-wrap: wrap;
-  @include media( "screen", ">minWidth") {
-    figure { max-width: 50%; }
-  }
-  @include media( "screen", ">bp1Width") {
-    figure { max-width: 33.3%; }
-  }
-}
-
-.skateschool {
-  flex-wrap: wrap;
-  @include media( "screen", ">minWidth") {
-    figure { max-width: 50%; }
-  }
-  @include media( "screen", ">bp1Width") {
-    figure { max-width: 25%; }
-  }
-}
-
 .us {
   flex-wrap: wrap;
 }
 
-.events,
-.us,
-.rooms {
-   h2 {
-     text-align: center;
-   }
-   .group {
-     margin-bottom: $vertical-space-small;
-   }
-}
 .inline {
   display: inline-block;
 }
@@ -145,19 +160,5 @@ em { color: lighten($black, 40%);}
   p {
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-
-
-.white-gladak.flex {
-  flex-wrap: wrap;
-  figure {
-    @include media( "screen", ">bp1Width") {
-      width: 50%;
-    }
-    @include media( "screen", ">maxWidth") {
-      width: 33.3%;
-    }
   }
 }

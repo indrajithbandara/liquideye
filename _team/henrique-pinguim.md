@@ -1,5 +1,5 @@
 ---
-layout: team
+layout: team_photographer
 name: henrique pinguim
 ---
 Henrique Pinguim or "Penguin" is above all a love by the sea. Saw the photo birth unpretentiously, on any given day, recording the performance of friends.

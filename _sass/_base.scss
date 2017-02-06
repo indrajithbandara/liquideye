@@ -213,6 +213,12 @@ h4, h5, h6 {
   }
 }
 
+.content {
+	margin: 0 auto;
+  margin-top: $vertical-space;
+  margin-bottom: $vertical-space;
+}
+
 .imagecontent {
   margin: 0 auto;
   max-width: none;
