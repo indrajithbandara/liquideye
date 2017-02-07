@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+  }
+  .liquideye_logo {
+    height: 200px;
   }
 
   .logoblock {/*a*/
@@ -32,6 +36,10 @@
     padding-bottom: 10px;
     @include media( "screen", "<minWidth") {
       text-align: center;
+    }
+    @include media( "screen", ">bp1Width") {
+      padding-top: 54px;
+      padding-bottom: 0;
     }
   }
 }

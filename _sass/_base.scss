@@ -68,10 +68,6 @@ a {
 p {
   margin-top: 0;
   margin-bottom: $vertical-space-small;
-  // margin-right: .25rem;
-  // @include media( "screen", ">minWidth") {
-  //   margin-right: .75rem;
-  // }
 }
 
 
@@ -89,7 +85,7 @@ hr {
   border-bottom: 1px solid $black;
 }
 
-/*// Quotes*/
+/*Quotes*/
 blockquote {
   padding: 0;
   padding-left: $vertical-space-small;
@@ -179,8 +175,8 @@ h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  padding-left: $vertical-space-small;
-  padding-right: $vertical-space-small;
+  padding-left: $vertical-space;
+  padding-right: $vertical-space;
   max-width: 1000px;
 }
 
