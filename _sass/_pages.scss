@@ -87,6 +87,14 @@ em { color: lighten($black, 30%);}
     flex-wrap: nowrap;
   }
 }
+
+.testimonial_intro > * {
+  text-align: center;
+  margin-left: $vertical-space;
+  margin-right: $vertical-space;
+  margin-bottom: $vertical-space;
+}
+
 .testimonial_header {
   padding-bottom: $vertical-space-small;
   @include media( "screen", ">minWidth", "<bp1Width"){
