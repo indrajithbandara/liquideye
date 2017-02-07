@@ -24,6 +24,7 @@
     -webkit-box-pack: center;
     justify-content: center;
   }
+
   a {
     margin-left: 0;
     display: -webkit-box;
@@ -34,6 +35,7 @@
     -webkit-box-align: center;
     align-items: center;
   }
+
   .paragraph {
     display: -webkit-box;
     display: flex;
@@ -46,15 +48,30 @@
       padding-right: 5px;
     }
   }
+
   .liquideye_logo {
     width: 100px;
     height: 100px;
     min-width: 100px;
   }
+
   .qr.paragraph {
     width: 100px;
     height: 100px;
     min-width: 100px;
+    margin-left: -5px;
+  }
+
+  .footer_logo {
+    margin-left: -2px;
+  }
+
+  .copyright {
+    margin-left: 7px;
+  }
+
+  .powered {
     margin-left: 5px;
+    font-size: 15px;
   }
 }

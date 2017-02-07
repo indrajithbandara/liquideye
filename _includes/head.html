@@ -4,11 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ site.title_long | escape }} • {{ page.title | capitalize }}{% else %}{{ site.title_long | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.twitter_description %}{{ page.twitter_description}}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords}}">{% endif %}
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <meta name="google-site-verification" content="{{ site.google.verify }}" />
 
 

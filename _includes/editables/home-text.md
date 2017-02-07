@@ -6,4 +6,4 @@ If you shoot with one of Canon’s consumer model DSLR’s such as the EOS 400D,
 
 On the other hand if your needs are more involved and your budget less constrained, then you may choose to go with our pro-model C1793 or C1793S which will also houses the prosumer range of Canon DSLR’s. And if you shoot with the Canon 1D series DSLR’s the C1794 will also house these flagship models as well.
 
-As you can see, LiquidEye pretty much has the entire line of the Canon DSLR’s covered for you. So whether you are a beginner or a seasoned photographer at LiquidEye we have a water-housing solution to suit your needs.
+As you can see, Liquid Eye pretty much has the entire line of the Canon DSLR’s covered for you. So whether you are a beginner or a seasoned photographer at Liquid Eye we have a water housing solution to suit your needs.
