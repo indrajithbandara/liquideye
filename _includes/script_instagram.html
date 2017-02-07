@@ -27,8 +27,8 @@
   var media = data.data,
     fragment = document.createDocumentFragment();
 
-  //get latest 10 posts
-  for (var a = 0, al = 12; a < al; a++) {
+  //get latest 14 posts
+  for (var a = 0, al = 14; a < al; a++) {
     if (supportsTemplate()) {
       var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
       mediaClone.querySelector('a').href = media[a].link;
@@ -86,18 +86,8 @@
   }
 
   document.getElementById('instagram-media').appendChild(fragment);
-
-  if (data.pagination.next_url !== undefined) {
-    instagramURL = data.pagination.next_url;
-  } else {
-    document.querySelector('.load-more').parentNode.removeChild(document.querySelector('.load-more'));
-  }
   };
 
   getJSONP(instagramURL, 'getInstagramMedia');
-
-  document.querySelector('.load-more').addEventListener('click', function () {
-  getJSONP(instagramURL, 'getInstagramMedia');
-  });
 
 </script>

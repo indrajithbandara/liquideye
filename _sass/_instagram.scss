@@ -3,21 +3,20 @@
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
+  svg {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .instagram_box {
 	box-sizing: border-box;
-
 	&:before,
-	&:after {
-		box-sizing: border-box;
-	}
+	&:after { box-sizing: border-box; }
 }
-
-
 
 .instagram {
   display: -webkit-box;
@@ -33,7 +32,6 @@
     border-bottom: 0 none;
   }
 
-
 	.media {
 		padding: 4px;
 		position: relative;
@@ -43,10 +41,6 @@
 			margin: 2.5%;
 			float: left;
 		}
-		// @media all and (min-width: 840px) {
-		// 	width: 28.3334%;
-		// 	margin: 2.5%;
-		// }
 
 		&.video a:before,
 		&.video a:after {
@@ -55,6 +49,7 @@
 			left: 50%;
 			content: '';
 		}
+
 		&.video a:before {
 			width: 48px;
 			height: 48px;
@@ -65,6 +60,7 @@
 			margin-top: -24px;
 			margin-left: -24px;
 		}
+
 		&.video a:after {
 			width: 16px;
 			height: 12px;
@@ -80,13 +76,8 @@
 			height: auto;
 			vertical-align: middle;
 			padding-bottom: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
-      @include media( "screen", ">minWidth") {
-        padding-right: 0;
-        padding-left: 0;
-      }
 		}
+
 		.user {
 			width: 48px;
 			height: 48px;
@@ -114,18 +105,20 @@
 	outline: none;
 }
 
-
 .instagram-likes {
 	padding-right: 10px;
 }
+
 .instagram-likes:before {
 	content: "♡ ";
 }
+
 .instagram-comments:before {
 	content: "✎ ";
 }
 
 .instagram-caption-box {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -135,17 +128,15 @@
   background-color: rgba(255,255,255,.85);
   color: black;
   line-height: 1.1;
-  display: none;
-  a:hover & {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .instagram-caption {
-    max-width: 80%;
-    font-size: 14px;
-    @include media( "screen", ">bp1Width") {
-      font-size: 17px;
+  @include media( "screen", ">bp1Width") {
+    a:hover & {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .instagram-caption {
+      max-width: 90%;
+      font-size: 16px;
     }
   }
 }
