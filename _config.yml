@@ -6,7 +6,7 @@ email: rokmabox@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Liquid Eye produces light and strong water housing systems. Whether you are a beginner or a seasoned photographer LiquidEye have a waterhousing solution to suit your needs.
 baseurl: ""
-url: "liquideye.junglestar.org"
+url: "https://toybreaker.github.io/liquideye/"
 preview_image: liquideye_preview_image.jpg
 
 github_url: "https://toybreaker.github.io/liquideye/"
