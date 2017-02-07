@@ -26,6 +26,7 @@
 
 .youtube_title {
   margin-top: $vertical-space;
+  margin-bottom: $vertical-space;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -36,4 +37,10 @@
     width: 50px;
     height: 50px;
   }
+}
+
+.youtube_block {
+  background-color: lighten( $brand_blue, 30%);
+  padding-top: $vertical-space;
+  padding-bottom: $vertical-space;
 }

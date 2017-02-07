@@ -10,30 +10,29 @@
 
     {% include svg/defs.html %}
 
+    {% include header.html %}
+
     <div class="bungkus group">
 
-      {% include header.html %}
+      <div class="slideshow">
 
+        <div class="slideshow-slide-list">
 
-        <div class="slideshow">
-          <div class="slideshow-slide-list">
+        {% comment %}
+        from: http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
+        {% endcomment %}
 
-{% comment %}
-from:
-http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
-{% endcomment %}
-
-            {% for image in site.static_files %}
+          {% for image in site.static_files %}
               {% if image.path contains 'p/home' %}
                 <figure class="slideshow-slide">
                   <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                 </figure>
               {% endif %}
-            {% endfor %}
+          {% endfor %}
 
-          </div>
         </div>
 
+      </div>
 
       <div class="container content">
         {{ content }}
@@ -44,7 +43,7 @@ http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a
     </div>
 
     {% include script_slideshow.html %}
-    
+
     <script type="text/javascript">
       var slideshowEl = document.querySelector('.slideshow');
       Slideshow(slideshowEl, {
@@ -56,7 +55,6 @@ http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a
         transitionEffect: "slide",
       });
     </script>
-
 
     {% include script_ext_link.html %}
 

@@ -1,0 +1,19 @@
+<div class="container content">
+
+  <h2 class="youtube_title">
+    <span>Videos from our&nbsp;</span>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="youtube">
+      <use xlink:href="#icn--youtube"></use>
+    </svg>
+    <span class="hide_on_small">LiquidEyeWHS</span>
+  </h2>
+
+  {% for video in site.data.youtube %}
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{video.videocode}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+  {% endfor %}
+
+</div>

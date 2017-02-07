@@ -9,6 +9,8 @@ $underline_link_color : #b4e7f8;
 
 $brand_blue           : #3a81c1;
 $brand_yellow         : #fff200;
+$menu_bg_color        : lighten( $brand_blue, 45%);
+$body_bg_color        : lighten( $brand_blue, 40%);
 
 $base-font: caption;
 $base-font-size-tiny: 15px;
