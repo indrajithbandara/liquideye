@@ -1,6 +1,7 @@
 ---
 layout: team_photographer
 name: henrique pinguim
+description: Henrique Pinguim or "Penguin" is above all a love by the sea. The distinctive look and amazing images generated in a short time it was touted as one of the greatest revelations of aquatic photography.
 ---
 Henrique Pinguim or "Penguin" is above all a love by the sea. Saw the photo birth unpretentiously, on any given day, recording the performance of friends.
 

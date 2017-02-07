@@ -1,5 +1,5 @@
 <script>
-  var user = '{{site.uid}}';
+  var user = '{{site.ui}}';
   var accessToken = '{{site.at}}';
 </script>
 
@@ -43,7 +43,7 @@
 
       var caption = document.createElement("span");
         caption.classList.add('instagram-caption');
-        caption.textContent = media[a].caption.text.replace(/#rokmaphotography/g, 'Rokma. ').replace(/\s?#\S+/g, '').replace(/Link in bio for more info at essbali.com/, '').replace(/Link in bio for bookings at essbali.com/, '').replace(/Link in bio to find out more at essbali.com/, '').replace(/, more detail on link in bio/, '.').replace(/essbali.com/, '');
+        caption.textContent = media[a].caption.text;
 
       var caption_box = document.createElement('div');
       caption_box.classList.add('instagram-caption-box');

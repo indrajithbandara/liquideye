@@ -5,8 +5,10 @@ slogan: Rock Solid yet Light as a Feather!
 email: rokmabox@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Liquid Eye produces light and strong water housing systems. Whether you are a beginner or a seasoned photographer LiquidEye have a waterhousing solution to suit your needs.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "liquideye.junglestar.org" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "liquideye.junglestar.org"
+preview_image: liquideye_preview_image.jpg
+
 github_url: "https://toybreaker.github.io/liquideye/"
 github_username:  toybreaker
 repository: toybreaker/liquideye
@@ -21,7 +23,7 @@ google:
   verification: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
 # i
-uid: '256466927'
+ui: '256466927'
 at: '256466927.928b166.90b119a23d774c3f907536f435af3168'
 
 # Build settings
