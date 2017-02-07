@@ -1,0 +1,103 @@
+<script>
+  var user = '{{site.uid}}';
+  var accessToken = '{{site.at}}';
+</script>
+
+<script type="text/javascript">
+  // Detect if <template> is supported
+  function supportsTemplate() {
+  return 'content' in document.createElement('template');
+  }
+
+  var instagramURL = 'https://api.instagram.com/v1/users/' + user + '/media/recent?access_token=' + accessToken;
+
+  var getJSONP = function (source, callback) {
+  var reference = window.document.getElementsByTagName('script')[0];
+  var script = window.document.createElement('script');
+  script.src = source + (source.indexOf('?') + 1 ? '&' : '?') + 'callback=' + callback;
+  script.async = true;
+
+  reference.parentNode.insertBefore(script, reference);
+
+  script.onload = function () {
+    this.remove();
+  };
+  };
+  var getInstagramMedia = function (data) {
+  var media = data.data,
+    fragment = document.createDocumentFragment();
+
+  //get latest 10 posts
+  for (var a = 0, al = 12; a < al; a++) {
+    if (supportsTemplate()) {
+      var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
+      mediaClone.querySelector('a').href = media[a].link;
+
+      // mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url;
+      mediaClone.querySelector('.instagram-image').src = media[a].images.thumbnail.url.replace('s150x150/', 's320x320/');
+
+      if (media[a].caption !== null && media[a].caption.text !== null) {
+        mediaClone.querySelector('.instagram-image').alt = media[a].caption.text;
+
+      }
+
+      var caption = document.createElement("span");
+        caption.classList.add('instagram-caption');
+        caption.textContent = media[a].caption.text.replace(/#rokmaphotography/g, 'Rokma. ').replace(/\s?#\S+/g, '').replace(/Link in bio for more info at essbali.com/, '').replace(/Link in bio for bookings at essbali.com/, '').replace(/Link in bio to find out more at essbali.com/, '').replace(/, more detail on link in bio/, '.').replace(/essbali.com/, '');
+
+      var caption_box = document.createElement('div');
+      caption_box.classList.add('instagram-caption-box');
+      caption_box.appendChild(caption);
+
+      mediaClone.querySelector('a').appendChild(caption_box);
+
+      var likes = document.createElement("span");
+        likes.classList.add('instagram-likes');
+        likes.textContent = media[a].likes.count;
+      mediaClone.querySelector('a').appendChild(likes);
+
+      var comments = document.createElement("span");
+        comments.classList.add('instagram-comments');
+        comments.textContent = media[a].comments.count;
+      mediaClone.querySelector('a').appendChild(comments);
+
+      fragment.appendChild(mediaClone);
+    } else {
+      var mediaElement = document.createElement('div');
+      mediaElement.className = 'media ' + media[a].type;
+
+      var linkElement = document.createElement('a');
+      linkElement.href = media[a].link;
+      linkElement.target = '_blank';
+      if (media[a].caption !== null && media[a].caption.text !== null) {
+        linkElement.title = media[a].caption.text;
+      }
+      mediaElement.appendChild(linkElement);
+
+      var imageElement = document.createElement('img');
+      imageElement.src = media[a].images.low_resolution.url;
+      if (media[a].caption !== null && media[a].caption.text !== null) {
+        imageElement.alt = media[a].caption.text;
+      }
+      linkElement.appendChild(imageElement);
+
+      fragment.appendChild(mediaElement);
+    }
+  }
+
+  document.getElementById('instagram-media').appendChild(fragment);
+
+  if (data.pagination.next_url !== undefined) {
+    instagramURL = data.pagination.next_url;
+  } else {
+    document.querySelector('.load-more').parentNode.removeChild(document.querySelector('.load-more'));
+  }
+  };
+
+  getJSONP(instagramURL, 'getInstagramMedia');
+
+  document.querySelector('.load-more').addEventListener('click', function () {
+  getJSONP(instagramURL, 'getInstagramMedia');
+  });
+
+</script>
