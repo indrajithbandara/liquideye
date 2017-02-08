@@ -44,4 +44,4 @@ collections:
    output: true
   waterhousings:
    output: true
-   permalink: /water-housings/:path/:title/
+   permalink: /water-housings/:path/
