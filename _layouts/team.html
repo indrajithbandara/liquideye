@@ -15,23 +15,28 @@
     <div class="bungkus group">
 
       <div class="container content">
+
         <!-- team-looper -->
         <div class="looper" >
+
           {% for photographer in site.team %}
             <a class="looper__link photographer" href="{{ photographer.url | prepend: site.baseurl }}">
               <div class="photographer_face">
-                <img src="{{ site.baseurl }}/assets/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
+                <img src="{{ site.baseurl }}/assets/p/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
               </div>
               <div class="photographer_text">
                 <h2 class="photographer_name">{{ photographer.name }}</h2>
+
                 {% if photographer.quote %}
                   <p class="photographer_quote">{{ photographer.quote }}</p>
                 {% else %}
                   <p class="photographer_intro">{{ photographer.content | strip_html | normalize_whitespace | truncate: 300 }}</p>
                 {% endif %}
+                
               </div>
             </a>
           {% endfor %}
+
         </div>
       </div>
 

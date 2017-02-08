@@ -1,0 +1,47 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+  <body class="housings">
+
+    {% include svg/defs.html %}
+
+    {% include header.html %}
+
+    <div class="bungkus group">
+
+      <div class="container content">
+
+        <h2>Professional Water Housings</h2>
+
+        <!-- housings-looper -->
+        <div class="looper" >
+
+          {% for housing in site.waterhousings %}
+            <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
+              <div class="housing_block">
+                <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                <h3>{{ housing.name }}</h3>
+              </div>
+
+            </a>
+          {% endfor %}
+
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+
+    {% include script_ext_link.html %}
+
+    {% include script_google_analytics.html %}
+
+  </body>
+
+</html>

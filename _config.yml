@@ -41,3 +41,5 @@ collections:
   testimonials:
   team:
    output: true
+  waterhousings:
+   output: true
