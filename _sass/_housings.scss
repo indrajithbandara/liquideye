@@ -1,5 +1,11 @@
 .housings,
 .housing {
+  .content {
+    @include media( "screen", ">bp1Width") {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
   .bungkus {
     background-color: transparent;
   }
@@ -57,5 +63,42 @@
       padding-left: $vertical-space-small/2;
       padding-right: $vertical-space-small/2;
     }
+  }
+}
+
+.housing_top_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media( "screen", ">bp1Width") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.housing_photos {
+  min-width: 50%;
+  max-width: 500px;
+  @include media( "screen", ">bp1Width") {
+    margin-right: $vertical-space-small;
+  }
+}
+
+.housing_intro {
+  .price {
+    font-size: 2rem;
+    &:before {
+      content: "USD";
+      padding-right: $vertical-space-small;
+    }
+  }
+  .order_button {
+    min-width: 0;
+    margin-top: $vertical-space;
+    span {
+      font-size: 1.3rem;
+      padding: $vertical-space-small;
+      border: 1px black solid;
+    }
+
   }
 }

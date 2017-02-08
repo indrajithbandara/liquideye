@@ -16,14 +16,20 @@
 
       <div class="container content">
 
-          <h2>Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h2>
+        <h2>Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h2>
 
-        <div class="housing_photos">
-          <img src="{{site.baseurl}}/assets/p/housings/{{page.name}}/01.jpg" alt="{{ page.name }}">
-        </div>
+        <div class="housing_top_block">
 
-        <div class="housing_intro">
-          {{content}}
+          <div class="housing_photos">
+            <img src="{{site.baseurl}}/assets/p/housings/{{page.name}}/01.jpg" alt="{{ page.name }}">
+          </div>
+
+          <div class="housing_intro">
+            <div class="">{{content}}</div>
+            <div class="price">{{page.price}}</div>
+            <div class="order_button"><span>Order Now</span></div>
+          </div>
+
         </div>
 
         <div class="housing_data">
