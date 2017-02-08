@@ -42,6 +42,7 @@ collections:
   testimonials:
   team:
    output: true
+   permalink: /team/:path/
   waterhousings:
    output: true
    permalink: /water-housings/:path/
