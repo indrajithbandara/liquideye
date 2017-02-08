@@ -28,8 +28,9 @@
       justify-content: flex-start;
     }
   }
-  h1 {
-    color: $brand_blue;
+  .claim {
+    font-size: 26px;
+    font-weight: 300;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -38,7 +39,7 @@
       text-align: center;
     }
     @include media( "screen", ">bp1Width") {
-      padding-top: 54px;
+      padding-top: 52px;
       padding-bottom: 0;
     }
   }

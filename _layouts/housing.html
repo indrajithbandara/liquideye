@@ -16,7 +16,7 @@
 
       <div class="container content">
 
-        <h2>Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h2>
+        <h1>Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h1>
 
         <div class="housing_top_block">
 
@@ -25,33 +25,188 @@
           </div>
 
           <div class="housing_intro">
+            <h2>Product Overview</h2>
             <div class="">{{content}}</div>
             <div class="price">{{page.price}}</div>
-            <div class="order_button"><span>Order Now</span></div>
+            <div class="order_button">
+              <a href="#"><span>Order Now</span></a>
+            </div>
           </div>
 
         </div>
 
-        <div class="housing_data">
+        <div class="housing_data group">
 
-          <h3>Features</h3>
-          <div class="housing_features">
-            {{page.features | markdownify }}
+          <h2>Product Information</h2>
+
+          <div class="data_block housing_specifications row">
+            <div class="title column">
+              <h3>Features</h3>
+            </div>
+            <div class="data column">
+              <p>{{page.features.feature1}}</p>
+              <p>{{page.features.feature2}}</p>
+              <p>{{page.features.feature3}}</p>
+              <p>{{page.features.feature4}}</p>
+              <p>{{page.features.feature5}}</p>
+              <p>{{page.features.feature6}}</p>
+            </div>
           </div>
 
-          <h3>Specifications</h3>
-          <div class="housing_specifications">
-            {{page.specifications | markdownify }}
+
+          <div class="data_block housing_specifications row">
+            <div class="title column">
+              <h3>Tech Specs</h3>
+            </div>
+            <div class="data column">
+              <p class=""><strong>Size and Weight</strong></p>
+              <p>Width: {{page.specifications.width}}</p>
+              <p>Height: {{page.specifications.height}}</p>
+              <p>Depth: {{page.specifications.depth}}</p>
+              <p>Weight: {{page.specifications.weight}}</p>
+              <p class=""><strong>Material</strong></p>
+              {{page.specifications.material | markdownify }}
+            </div>
           </div>
 
-          <h3>Controls</h3>
-          <div class="housing_controls">
-            {{page.controls | markdownify }}
+
+          <div class="data_block housing_specifications row">
+            <div class="title column">
+              <h3>Controls</h3>
+            </div>
+
+            {% if page.controls.housing %}
+            <div class="data column">
+              <p class=""><strong>On the housing</strong></p>
+
+              <p>{{page.controls.housing.control1}}</p>
+
+              {% if page.controls.housing.control2 %}
+              <p>{{page.controls.housing.control2}}</p>
+              {% endif %}
+
+              {% if page.controls.housing.control3 %}
+              <p>{{page.controls.housing.control3}}</p>
+              {% endif %}
+
+              {% if page.controls.housing.control4 %}
+              <p>{{page.controls.housing.control4}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate %}
+              <p class=""><strong>On the back plate </strong></p>
+              {% endif %}
+
+              {% if page.controls.backplate.control1 %}
+              <p>{{page.controls.backplate.control1}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate.control2 %}
+              <p>{{page.controls.backplate.control2}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate.control3 %}
+              <p>{{page.controls.backplate.control3}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate.control3 %}
+              <p>{{page.controls.backplate.control4}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate.control5 %}
+              <p>{{page.controls.backplate.control5}}</p>
+              {% endif %}
+
+              {% if page.controls.backplate.control6 %}
+              <p>{{page.controls.backplate.control6}}</p>
+              {% endif %}
+
+            </div>
+            {% else %}
+            <div class="data column">
+
+              {% if page.controls.control1 %}
+              <p>{{page.controls.control1}}</p>
+              {% endif %}
+
+              {% if page.controls.control2 %}
+              <p>{{page.controls.control2}}</p>
+              {% endif %}
+
+              {% if page.controls.control3 %}
+              <p>{{page.controls.control3}}</p>
+              {% endif %}
+
+              {% if page.controls.control4 %}
+              <p>{{page.controls.control4}}</p>
+              {% endif %}
+
+
+              {% if page.controls.control5 %}
+              <p>{{page.controls.control5}}</p>
+              {% endif %}
+
+              {% if page.controls.control6 %}
+              <p>{{page.controls.control6}}</p>
+              {% endif %}
+
+              {% if page.controls.control7 %}
+              <p>{{page.controls.control7}}</p>
+              {% endif %}
+
+              {% if page.controls.control8 %}
+              <p>{{page.controls.control8}}</p>
+              {% endif %}
+
+              {% if page.controls.control9 %}
+              <p>{{page.controls.control9}}</p>
+              {% endif %}
+
+            </div>
+            {% endif %}
+
           </div>
 
-          <h3>Included</h3>
-          <div class="housing_included">
-            {{page.included | markdownify }}
+
+          <div class="data_block housing_specifications row">
+            <div class="title column">
+              <h3>What’s in the Box</h3>
+            </div>
+
+            <div class="data column">
+
+              <p>{{page.included.item1}}</p>
+
+              {% if page.included.item2 %}
+              <p>{{page.included.item2}}</p>
+              {% endif %}
+
+              {% if page.included.item3 %}
+              <p>{{page.included.item3}}</p>
+              {% endif %}
+
+              {% if page.included.item4 %}
+              <p>{{page.included.item4}}</p>
+              {% endif %}
+
+              {% if page.included.item5 %}
+              <p>{{page.included.item5}}</p>
+              {% endif %}
+
+              {% if page.included.item6 %}
+              <p>{{page.included.item6}}</p>
+              {% endif %}
+
+              {% if page.included.item7 %}
+              <p>{{page.included.item7}}</p>
+              {% endif %}
+
+              {% if page.included.item8 %}
+              <p>{{page.included.item8}}</p>
+              {% endif %}
+
+            </div>
+
           </div>
 
         </div>

@@ -10,7 +10,10 @@ html {
   background-color: $body-color;
   overflow-x: hidden!important;
 
-  font-family: sans-serif;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: $base-font-size-tiny;
   @include media( "screen", ">minWidth") {font-size: $base-font-size-min;}
   @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1;}
@@ -24,8 +27,16 @@ html {
 
 body {
   overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+}
+
+body, input, textarea, select, button {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings:'liga','kern';
+  direction: ltr;
+  text-align: left;
 }
 
 a {
@@ -67,7 +78,7 @@ a {
 
 p {
   margin-top: 0;
-  margin-bottom: $vertical-space-small;
+  padding-bottom: 12px;
 }
 
 strong {
@@ -142,32 +153,30 @@ h1, h2, h3, h4, h5, h6 {
   @include media( "screen", ">minWidth") { font-weight: 300;}
   line-height: 1.25;
   letter-spacing: -.025rem;
-  text-rendering: optimizeLegibility;
-  /*text-transform: capitalize;*/
   color: $black;
-  margin-top: $vertical-space;
-  margin-bottom: $vertical-space-small;
-
+  padding-top: $vertical-space;
+  padding-bottom: $vertical-space-small;
 }
 
 h1 {
-  font-size: 1.35rem;
-  line-height: 2;
-  @include media( "screen", ">minWidth") {
-    font-size: 1.4rem;
-    line-height: 1.25;
-  }
-  @include media( "screen", ">bp1Width") {font-size: 1.6rem;}
-  @include media( "screen", ">maxWidth") {font-size: 1.75rem;}
+  font-size: 30px;
+  line-height: 1.125;
+  @include media( "screen", ">minWidth") {font-size: 32px;}
+  @include media( "screen", ">bp1Width") {font-size: 34px;}
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 26px;
+  @include media( "screen", ">minWidth") {font-size: 28px;}
+  @include media( "screen", ">bp1Width") {font-size: 30px;}
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 24px;
+  @include media( "screen", ">minWidth") {font-size: 26px;}
+  @include media( "screen", ">bp1Width") {font-size: 28px;}
 }
 h4, h5, h6 {
-  font-size: 1rem;
+  font-size: 20px;
+  @include media( "screen", ">bp1Width") {font-size: 22px;}
 }
 
 .bungkus {
