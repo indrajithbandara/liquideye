@@ -36,6 +36,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+permalink: pretty
 
 collections:
   testimonials:
@@ -43,3 +44,4 @@ collections:
    output: true
   waterhousings:
    output: true
+   permalink: /water-housings/:path/:title/
