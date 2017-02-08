@@ -16,8 +16,38 @@
 
       <div class="container content">
 
-        <div class="">
+          <h2>Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h2>
+
+        <div class="housing_photos">
           <img src="{{site.baseurl}}/assets/p/housings/{{page.name}}/01.jpg" alt="{{ page.name }}">
+        </div>
+
+        <div class="housing_intro">
+          {{content}}
+        </div>
+
+        <div class="housing_data">
+
+          <h3>Features</h3>
+          <div class="housing_features">
+            {{page.features | markdownify }}
+          </div>
+
+          <h3>Specifications</h3>
+          <div class="housing_specifications">
+            {{page.specifications | markdownify }}
+          </div>
+
+          <h3>Controls</h3>
+          <div class="housing_controls">
+            {{page.controls | markdownify }}
+          </div>
+
+          <h3>Included</h3>
+          <div class="housing_included">
+            {{page.included | markdownify }}
+          </div>
+
         </div>
 
       </div>

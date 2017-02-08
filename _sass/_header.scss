@@ -53,7 +53,6 @@
   width: 100%;
   text-align: center;
   @include media( "screen", ">minWidth") {
-    //padding-top: 1rem;
     margin: 0;
     display: -webkit-box;
     display: flex;
@@ -81,7 +80,8 @@
       white-space: nowrap;
       text-align: center;
       @include media( "screen", ">minWidth"){
-        margin-right: $vertical-space-small;
+        margin-left: $vertical-space-small/2;
+        margin-right: $vertical-space-small/2;
       }
       .span {border-bottom: 2px solid transparent;}
     }
