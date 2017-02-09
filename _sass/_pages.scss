@@ -1,13 +1,32 @@
 em { color: lighten($black, 30%);}
 
+.home {
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  h1 {
+    padding-top: 0;
+    padding-bottom: $vertical-space;
+  }
+  h3 {
+    padding-bottom: $vertical-space-small;
+  }
+}
+
 .team .photographer,
 .about .photographer  {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   margin-bottom: $vertical-space;
   @media all and (min-width: 660px) {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
   }
 }
 .team a:hover .photographer_face {
@@ -15,7 +34,8 @@ em { color: lighten($black, 30%);}
 }
 .team_photographer .photographer {
   @media all and (min-width: 660px) {
-    align-items: flex-start;
+    -webkit-box-align: start;
+            align-items: flex-start;
   }
 }
 .photographer_face {
@@ -42,9 +62,13 @@ em { color: lighten($black, 30%);}
   }
 }
 .photographer_text {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 .photographer_quote, .photographer_intro {
   margin-left: 0;
@@ -80,6 +104,7 @@ em { color: lighten($black, 30%);}
 .testimonial {
   margin-bottom: $vertical-space;
   @include media( "screen", ">minWidth"){
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
   }
@@ -97,8 +122,10 @@ em { color: lighten($black, 30%);}
   padding-bottom: $vertical-space-small;
   @include media( "screen", ">minWidth", "<bp1Width"){
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   @include media( "screen", ">bp1Width"){
     min-width: 200px;
@@ -126,11 +153,17 @@ em { color: lighten($black, 30%);}
   }
 }
 .testimonial_contacts {
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
   @include media( "screen", ">bp1Width"){
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 }
 

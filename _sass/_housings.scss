@@ -9,21 +9,27 @@
     padding-bottom: $vertical-space;
   }
   .looper {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     text-align: center;
     padding-left: $vertical-space;
     padding-right: $vertical-space;
     @include media( "screen", ">minWidth") {
       padding-left: 0;
       padding-right: 0;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
     }
   }
-  .looper__link {//a
+  .looper__link {/*a*/
     padding-bottom: $vertical-space-small;
     @include media( "screen", ">minWidth") {
       display: block;
@@ -63,12 +69,19 @@
 }
 
 .housing_top_block {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   @include media( "screen", ">bp1Width") {
-    flex-direction: row;
-    align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: start;
+            align-items: flex-start;
   }
 }
 .housing_photos {
@@ -151,6 +164,7 @@
       width: 70%;
       padding: 43px 0px;
     }
+
     ul {
       list-style: none;
       padding-left: 0;
@@ -160,4 +174,6 @@
       }
     }
   }
+
+  &:last-child .data { border-bottom: 0 none;}
 }

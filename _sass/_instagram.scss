@@ -25,7 +25,8 @@
   flex-wrap: wrap;
   -webkit-box-pack: center;
   justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 
   a {
   	color: black;
@@ -131,9 +132,12 @@
   line-height: 1.1;
   @include media( "screen", ">bp1Width") {
     a:hover & {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
     }
     .instagram-caption {
       max-width: 90%;

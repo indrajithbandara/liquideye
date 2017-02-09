@@ -28,6 +28,7 @@
     }
   }
 }
+
 figcaption {
   font-size: $base-font-size-tiny*1.2;
   text-align: center;
@@ -38,5 +39,4 @@ figcaption {
   }
   @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1*1.5;}
   @include media( "screen", ">maxWidth") {font-size: $base-font-size-max*1.5;}
-
 }
