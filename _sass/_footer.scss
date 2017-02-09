@@ -11,20 +11,31 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    min-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-left: $vertical-space-small;
     padding-right: $vertical-space-small;
+    // @media screen and (min-width: 280px) {
+    //   margin-left: 5%;
+    //   margin-right: 5%;
+    // }
     @include media( "screen", ">minWidth") {
-      min-width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
+      min-width: 86%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+    @include media( "screen", ">bp1Width") {
+      min-width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
     }
     @include media( "screen", ">maxWidth") {
-      min-width: 70%;
-      margin-left: 15%;
-      margin-right: 15%;
+      min-width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
     }
   }
 
