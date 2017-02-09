@@ -34,11 +34,17 @@
     line-height: 1;
     margin: 0;
     padding: 0;
+    padding-left: $vertical-space-small;
+    padding-right: $vertical-space-small;
     padding-bottom: $vertical-space-small;
-    @include media( "screen", "<minWidth") {
+    text-align: center;
+    @include media( "screen", ">minWidth") {
       text-align: center;
+
     }
     @include media( "screen", ">bp1Width") {
+      padding-left: 0;
+      padding-right: 0;
       padding-top: 52px;
       padding-bottom: 0;
     }

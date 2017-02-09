@@ -1,60 +1,126 @@
 <footer class="footer">
   <div class="container">
+
+    <p class="footer_logo paragraph">
+      {% include svg/use.html id="icn--liquideye_logo" class="liquideye_logo" %}
+    </p>
+
     <div class="inner">
 
-      <p class="footer_logo paragraph">
-        {% include svg/use.html id="icn--liquideye_logo" class="liquideye_logo" %}
-      </p>
+      <div class="column">
+        <div class="column_title">Products</div>
 
-      <p class="instagram_link paragraph">
-        <a class="link-underline" title="{{ site.instagram }}" href="https://instagram.com/{{ site.instagram }}">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="instagram_logo">
-            <use xlink:href="#icn--instagram"></use>
-          </svg>
-          <span>{{ site.instagram }}</span>
-        </a>
-      </p>
+        {% for menuitem in site.data.footer_menu_products %}
+          {% if page.url contains menuitem.link %}
+            <p>
+              <a href="{{ site.baseurl }}/{{menuitem.name}}/" class="active">
+                <span class="capitalize">{{ menuitem.name }}</span>
+              </a>
+            </p>
+          {% else %}
+            <p>
+              <a href="{{ site.baseurl }}/{{menuitem.link}}/">
+                <span class="capitalize">{{ menuitem.name }}</span>
+              </a>
+            </p>
+          {% endif %}
+        {% endfor %}
+      </div>
 
-      <p class="facebook paragraph">
-        <a class="link-underline" title="{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="facebook">
-            <use xlink:href="#icn--facebook"></use>
-          </svg>
-          <span>{{ site.facebook }}</span>
-        </a>
-      </p>
+      <div class="column">
 
-      <p class="youtube paragraph">
-        <a class="link-underline" title="{{ site.google.youtube }}" href="https://www.youtube.com/user/{{ site.google.youtube }}/videos">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="youtube">
-            <use xlink:href="#icn--youtube"></use>
-          </svg>
-          <span>{{ site.google.youtube }}</span>
-        </a>
-      </p>
+        <div class="column_title">About Liquid Eye</div>
 
-      <p class="twitter paragraph">
-        <a class="link-underline" title="{{ site.twitter_username }}" href="https://twitter.com/{{ site.twitter_username }}">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
-            <use xlink:href="#icn--twitter"></use>
-          </svg>
-          <span>{{ site.twitter_username }}</span>
-        </a>
-      </p>
+        {% for menuitem in site.data.footer_menu_about_us %}
+          {% if page.url contains menuitem.link %}
+            <p>
+              <a href="{{ site.baseurl }}/{{menuitem.name}}/" class="active">
+                <span class="capitalize">{{ menuitem.name }}</span>
+              </a>
+            </p>
+          {% else %}
+            <p>
+              <a href="{{ site.baseurl }}/{{menuitem.link}}/">
+                <span class="capitalize">{{ menuitem.name }}</span>
+              </a>
+            </p>
+          {% endif %}
+        {% endfor %}
 
-      <p class="qr paragraph" title="liquideye.co">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="qr_liquideye_co">
-            <use xlink:href="#icn--qr_liquideye_co"></use>
-          </svg>
-        </a>
-      </p>
+      </div>
 
-      <p class="copyright paragraph">
-        <span>© 2017 {{ site.title }}. All rights reserved. </span>
-      </p>
-      <p class="powered paragraph"><a href="http://junglestar.org"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="junglestar">
-        <use xlink:href="#icn--junglestar"></use>
-      </svg>&nbsp;Powered by Junglestar</a></p>
+      <div class="column">
+        <div class="column_title">Get in touch</div>
+
+        <p class="mail_link paragraph">
+          <a class="link-underline" title="{{ site.instagram }}" href="{{ site.baseurl }}/contact/">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="email">
+              <use xlink:href="#icn--email"></use>
+            </svg>
+            <span>Contact</span>
+          </a>
+        </p>
+
+        <p class="instagram_link paragraph">
+          <a class="link-underline" title="{{ site.instagram }}" href="https://instagram.com/{{ site.instagram }}">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="instagram_logo">
+              <use xlink:href="#icn--instagram"></use>
+            </svg>
+            <span>{{ site.instagram }}</span>
+          </a>
+        </p>
+
+        <p class="facebook paragraph">
+          <a class="link-underline" title="{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="facebook">
+              <use xlink:href="#icn--facebook"></use>
+            </svg>
+            <span>{{ site.facebook }}</span>
+          </a>
+        </p>
+
+        <p class="youtube paragraph">
+          <a class="link-underline" title="{{ site.google.youtube }}" href="https://www.youtube.com/user/{{ site.google.youtube }}/videos">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="youtube">
+              <use xlink:href="#icn--youtube"></use>
+            </svg>
+            <span>{{ site.google.youtube }}</span>
+          </a>
+        </p>
+
+        <p class="twitter paragraph">
+          <a class="link-underline" title="{{ site.twitter_username }}" href="https://twitter.com/{{ site.twitter_username }}">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="twitter">
+              <use xlink:href="#icn--twitter"></use>
+            </svg>
+            <span>{{ site.twitter_username }}</span>
+          </a>
+        </p>
+
+        <p class="qr paragraph" title="liquideye.co">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="qr_liquideye_co">
+              <use xlink:href="#icn--qr_liquideye_co"></use>
+            </svg>
+          </a>
+        </p>
+
+      </div>
+
     </div>
+
+    <div class="foot">
+
+      <p class="copyright">
+        © 2017 {{ site.title }}. All rights reserved.
+        <a class="powered" href="http://junglestar.org">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="junglestar">
+            <use xlink:href="#icn--junglestar"></use>
+          </svg>&nbsp;Powered by Junglestar
+        </a>
+      </p>
+
+    </div>
+
   </div>
+
 </footer>

@@ -4,25 +4,70 @@
   width: 100%;
   text-align: center;
 
+  .container {
+    min-width: 90%;
+    min-height: 100vh;
+    min-height: 100vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    @include media( "screen", ">maxWidth") {
+      min-width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
+  .inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media all and (min-width: 700px)  {
+      flex-direction: row;
+    }
+  }
+
+  .foot {
+    width: 100%;
+    font-size: 15px;
+    padding-top: $vertical-space-small/8;
+    border-top: 1px solid darken($hr_color, 10%);
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    @media all and (min-width: 700px) {
+      width: auto;
+    }
+  }
+
+  .column_title {
+    width: 100%;
+    border-bottom: 1px solid darken($hr_color, 10%);
+    font-weight: 500;
+    margin-top: $vertical-space-small;
+    margin-bottom: $vertical-space-small/2;
+    padding-bottom: $vertical-space-small/2;
+    @media all and (min-width: 700px) {
+      border: 0 none;
+      margin-top: 0;
+    }
+  }
+
   h1 {
     text-transform: uppercase;
     margin-bottom: $vertical-space-small;
     margin-top: $vertical-space-small;
-  }
-  .container {
-    min-height: 100vh;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
   }
 
   a {
@@ -34,6 +79,9 @@
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
+    &.active {
+      border-bottom: 1px solid black;
+    }
   }
 
   .paragraph {
@@ -67,12 +115,15 @@
   }
 
   .copyright {
-    margin-left: 7px;
+  }
+  .junglestar {//svg
+    position: relative!important;
+    top: 8px;
   }
 
   .powered {
-    margin-left: 5px;
-    font-size: 15px;
+    display: inline;
+    margin-left: $vertical-space-small;
     opacity: .25;
   }
 }
