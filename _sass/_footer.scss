@@ -162,6 +162,7 @@
   }
 
   .footer_logo {
+    padding-top: 50px;
     margin-left: calc(50% - 50px);
     &.paragraph {
       @media all and (min-width: 700px) {
@@ -240,5 +241,5 @@
       padding-left: calc(50% - 30px);
     }
   }
-  
+
 }
