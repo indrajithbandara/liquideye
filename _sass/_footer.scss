@@ -52,6 +52,11 @@
             align-items: flex-start;
     -webkit-box-pack: justify;
             justify-content: space-between;
+    border-bottom: 1px solid $hr_color;
+    .colored_background & {
+      border-bottom: 1px solid darken($hr_color, 10%);
+    }
+    padding-bottom: $vertical-space;
     @media all and (min-width: 700px)  {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -63,7 +68,6 @@
     width: 100%;
     font-size: 15px;
     padding-top: $vertical-space-small/8;
-    border-top: 1px solid darken($hr_color, 15%);
   }
 
   .column {
@@ -93,7 +97,7 @@
     @include media( "screen", "<minWidth") {
       font-weight: 600;
     }
-    border-bottom: 1px solid darken($hr_color, 15%);
+    border-bottom: 1px solid darken($hr_color, 10%);
     @media all and (min-width: 700px) {
       border: 0 none;
       margin-top: 0;
@@ -168,8 +172,11 @@
       @media all and (min-width: 700px) {
         margin-left: -2px;
         width: 100%;
-        border-bottom: 1px solid darken($hr_color, 15%);
-        margin-bottom: 12px;
+        border-bottom: 1px solid $hr_color;
+        .colored_background & {
+          border-bottom: 1px solid darken($hr_color, 10%);
+        }
+        margin-bottom: $vertical-space;
       }
     }
   }

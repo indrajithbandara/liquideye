@@ -12,7 +12,7 @@
 
     {% include header.html %}
 
-    <div class="bungkus group">
+    <div class="bungkus colored_background group">
 
       <div class="slideshow">
 
@@ -34,8 +34,15 @@
 
       </div>
 
-      <div class="container content">
-        {{ content }}
+      <div class="container">
+        <div class="content">
+
+          <h3 class="center">Water-Housing Solutions</h3>
+          <h1 class="center">{{site.slogan}}</h1>
+
+          {{ content }}
+
+        </div>
       </div>
 
       {% include footer.html %}

@@ -1,4 +1,4 @@
-## Purchasing terms and conditions / Disclaimer:
+## Purchasing terms and conditions -- Disclaimer
 
 By purchasing a Liquid Eye product the customer agrees to accept the risk involved in using a still camera or any electronic device in a marine environment and they do so entirely at their own risk.
 Liquid Eye is in no way liable for any damages to the DSLR or electronic device through the use of this product.
@@ -6,7 +6,7 @@ Under no circumstances and in no event will Liquid Eye be liable in any way what
 
 Buyer hereby acknowledges and agrees that under no circumstances and in no event shall Liquid Eye's liability exceed the sales price of the Liquid Eye product or defective Liquid Eye product.
 
-## Terms and Conditions / Warranty:
+## Terms and Conditions -- Warranty
 
 Payment is to be paid in full prior to receiving product and no cash refunds or credits will be made.
 
@@ -31,5 +31,7 @@ Liquid Eye warranty does not cover against the following:
 In the event that a Liquid Eye water-housing/product faults within the allocated warranty time period, the water-housing/product will be fixed at Liquid Eye’s expenses (except shipping costs).
 Under no circumstances shall the water-housing/product be replaced.
 The buyer is to contact the Liquid Eye with the problem and appropriate arrangements will be made.
+
+<hr>
 
 _It is strongly advised that the customer obtain insurance to cover the costs of repair or replacement of your photographic equipment in the event that the equipment sustains damage while being used in the Liquid Eye water-housing/product._

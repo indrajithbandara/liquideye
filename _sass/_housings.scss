@@ -3,11 +3,6 @@
   .bungkus {
     background-color: transparent;
   }
-  h1 {
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: $vertical-space;
-  }
   .looper {
     display: -webkit-box;
     display: flex;
@@ -176,4 +171,12 @@
   }
 
   &:last-child .data { border-bottom: 0 none;}
+}
+
+.level {
+  margin-top: 8px;
+  span {
+    padding: 5px;
+    border: 1px solid $hr_color;
+  }
 }

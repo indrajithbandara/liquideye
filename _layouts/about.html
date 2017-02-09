@@ -12,20 +12,25 @@
 
     {% include header.html %}
 
-    <div class="bungkus group">
+    <div class="bungkus colored_background group">
 
-      <div class="container content photographer">
+      <h3 class="center fat_dbl_header">Dedicated to water sports</h3>
+      <h1 class="center fat_dbl_header">About Liquid Eye water housing systems</h1>
 
-        <div class="photographer_face">
-          <img src="{{ site.baseurl }}/assets/p/team/philippe-chevodian.jpg" alt="Philippe Chevodian">
+      <div class="container">
+        <div class="content photographer">
+
+          <div class="photographer_face">
+            <img src="{{ site.baseurl }}/assets/p/team/philippe-chevodian.jpg" alt="Philippe Chevodian">
+          </div>
+          <div class="photographer_text">
+            <p class="photographer_intro">{{ content }}</p>
+            {% if page.quote %}
+            <p class="photographer_quote">{{ page.quote }}</p>
+            {% endif %}
+          </div>
+
         </div>
-        <div class="photographer_text">
-          <p class="photographer_intro">{{ content }}</p>
-          {% if page.quote %}
-          <p class="photographer_quote">{{ page.quote }}</p>
-          {% endif %}
-        </div>
-
       </div>
 
       {% include footer.html %}

@@ -14,48 +14,52 @@
 
     <div class="bungkus group">
 
-      <div class="container content">
+      <div class="container">
+        <div class="content">
 
-        <h1>Professional, Intermediate and Beginner Water Housings</h1>
+          <h3 class="center fat_dbl_header">{{ site.slogan }}</h3>
+          <h1 class="center fat_dbl_header">Professional, Intermediate and Beginner Water Housings</h1>
 
-        <!-- housings-looper -->
-        <div class="looper" >
+          <!-- housings-looper -->
+          <div class="looper" >
 
-          {% for housing in site.waterhousings %}
-            {% if housing.level=="professional" %}
-            <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
-              <div class="housing_block">
-                <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                <div class="level"><span>{{ housing.level }}</span></div>
-                <h3>{{ housing.name }}</h3>
-              </div>
-            </a>
-            {% endif %}
-          {% endfor %}
+            {% for housing in site.waterhousings %}
+              {% if housing.level=="professional" %}
+              <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
+                <div class="housing_block">
+                  <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                  <div class="level"><span>{{ housing.level }}</span></div>
+                  <h3>{{ housing.name }}</h3>
+                </div>
+              </a>
+              {% endif %}
+            {% endfor %}
 
-          {% for housing in site.waterhousings %}
-            {% if housing.level=="intermediate" %}
-            <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
-              <div class="housing_block">
-                <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                <div class="level"><span>{{ housing.level }}</span></div>
-                <h3>{{ housing.name }}</h3>
-              </div>
-            </a>
-            {% endif %}
-          {% endfor %}
+            {% for housing in site.waterhousings %}
+              {% if housing.level=="intermediate" %}
+              <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
+                <div class="housing_block">
+                  <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                  <div class="level"><span>{{ housing.level }}</span></div>
+                  <h3>{{ housing.name }}</h3>
+                </div>
+              </a>
+              {% endif %}
+            {% endfor %}
 
-          {% for housing in site.waterhousings %}
-            {% if housing.level=="beginner" %}
-            <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
-              <div class="housing_block">
-                <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                <div class="level"><span>{{ housing.level }}</span></div>
-                <h3>{{ housing.name }}</h3>
-              </div>
-            </a>
-            {% endif %}
-          {% endfor %}
+            {% for housing in site.waterhousings %}
+              {% if housing.level=="beginner" %}
+              <a class="looper__link" href="{{ housing.name | prepend: site.baseurl }}">
+                <div class="housing_block">
+                  <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                  <div class="level"><span>{{ housing.level }}</span></div>
+                  <h3>{{ housing.name }}</h3>
+                </div>
+              </a>
+              {% endif %}
+            {% endfor %}
+
+          </div>
 
         </div>
       </div>

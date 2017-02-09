@@ -98,7 +98,7 @@ hr {
   position: relative;
   margin: $vertical-space 0;
   border: 0;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $hr_color;
 }
 
 /*Quotes*/
@@ -151,6 +151,7 @@ tbody tr:nth-child(odd) th {
 /* Headings*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+  text-transform: capitalize;
   @include media( "screen", ">minWidth") { font-weight: 300;}
   line-height: 1.25;
   letter-spacing: -.025rem;
@@ -184,7 +185,13 @@ h4, h5, h6 {
   min-height: 100vh;
   position: relative;
   padding: 0;
-  background-color: $body_bg_color;
+  &.colored_background {
+    background-color: $body_bg_color;
+    .content {
+      border-top: 0 none;
+      margin-top: 0;
+    }
+  }
 }
 
 .container {
@@ -196,8 +203,11 @@ h4, h5, h6 {
 
 .content {
 	margin: 0 auto;
-  margin-top: $vertical-space;
   margin-bottom: $vertical-space;
+  @include media( "screen", ">bp1Width") {
+    border-top: 1px solid $hr_color;
+    padding-top: $vertical-space-small;
+  }
 }
 
 .imagecontent {

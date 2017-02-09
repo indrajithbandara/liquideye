@@ -12,18 +12,22 @@
 
     {% include header.html %}
 
-    <div class="bungkus group">
+    <div class="bungkus colored_background group">
 
-      <div class="container content photographer">
-        <div class="photographer_face">
-          <img src="{{ site.baseurl }}/assets/p/team/{{ page.name | slugify: 'pretty' }}.jpg" alt="{{ page.name }}">
-        </div>
-        <div class="photographer_text">
-          <h2 class="photographer_name">{{ page.name }}</h2>
-          <p class="photographer_intro">{{ content }}</p>
-          {% if page.quote %}
-          <p class="photographer_quote">{{ page.quote }}</p>
-          {% endif %}
+      <div class="container">
+        <div class="content photographer">
+
+          <div class="photographer_face">
+            <img src="{{ site.baseurl }}/assets/p/team/{{ page.name | slugify: 'pretty' }}.jpg" alt="{{ page.name }}">
+          </div>
+          <div class="photographer_text">
+            <h2 class="photographer_name">{{ page.name }}</h2>
+            <p class="photographer_intro">{{ content }}</p>
+            {% if page.quote %}
+            <p class="photographer_quote">{{ page.quote }}</p>
+            {% endif %}
+          </div>
+
         </div>
       </div>
 

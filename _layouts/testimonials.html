@@ -12,54 +12,60 @@
 
     {% include header.html %}
 
-    <div class="bungkus group">
+    <div class="bungkus colored_background group">
 
-      <div class="container content">
+      <div class="container">
+        <div class="content">
 
-        <!-- testimonials-looper -->
-        <div class="looper" >
+          <h3 class="center fat_dbl_header">{{site.slogan}}</h3>
+          <h1 class="center fat_dbl_header">what customers are saying about our products</h1>
 
-          <div class="testimonial_intro">{{ content }}</div>
+          <!-- testimonials-looper -->
+          <div class="looper" >
 
-          {% for testimonial in site.testimonials %}
-            <div class="looper__link testimonial">
+            <div class="testimonial_intro">{{ content }}</div>
 
-              <div class="testimonial_header">
+            {% for testimonial in site.testimonials %}
+              <div class="looper__link testimonial">
 
-                <h2 class="testimonial_name">{{ testimonial.name }}</h2>
+                <div class="testimonial_header">
 
-                <div class="testimonial_contacts">
+                  <h2 class="testimonial_name">{{ testimonial.name }}</h2>
 
-                {% if testimonial.website %}
-                  <div class="testimonial_website">
-                    <a class="link_underline" href="{{ testimonial.website }}" title="check his website">website</a>
+                  <div class="testimonial_contacts">
+
+                  {% if testimonial.website %}
+                    <div class="testimonial_website">
+                      <a class="link_underline" href="{{ testimonial.website }}" title="check his website">website</a>
+                    </div>
+                  {% endif %}
+
+                  {% if testimonial.instagram %}
+                    <div class="testimonial_instagram">
+                      <a class="link_underline" href="{{ testimonial.instagram }}" title="check his Instagram">instagram</a>
+                    </div>
+                  {% endif %}
+
+                  {% if testimonial.email %}
+                    <div class="testimonial_email">
+                      <a class="link_underline" href="mailto:{{ testimonial.email }}" title="write him an email">mail</a>
+                    </div>
+                  {% endif %}
+
                   </div>
-                {% endif %}
 
-                {% if testimonial.instagram %}
-                  <div class="testimonial_instagram">
-                    <a class="link_underline" href="{{ testimonial.instagram }}" title="check his Instagram">instagram</a>
-                  </div>
-                {% endif %}
-
-                {% if testimonial.email %}
-                  <div class="testimonial_email">
-                    <a class="link_underline" href="mailto:{{ testimonial.email }}" title="write him an email">mail</a>
-                  </div>
-                {% endif %}
-                
                 </div>
 
+                <div class="testimonial_photo">
+                  <img src="{{ site.baseurl }}/assets/p/testimonials/{{ testimonial.name | slugify: 'pretty' }}.jpg" alt="{{ testimonial.name }}">
+                </div>
+
+                <p class="testimonial_quote">{{ testimonial.content | strip_html | normalize_whitespace }}</p>
+
               </div>
+            {% endfor %}
 
-              <div class="testimonial_photo">
-                <img src="{{ site.baseurl }}/assets/p/testimonials/{{ testimonial.name | slugify: 'pretty' }}.jpg" alt="{{ testimonial.name }}">
-              </div>
-
-              <p class="testimonial_quote">{{ testimonial.content | strip_html | normalize_whitespace }}</p>
-
-            </div>
-          {% endfor %}
+          </div>
 
         </div>
       </div>

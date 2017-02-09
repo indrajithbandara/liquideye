@@ -13,6 +13,14 @@ em { color: lighten($black, 30%);}
   }
 }
 
+.home,
+.team,
+.page {
+  .content {
+    border-top: 0 none;
+  }
+}
+
 .team .photographer,
 .about .photographer  {
   display: -webkit-box;
@@ -46,8 +54,10 @@ em { color: lighten($black, 30%);}
   min-height: 200px;
   min-width: 200px;
   overflow: hidden;
-  margin-bottom: $vertical-space;;
+
+  margin-top: $vertical-space;
   @media all and (min-width: 660px) {
+    margin-bottom: $vertical-space;
     margin-right: $vertical-space;
   }
 
@@ -133,16 +143,18 @@ em { color: lighten($black, 30%);}
   }
 }
 
-.testimonial_name {
+.testimonial_name {//h2
   width: auto;
   margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 4px;
 }
 
 .testimonial_photo {
   margin-bottom: $vertical-space-small;
   @include media( "screen", ">minWidth", "<bp1Width") {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 220px;
+    max-width: 220px;
     padding-right: $vertical-space-small;
   }
   @include media( "screen", ">bp1Width"){
@@ -275,4 +287,13 @@ em { color: lighten($black, 30%);}
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+
+h3.fat_dbl_header {
+
+}
+h1.fat_dbl_header {
+  padding-top: 0;
+  padding-bottom: 2.5rem;
 }
