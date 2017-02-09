@@ -25,7 +25,7 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="professional" %}
-              <a class="looper__link" href="{{ site.url }}water-housings/{{ housing.name}}">
+              <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name}}">
                 <div class="housing_block">
                   <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
                   <div class="level"><span>{{ housing.level }}</span></div>
