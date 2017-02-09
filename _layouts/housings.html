@@ -37,7 +37,7 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="intermediate" %}
-              <a class="looper__link" href="/water-housings/{{ housing.name | prepend: site.baseurl }}">
+              <a class="looper__link" href="{{ site.url }}/water-housings/{{ housing.name}}">
                 <div class="housing_block">
                   <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
                   <div class="level"><span>{{ housing.level }}</span></div>
@@ -49,7 +49,7 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="beginner" %}
-              <a class="looper__link" href="/water-housings/{{ housing.name | prepend: site.baseurl }}">
+              <a class="looper__link" href="water-housings/{{ housing.name | prepend: site.baseurl }}">
                 <div class="housing_block">
                   <img  class="housing_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
                   <div class="level"><span>{{ housing.level }}</span></div>
