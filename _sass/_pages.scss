@@ -181,24 +181,6 @@ em { color: lighten($black, 30%);}
   }
 }
 
-
-// .events_call {
-//   background-color: rgba(0,0,0,.1);
-//   padding-bottom: $vertical-space;
-//   img {
-//     max-width: 200px;
-//     @include media( "screen", ">minWidth") {
-//       max-width: 240px;
-//     }
-//   }
-//   .box {/*a*/
-//     padding-left: 1rem;
-//     padding-right: 1rem;
-//     border: 0 none;
-//     &:hover {border: 0 none;}
-//   }
-//}
-
 .small {
   padding: .25rem;
 }

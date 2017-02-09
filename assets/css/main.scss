@@ -2,9 +2,9 @@
 sitemap: false
 ---
 
-$body-color           : #fff;
+$body_color           : #fff;
 $black                : #161616;
-$link-color           : #000;
+$link_color           : #000;
 $underline_link_color : #b4e7f8;
 
 $brand_blue           : #3a81c1;
@@ -35,8 +35,8 @@ $mediaMaxWidth: 1260px;
 @import "header";
 @import "slideshow";
 @import "thumbs";
-@import "footer";
 @import "svg";
 @import "instagram";
 @import "youtube";
 @import "housings";
+@import "footer";

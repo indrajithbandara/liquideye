@@ -5,16 +5,22 @@
   text-align: center;
 
   .container {
-    min-width: 90%;
-    min-height: 100vh;
     min-height: 100vh;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: $vertical-space-small;
+    padding-right: $vertical-space-small;
+    @include media( "screen", ">minWidth") {
+      min-width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
     @include media( "screen", ">maxWidth") {
       min-width: 70%;
       margin-left: 15%;
@@ -37,7 +43,7 @@
     width: 100%;
     font-size: 15px;
     padding-top: $vertical-space-small/8;
-    border-top: 1px solid darken($hr_color, 10%);
+    border-top: 1px solid darken($hr_color, 15%);
   }
 
   .column {
@@ -46,18 +52,23 @@
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+    margin-bottom: $vertical-space-small;
     @media all and (min-width: 700px) {
       width: auto;
+      margin-bottom: 0;
     }
   }
 
   .column_title {
     width: 100%;
-    border-bottom: 1px solid darken($hr_color, 10%);
-    font-weight: 500;
     margin-top: $vertical-space-small;
     margin-bottom: $vertical-space-small/2;
     padding-bottom: $vertical-space-small/2;
+    font-weight: 500;
+    @include media( "screen", "<minWidth") {
+      font-weight: 600;
+    }
+    border-bottom: 1px solid darken($hr_color, 15%);
     @media all and (min-width: 700px) {
       border: 0 none;
       margin-top: 0;
@@ -103,6 +114,20 @@
     min-width: 100px;
   }
 
+  .column.contact {
+    .link_underline {
+      border-bottom: transparent;
+    }
+    @media all and (max-width: 280px) {
+      span { display: none;}
+      p a svg {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+      }
+    }
+  }
+
   .qr.paragraph {
     width: 100px;
     height: 100px;
@@ -111,11 +136,34 @@
   }
 
   .footer_logo {
-    margin-left: -2px;
+    margin-left: calc(50% - 50px);
+    &.paragraph {
+      @media all and (min-width: 700px) {
+        margin-left: -2px;
+        width: 100%;
+        border-bottom: 1px solid darken($hr_color, 15%);
+        margin-bottom: 12px;
+      }
+    }
   }
 
   .copyright {
+    font-size: 12px;
+    span { display: block; }
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: $vertical-space;
+    @include media( "screen", ">minWidth") {
+      text-align: left;
+      font-size: 13.5px;
+      span { display: inline; }
+    }
+
   }
+  .powered.open_in_new_window:hover {//a
+    opacity: .4;
+  }
+
   .junglestar {//svg
     position: relative!important;
     top: 8px;
@@ -123,7 +171,45 @@
 
   .powered {
     display: inline;
-    margin-left: $vertical-space-small;
     opacity: .25;
+    margin-left: $vertical-space-small;
+    @include media( "screen", "<minWidth") {
+      display: block;
+      margin-left: 0;
+      span {
+        display: block!important;
+        min-width: 100%;
+      }
+    }
   }
+
+  @media screen and (max-width: 280px) {
+    p, a, .column_title {
+      text-align: center;
+      width: 100%;
+    }
+    .qr.paragraph {
+      width: 100%;
+    }
+    a.active {
+      border-bottom: 0 none;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active span {
+        padding: 5px;
+        border-bottom: 1px solid black;
+      }
+    }
+    .link_underline {
+      border-bottom-color: transparent!important;
+      padding-bottom: 0!important;
+    }
+    a.link_underline svg {
+      padding-left: calc(50% - 30px);
+    }
+  }
+
 }
