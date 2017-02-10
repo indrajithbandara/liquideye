@@ -27,6 +27,7 @@
     }
   }
   .looper__link {/*a*/
+    position: relative;
     padding-bottom: $vertical-space-small;
     @include media( "screen", ">minWidth") {
       display: block;
@@ -34,6 +35,37 @@
     }
     @include media( "screen", ">bp1Width") {
       max-width: 22%;
+    }
+    .status {
+      font-size: 85%;
+      font-weight: 500;
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      padding: 22px;
+      border-top: 2px solid red;
+      border-left: 2px solid red;
+      border-radius: 50%;
+      width: 10px;
+      background-color: red;
+      opacity: .75;
+      &.sale {
+        border-top: 2px solid orange;
+        border-left: 2px solid orange;
+        background-color: orange;
+        opacity: 1;
+      }
+    }
+    .status_text {
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 7px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      color: white;
     }
   }
   .product_data {
