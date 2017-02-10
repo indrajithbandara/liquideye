@@ -55,3 +55,6 @@ collections:
   spareparts:
    output: true
    permalink: /spare-parts/:path/
+  gearsleeves:
+   output: true
+   permalink: /gear-sleeves/:path/

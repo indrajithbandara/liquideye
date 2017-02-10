@@ -18,7 +18,7 @@
         <div class="content">
 
           <h3 class="center fat_dbl_header">{{ site.slogan }}</h3>
-          <h1 class="center fat_dbl_header">Accessories</h1>
+          <h1 class="center fat_dbl_header">Pistols, Ports, and Spare Accessories</h1>
 
           <!-- accessories-looper -->
           <div class="looper" >
@@ -42,6 +42,20 @@
                   <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.png" alt="Liquid Eye Front Ports: {{ port.name }}">
                   <div class="product_group"><span>Front Port</span></div>
                   <h3>{{ port.name }}</h3>
+                </div>
+              </a>
+            {% endfor %}
+
+
+            <!-- gear-sleeves-looper -->
+            {% for gearsleeve in site.gearsleeves %}
+              <a class="looper__link port" href="{{ site.baseurl }}/gear-sleeves/{{ gearsleeve.name}}">
+                <div class="product_block">
+                  <img class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/gear-sleeves/{{ gearsleeve.name | downcase }}/01.png" alt="Liquid Eye Gear Sleeve: {{ gearsleeve.name }}">
+                  <div class="product_group">
+                    <span>Gear Sleeve</span>
+                  </div>
+                  <h3>{{ gearsleeve.display_name }}</h3>
                 </div>
               </a>
             {% endfor %}
