@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-  <body class="accessories">
+  <body class="products accessories">
 
     {% include svg/defs.html %}
 
@@ -25,11 +25,11 @@
 
             <!-- pistols-looper -->
             {% for pistol in site.pistols %}
-              <a class="looper__link pistol" href="{{ site.baseurl }}/pistols/{{ accessory.name}}">
-                <div class="accessory_block">
-                  <img  class="accessory_thumb" src="{{ site.baseurl }}/assets/p/accessories/{{accessory.accessory_group}}/{{ accessory.name}}/01.jpg" alt="Liquid Eye {{accessory.accessory_group}}: {{ accessory.name }}  ">
-                  <div class="accessory_group"><span>{{ accessory.accessory_group }}</span></div>
-                  <h3>{{ accessory.name }} Pistol</h3>
+              <a class="looper__link pistol" href="{{ site.baseurl }}/pistols/{{ pistol.name}}">
+                <div class="product_block">
+                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
+                  <div class="product_group"><span>Pistol</span></div>
+                  <h3>{{ pistol.name }}</h3>
                 </div>
               </a>
             {% endfor %}
