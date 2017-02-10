@@ -127,6 +127,9 @@
     &:hover {
       border-bottom: 1px solid black;
     }
+    &.powered:hover {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .paragraph {
