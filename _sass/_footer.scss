@@ -119,7 +119,12 @@
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
+    border-bottom: 1px solid transparent;
     &.active {
+      border-bottom: 1px solid black;
+
+    }
+    &:hover {
       border-bottom: 1px solid black;
     }
   }
