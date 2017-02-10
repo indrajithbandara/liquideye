@@ -28,8 +28,32 @@
               <a class="looper__link pistol" href="{{ site.baseurl }}/pistols/{{ pistol.name}}">
                 <div class="product_block">
                   <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
-                  <div class="product_group"><span>Pistol</span></div>
+                  <div class="product_group"><span>Pistol Grip</span></div>
                   <h3>{{ pistol.name }}</h3>
+                </div>
+              </a>
+            {% endfor %}
+
+
+            <!-- ports-looper -->
+            {% for port in site.ports %}
+              <a class="looper__link port" href="{{ site.baseurl }}/ports/{{ port.name}}">
+                <div class="product_block">
+                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.png" alt="Liquid Eye Front Ports: {{ port.name }}">
+                  <div class="product_group"><span>Front Port</span></div>
+                  <h3>{{ port.name }}</h3>
+                </div>
+              </a>
+            {% endfor %}
+
+
+            <!-- spare-parts-looper -->
+            {% for sparepart in site.spareparts %}
+              <a class="looper__link port" href="{{ site.baseurl }}/spare-parts/{{ sparepart.name}}">
+                <div class="product_block">
+                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/spare-parts/{{ sparepart.name | downcase }}/01.png" alt="Liquid Eye Spare Parts: {{ sparepart.name }}">
+                  <div class="product_group"><span>Spare Part</span></div>
+                  <h3>{{ sparepart.display_name }}</h3>
                 </div>
               </a>
             {% endfor %}

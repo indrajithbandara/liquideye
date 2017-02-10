@@ -49,3 +49,9 @@ collections:
   pistols:
    output: true
    permalink: /pistols/:path/
+  ports:
+   output: true
+   permalink: /ports/:path/
+  spareparts:
+   output: true
+   permalink: /spare-parts/:path/

@@ -60,6 +60,13 @@ em { color: lighten($black, 30%);}
     margin-bottom: $vertical-space;
     margin-right: $vertical-space;
   }
+  .team_photographer & {
+    border: 0 none;
+    height: 250px;
+    width: 250px;
+    min-height: 250px;
+    min-width: 250px;
+  }
 
 }
 .photographer_name, .testimonial_name {
@@ -70,7 +77,11 @@ em { color: lighten($black, 30%);}
   @media all and (min-width: 660px) {
     text-align: left;
   }
+  .team a:hover & {
+    color: $brand_blue;
+  }
 }
+
 .photographer_text {
   display: -webkit-box;
   display: flex;
@@ -98,6 +109,9 @@ em { color: lighten($black, 30%);}
   top: 22px;
   padding-right: 1rem;
   color: lighten($black, 60%);
+  .team a:hover & {
+    color: $brand_blue;
+  }
 }
 .photographer_quote:after,
 .testimonial_quote:after {
@@ -109,6 +123,9 @@ em { color: lighten($black, 30%);}
   top: 22px;
   padding-left: .5rem;
   color: lighten($black, 60%);
+  .team a:hover & {
+    color: $brand_blue;
+  }
 }
 
 .testimonial {
