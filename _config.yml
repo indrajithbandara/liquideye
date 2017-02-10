@@ -46,3 +46,6 @@ collections:
   waterhousings:
    output: true
    permalink: /water-housings/:path/
+  pistols:
+   output: true
+   permalink: /pistols/:path/

@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-  <body class="housing">
+  <body class="accessory pistol">
 
     {% include svg/defs.html %}
 
@@ -18,12 +18,12 @@
         <div class="content">
 
           <h3 class="center fat_dbl_header">{{ site.slogan }}</h3>
-          <h1 class="center fat_dbl_header">Liquid Eye {{ page.name | upcase }} {{ page.level | capitalize }} Housing</h1>
+          <h1 class="center fat_dbl_header">Liquid Eye {{ page.name | upcase }} Pistol </h1>
 
           <div class="product_top_block">
 
             <div class="product_photos">
-              <img src="{{site.baseurl}}/assets/p/housings/{{page.name}}/01.jpg" alt="{{ page.name }}">
+              <img src="{{site.baseurl}}/assets/p/accessories/pistols/{{page.name}}/01.jpg" alt="Liquid Eye {{ page.name }} pistol">
             </div>
 
             <div class="product_intro">
@@ -77,54 +77,6 @@
                 <h3>Controls</h3>
               </div>
 
-              {% if page.controls.housing %}
-              <div class="data column">
-                <p class=""><strong>On the housing</strong></p>
-
-                <p>{{page.controls.housing.control1}}</p>
-
-                {% if page.controls.housing.control2 %}
-                <p>{{page.controls.housing.control2}}</p>
-                {% endif %}
-
-                {% if page.controls.housing.control3 %}
-                <p>{{page.controls.housing.control3}}</p>
-                {% endif %}
-
-                {% if page.controls.housing.control4 %}
-                <p>{{page.controls.housing.control4}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate %}
-                <p class=""><strong>On the back plate </strong></p>
-                {% endif %}
-
-                {% if page.controls.backplate.control1 %}
-                <p>{{page.controls.backplate.control1}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate.control2 %}
-                <p>{{page.controls.backplate.control2}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate.control3 %}
-                <p>{{page.controls.backplate.control3}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate.control3 %}
-                <p>{{page.controls.backplate.control4}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate.control5 %}
-                <p>{{page.controls.backplate.control5}}</p>
-                {% endif %}
-
-                {% if page.controls.backplate.control6 %}
-                <p>{{page.controls.backplate.control6}}</p>
-                {% endif %}
-
-              </div>
-              {% else %}
               <div class="data column">
 
                 {% if page.controls.control1 %}
@@ -142,7 +94,6 @@
                 {% if page.controls.control4 %}
                 <p>{{page.controls.control4}}</p>
                 {% endif %}
-
 
                 {% if page.controls.control5 %}
                 <p>{{page.controls.control5}}</p>
@@ -165,7 +116,6 @@
                 {% endif %}
 
               </div>
-              {% endif %}
 
             </div>
 

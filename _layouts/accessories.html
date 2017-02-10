@@ -1,0 +1,52 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+  <body class="accessories">
+
+    {% include svg/defs.html %}
+
+    {% include header.html %}
+
+    <div class="bungkus group">
+
+      <div class="container">
+        <div class="content">
+
+          <h3 class="center fat_dbl_header">{{ site.slogan }}</h3>
+          <h1 class="center fat_dbl_header">Accessories</h1>
+
+          <!-- accessories-looper -->
+          <div class="looper" >
+
+            <!-- pistols-looper -->
+            {% for pistol in site.pistols %}
+              <a class="looper__link pistol" href="{{ site.baseurl }}/pistols/{{ accessory.name}}">
+                <div class="accessory_block">
+                  <img  class="accessory_thumb" src="{{ site.baseurl }}/assets/p/accessories/{{accessory.accessory_group}}/{{ accessory.name}}/01.jpg" alt="Liquid Eye {{accessory.accessory_group}}: {{ accessory.name }}  ">
+                  <div class="accessory_group"><span>{{ accessory.accessory_group }}</span></div>
+                  <h3>{{ accessory.name }} Pistol</h3>
+                </div>
+              </a>
+            {% endfor %}
+
+          </div>
+
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+
+    {% include script_ext_link.html %}
+
+    {% include script_google_analytics.html %}
+
+  </body>
+
+</html>

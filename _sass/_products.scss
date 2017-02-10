@@ -1,5 +1,5 @@
-.housings,
-.housing {
+.products,
+.product {
   .bungkus {
     background-color: transparent;
   }
@@ -34,7 +34,7 @@
       max-width: 22%;
     }
   }
-  .housing_data {
+  .product_data {
     ul {
       list-style-type: disc;
       padding-left: $vertical-space-small;
@@ -47,7 +47,7 @@
   }
 }
 
-.housing_block  {
+.product_block  {
   h3 {
     text-transform: uppercase;
     padding-top: $vertical-space-small/2;
@@ -63,7 +63,7 @@
   }
 }
 
-.housing_top_block {
+.product_top_block {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -79,7 +79,7 @@
             align-items: flex-start;
   }
 }
-.housing_photos {
+.product_photos {
   min-width: 50%;
   max-width: 500px;
   padding-bottom: $vertical-space-small;
@@ -88,7 +88,7 @@
   }
 }
 
-.housing_intro {
+.product_intro {
   padding-bottom: $vertical-space;
   .price {
     font-size: 32px;
@@ -133,7 +133,7 @@
   }
 }
 
-.housing_data {
+.product_data {
   h2 {
     text-align: left;
     border-bottom: 1px solid $hr_color;
