@@ -36,8 +36,19 @@
     @include media( "screen", ">bp1Width") {
       max-width: 22%;
     }
+
+    .status_text {
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      color: white;
+      font-weight: 600;
+    }
+
     .status {
-      font-size: 85%;
+      font-size: 14px;
       font-weight: 500;
       display: block;
       position: absolute;
@@ -51,22 +62,23 @@
       background-color: red;
       opacity: .75;
       &.sale {
-        border-top: 2px solid orange;
-        border-left: 2px solid orange;
-        background-color: orange;
+        border-top: 2px solid $brand_blue;
+        border-left: 2px solid $brand_blue;
+        background-color: $brand_blue;
         opacity: 1;
+        .status_text {
+          left: 4px;
+          top: 11px;
+        }
+      }
+      &.new {
+        .status_text {
+          left: 5px;
+          top: 11px;
+        }
       }
     }
-    .status_text {
-      text-transform: uppercase;
-      display: block;
-      position: absolute;
-      left: 4px;
-      top: 12px;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      color: white;
-    }
+
   }
   .product_data {
     ul {
