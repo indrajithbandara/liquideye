@@ -13,7 +13,7 @@
         {% for menuitem in site.data.footer_menu_products %}
           {% if page.url contains menuitem.link %}
             <p>
-              <a href="{{ site.baseurl }}/{{menuitem.name}}/" class="active">
+              <a href="{{ site.baseurl }}/{{menuitem.link}}/" class="active">
                 <span class="capitalize">{{ menuitem.name }}</span>
               </a>
             </p>
@@ -34,7 +34,7 @@
         {% for menuitem in site.data.footer_menu_about_us %}
           {% if page.url contains menuitem.link %}
             <p>
-              <a href="{{ site.baseurl }}/{{menuitem.name}}/" class="active">
+              <a href="{{ site.baseurl }}/{{menuitem.link}}/" class="active">
                 <span class="capitalize">{{ menuitem.name }}</span>
               </a>
             </p>
