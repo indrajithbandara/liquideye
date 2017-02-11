@@ -195,10 +195,12 @@
     text-align: center;
     padding-top: 12px;
     padding-bottom: $vertical-space;
-    @include media( "screen", ">minWidth") {
-      text-align: left;
+    @media all and (min-width: 300px) {
       font-size: 13.5px;
       span { display: inline; }
+    }
+    @media all and (min-width: 700px) {
+      text-align: left;
     }
 
   }
@@ -207,21 +209,25 @@
   }
 
   .junglestar {/*svg*/
+    max-height: 20px;
     position: relative!important;
     top: 8px;
   }
 
   .powered {
-    display: inline;
     opacity: .25;
-    margin-left: $vertical-space-small;
-    @include media( "screen", "<minWidth") {
-      display: block;
-      margin-left: 0;
-      span {
-        display: block!important;
-        min-width: 100%;
-      }
+    display: block;
+    margin-left: 0;
+    span {
+      display: block!important;
+      min-width: 100%;
+    }
+    @include media( "screen", ">minWidth") {
+
+    }
+    @media all and (min-width: 700px) {
+      display: inline;
+      margin-left: $vertical-space-small;
     }
   }
 
