@@ -142,9 +142,13 @@
 .fat_dbl_header {
   padding-top: 1rem;
   padding-bottom: 1rem;
+
   .housings &,
   .testimonials & {
     padding-bottom: 2rem;
+    @include media( "screen", ">minWidth") {
+      padding-bottom: 2.5rem;
+    }
   }
   h1, h2, h3, h4 {
     padding-top: .5rem;
