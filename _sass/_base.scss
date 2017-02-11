@@ -151,7 +151,7 @@ tbody tr:nth-child(odd) th {
 /* Headings*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  // text-transform: capitalize;
+  /* text-transform: capitalize;*/
   @include media( "screen", ">minWidth") { font-weight: 300;}
   line-height: 1.25;
   letter-spacing: -.025rem;

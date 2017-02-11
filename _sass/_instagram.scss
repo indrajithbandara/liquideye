@@ -2,11 +2,14 @@
   margin-top: $vertical-space;
   margin-bottom: $vertical-space;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   svg {
     width: 50px;
     height: 50px;
@@ -21,12 +24,16 @@
 
 .instagram {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+          -ms-flex-align: center;
+      align-items: center;
 
   a {
   	color: black;
@@ -133,11 +140,14 @@
   @include media( "screen", ">bp1Width") {
     a:hover & {
       display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-              align-items: center;
+              -ms-flex-align: center;
+          align-items: center;
       -webkit-box-pack: center;
-              justify-content: center;
+              -ms-flex-pack: center;
+          justify-content: center;
     }
     .instagram-caption {
       max-width: 90%;

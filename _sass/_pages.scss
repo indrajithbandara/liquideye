@@ -24,17 +24,21 @@ em { color: lighten($black, 30%);}
 .team .photographer,
 .about .photographer  {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+          -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+          -ms-flex-align: center;
+      align-items: center;
   margin-bottom: $vertical-space;
   @media all and (min-width: 660px) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
+            -ms-flex-direction: row;
+        flex-direction: row;
   }
 }
 .team a:hover .photographer_face {
@@ -43,7 +47,8 @@ em { color: lighten($black, 30%);}
 .team_photographer .photographer {
   @media all and (min-width: 660px) {
     -webkit-box-align: start;
-            align-items: flex-start;
+            -ms-flex-align: start;
+        align-items: flex-start;
   }
 }
 .photographer_face {
@@ -63,7 +68,8 @@ em { color: lighten($black, 30%);}
     }
   }
   .about & {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin-top: 0;
   }
   .team_photographer & {
@@ -90,12 +96,15 @@ em { color: lighten($black, 30%);}
 
 .photographer_text {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+          -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-box-align: start;
-          align-items: flex-start;
+          -ms-flex-align: start;
+      align-items: flex-start;
 }
 .photographer_quote, .photographer_intro {
   margin-left: 0;
@@ -138,11 +147,14 @@ em { color: lighten($black, 30%);}
   margin-bottom: $vertical-space;
   @include media( "screen", ">minWidth"){
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   @include media( "screen", ">bp1Width"){
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -156,9 +168,11 @@ em { color: lighten($black, 30%);}
   @include media( "screen", ">minWidth", "<bp1Width"){
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+            -ms-flex-align: center;
+        align-items: center;
   }
   @include media( "screen", ">bp1Width"){
     min-width: 200px;
@@ -189,16 +203,20 @@ em { color: lighten($black, 30%);}
 }
 .testimonial_contacts {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+          -ms-flex-direction: row;
+      flex-direction: row;
   -webkit-box-pack: center;
-          justify-content: center;
+          -ms-flex-pack: center;
+      justify-content: center;
   @include media( "screen", ">bp1Width"){
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+            -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 
@@ -221,31 +239,40 @@ em { color: lighten($black, 30%);}
 
 .box {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .ratings,
 .events_call .container {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   @include media( "screen", ">bp1Width") {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
+            -ms-flex-direction: row;
+        flex-direction: row;
   }
 }
 
@@ -254,7 +281,8 @@ em { color: lighten($black, 30%);}
 }
 
 .us {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .inline {
@@ -270,7 +298,8 @@ em { color: lighten($black, 30%);}
 }
 .right {
   -webkit-box-ordinal-group: 3;
-  order: 2;
+  -ms-flex-order: 2;
+      order: 2;
   padding-left: 0;
   @include media( "screen", ">bp1Width") {
     padding-left: 1rem;
@@ -282,11 +311,14 @@ em { color: lighten($black, 30%);}
   img { width: 100%; }
   @include media( "screen", ">bp1Width") {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack:justify;
-    justify-content:space-between;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
     -webkit-box-align: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     p {
       max-width: 50%;
     }
@@ -297,11 +329,14 @@ em { color: lighten($black, 30%);}
   .flex a {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-pack: center;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     border: 0 none;
     opacity: 1;
     &:hover { opacity: .7; }

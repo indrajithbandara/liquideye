@@ -274,3 +274,8 @@
     }
   }
 }
+
+.slideshow figure{
+  -webkit-clip-path: rectangle(0px, 0px, 600px, 600px, 0px, 0px);
+          clip-path: rectangle(0px, 0px, 600px, 600px, 0px, 0px);
+}

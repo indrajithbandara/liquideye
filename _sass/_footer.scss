@@ -8,14 +8,18 @@
     min-height: 100vh;
     text-align: left;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+            -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-align: start;
-            align-items: flex-start;
+            -ms-flex-align: start;
+        align-items: flex-start;
     -webkit-box-pack: center;
-            justify-content: center;
+            -ms-flex-pack: center;
+        justify-content: center;
     min-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -45,14 +49,18 @@
   .inner {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+            -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-align: start;
-            align-items: flex-start;
+            -ms-flex-align: start;
+        align-items: flex-start;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
     border-bottom: 1px solid $hr_color;
     .colored_background & {
       border-bottom: 1px solid darken($hr_color, 10%);
@@ -61,7 +69,8 @@
     @media all and (min-width: 700px)  {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-              flex-direction: row;
+              -ms-flex-direction: row;
+          flex-direction: row;
     }
   }
 
@@ -73,14 +82,18 @@
 
   .column {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+            -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-align: start;
-            align-items: flex-start;
+            -ms-flex-align: start;
+        align-items: flex-start;
     -webkit-box-pack: center;
-            justify-content: center;
+            -ms-flex-pack: center;
+        justify-content: center;
     width: 100%;
     margin-bottom: $vertical-space-small;
     @media all and (min-width: 700px) {
@@ -111,12 +124,15 @@
   a {
     margin-left: 0;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     -webkit-box-align: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     border-bottom: 1px solid transparent;
     &.active {
       border-bottom: 1px solid black;
@@ -132,10 +148,13 @@
 
   .paragraph {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: start;
-            align-items: flex-start;
+            -ms-flex-align: start;
+        align-items: flex-start;
     margin-bottom: 0;
     padding-bottom: 5px;
     a {
@@ -242,11 +261,14 @@
     }
     a {
       display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-              justify-content: center;
+              -ms-flex-pack: center;
+          justify-content: center;
       -webkit-box-align: center;
-              align-items: center;
+              -ms-flex-align: center;
+          align-items: center;
       &.active span {
         padding: 5px;
         border-bottom: 1px solid black;
