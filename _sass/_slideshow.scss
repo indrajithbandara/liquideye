@@ -275,7 +275,16 @@
   }
 }
 
-.slideshow figure{
-  -webkit-clip-path: rectangle(0px, 0px, 600px, 600px, 0px, 0px);
-          clip-path: rectangle(0px, 0px, 600px, 600px, 0px, 0px);
-}
+// tentative Art Direction - w.i.p.
+// .slideshow_wrap {
+//   position: relative;
+//   overflow: hidden;
+//   min-height: 50vh;
+// }
+
+// .slideshow {
+//   position: absolute;
+//   bottom: 0;
+//   transform: scale(1.75);
+//   transform-origin: top center;
+// }
