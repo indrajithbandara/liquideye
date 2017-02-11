@@ -2,7 +2,7 @@ Established in 1995, Liquid Eye is a European based company that builds splash w
 
 Liquid Eye was started by a professional photographer who felt the need to create gear totally adapted to his needs and necessities.
 
-Photographer Philippe Chevodian, became the special designer of Liquid Eye. His trips around the world searching new waves, lead him to constantly improve and perfect his equipment and every details of Liquid Eye housings is influenced by this research.
+Photographer Philippe Chevodian, became the special designer of Liquid Eye. His trips around the world searching for new waves, lead him to constantly improve and perfect his equipment. Every details of Liquid Eye housings is influenced by this research.
 
 Our production is essentially centered on weight and volume earnings, paramount factors in action photography.
 
