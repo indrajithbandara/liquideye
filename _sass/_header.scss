@@ -129,20 +129,25 @@
   }
 }
 
-/*page headers*/
+/*page fat headers*/
 .fat_3_header {
   padding-top: 1rem;
-}
-
-h1, h2, h3, h4 {
-  &.fat_dbl_header {
+  padding-bottom: 1rem;
+  h1, h2, h3, h4 {
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
 }
 
-h1.fat_dbl_header {
-  padding-top: 0;
-  padding-bottom: 2.5rem;
+.fat_dbl_header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .housings &,
+  .testimonials & {
+    padding-bottom: 2rem;
+  }
+  h1, h2, h3, h4 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
 }
-h3.fat_dbl_header {}

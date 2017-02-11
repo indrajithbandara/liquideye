@@ -54,11 +54,17 @@ em { color: lighten($black, 30%);}
   min-height: 200px;
   min-width: 200px;
   overflow: hidden;
-
   margin-top: $vertical-space;
   @media all and (min-width: 660px) {
-    margin-bottom: $vertical-space;
     margin-right: $vertical-space;
+    margin-bottom: $vertical-space;
+    .team &  {
+      margin-bottom: 0;
+    }
+  }
+  .about & {
+    align-self: flex-start;
+    margin-top: 0;
   }
   .team_photographer & {
     border: 0 none;

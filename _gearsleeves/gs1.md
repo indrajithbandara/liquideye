@@ -1,5 +1,5 @@
 ---
-layout: gearsleeves
+layout: gearsleeve
 name: gs1
 accessory_group: gear-sleeves
 price: 10
