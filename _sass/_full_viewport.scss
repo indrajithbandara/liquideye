@@ -1,51 +1,17 @@
 
 .full_viewport {//view_wrap
-  overflow: hidden;
-  height: 100vh;
+
 }
 
 .lower_viewport {//bungkus
-  overflow: hidden;
-  height: 100%;
+
 }
 
 .slides_wrap {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
+
 }
 
 .slide {//figure
-  overflow: hidden;
-  position: relative;
-  display: block;
-  min-height: calc(100% - 255px);
-  width: 100%;
-  img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 225%;
-    margin-left: -225%;
-    max-width: none;
-    width: 450%;
-  }
-  @media all and (min-width: 280px) {
-    img {width: 355vw;}
-  }
-  @media all and (min-width: 320px) {
-    img {width: 310vw;}
-  }
-  @media all and (min-width: 480px) {
-    min-height: calc(100% - 180px);
-    img {width: 230vw;}
-  }
-  @media all and (min-width: 800px) {
-    min-height: calc(100% - 144px);
-    img {width: 145vw;}
-  }
-  @media all and (min-width: 1260px) {
-    width: 100%;
-    img {width: 100vw;}
-  }
+  
+
 }
