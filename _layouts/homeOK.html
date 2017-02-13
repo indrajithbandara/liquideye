@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
   <body class="home">
 
@@ -18,19 +18,23 @@
 
         <div class="slideshow">
 
-          <div class="slideshow-slide-list">
+        <div class="slideshow-slide-list">
 
-            {% for image in site.static_files %}
+        {% comment %}
+        from: http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
+        {% endcomment %}
+
+          {% for image in site.static_files %}
               {% if image.path contains 'p/home' %}
-              <figure class="slideshow-slide">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-              </figure>
+                <figure class="slideshow-slide">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                </figure>
               {% endif %}
-            {% endfor %}
-
-          </div>
+          {% endfor %}
 
         </div>
+
+      </div>
 
       </div>
 
@@ -57,7 +61,7 @@
         allowSwipe: true,
         showIndicators: false,
         autoplay: true,
-        // infinite loop
+      	// infinite loop
         loopSlides: true,
         transitionEffect: "slide",
       });
