@@ -68,9 +68,14 @@ em { color: lighten($black, 30%);}
     }
   }
   .about & {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  @media all and (min-width: 660px) {
+      -ms-flex-item-align: start;
+    align-self: flex-start;
     margin-top: 0;
+    }
   }
   .team_photographer & {
     border: 0 none;
