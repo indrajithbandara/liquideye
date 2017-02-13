@@ -20,12 +20,10 @@
 
           <div class="slideshow-slide-list">
 
-            {% for image in site.static_files %}
-              {% if image.path contains 'p/home' %}
-              <figure class="slideshow-slide">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-              </figure>
-              {% endif %}
+            {% for promo in site.data.promos %}
+            <div class="slideshow-slide">
+              <div class="" data-src="{{ site.baseurl }}/assets/p/home/{{ promo.photo_file_name }}.jpg"></div>
+            </div>
             {% endfor %}
 
           </div>
@@ -48,6 +46,14 @@
       {% include footer.html %}
 
     </div>
+    <script>
+    var list = document.querySelectorAll("div[data-src]");
+
+      for (var i = 0; i < list.length; i++) {
+      var url = list[i].getAttribute('data-src');
+      list[i].style.backgroundImage="url('" + url + "')";
+      }
+    </script>
 
     {% include script_slideshow.html %}
 

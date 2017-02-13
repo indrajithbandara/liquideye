@@ -25,8 +25,22 @@
   top: 0;
   left: 0;
   height: 100%;
+  min-height: calc(100vh - 180px);
   width: 100%;
   overflow: hidden;
+  div[data-src] {
+    width: 100%;
+    min-height: calc(100vh - 255px);
+    @include media( "screen", ">minWidth") {
+      min-height: calc(100vh - 180px);
+    }
+    @include media( "screen", ">bp1Width") {
+      min-height: calc(100vh - 120px);
+    }
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .slideshow-caption {
     position: absolute;
     margin: 0;
