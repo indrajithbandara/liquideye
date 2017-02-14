@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 252px);
   width: 100%;
   overflow: hidden;
   div[data-src] {
@@ -292,7 +292,7 @@
   font-size: 13px;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 5%;
   padding: 1rem;
   color: white;
 }
