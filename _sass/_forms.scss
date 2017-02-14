@@ -1,0 +1,55 @@
+.form_row {
+  background-color: $menu_bg_color;
+}
+
+
+
+.form_block {
+  padding-top: $vertical-space-small/2;
+  padding-bottom: $vertical-space-small;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include media( "screen", ">minWidth"){
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+
+  h2, h3  {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+    @include media( "screen", ">minWidth") {
+      display: inline-block;
+      margin-left: $vertical-space-small;
+      margin-bottom: 0;
+    }
+  }
+  form {
+    padding: 8px;
+    display: block;
+    width: auto;
+    margin-left: 0;
+    border: 1px solid black;
+    margin-bottom: $vertical-space-small;
+    @include media( "screen", ">minWidth") {
+      display: inline-block;
+      margin-left: $vertical-space-small;
+    }
+
+  }
+  select {
+    border: 0 none;
+    font-size: 20px;
+    background-color: transparent;
+    option {
+      color: red;
+    }
+  }
+
+}
