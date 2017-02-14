@@ -22,7 +22,11 @@
 
             {% for promo in site.data.promos %}
             <div class="slideshow-slide">
-              <div class="" data-src="{{ site.baseurl }}/assets/p/home/{{ promo.photo_file_name }}.jpg"></div>
+              <div class="" data-src="{{ site.baseurl }}/assets/p/home/{{ promo.photo_file_name }}.jpg">
+                <div class="caption" data-caption="{{promo.surfer}} | {{promo.spot}} | {{promo.photog}}">
+
+                </div>
+              </div>
             </div>
             {% endfor %}
 
@@ -46,12 +50,21 @@
       {% include footer.html %}
 
     </div>
-    <script>
-    var list = document.querySelectorAll("div[data-src]");
 
-      for (var i = 0; i < list.length; i++) {
-      var url = list[i].getAttribute('data-src');
-      list[i].style.backgroundImage="url('" + url + "')";
+    <script>
+      //take care of bg images
+      var list = document.querySelectorAll("div[data-src]");
+
+        for (var i = 0; i < list.length; i++) {
+        var url = list[i].getAttribute('data-src');
+        list[i].style.backgroundImage="url('" + url + "')";
+      }
+      //take care of images captions
+      var list = document.querySelectorAll("div[data-caption]");
+
+        for (var i = 0; i < list.length; i++) {
+        var string = list[i].getAttribute('data-caption');
+        list[i].innerHTML+= string ;
       }
     </script>
 

@@ -288,17 +288,11 @@
     }
   }
 }
-
-// tentative Art Direction - w.i.p.
-// .slideshow_wrap {
-//   position: relative;
-//   overflow: hidden;
-//   min-height: 50vh;
-// }
-
-// .slideshow {
-//   position: absolute;
-//   bottom: 0;
-//   transform: scale(1.75);
-//   transform-origin: top center;
-// }
+.caption {
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  color: white;
+}
