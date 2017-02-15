@@ -145,16 +145,7 @@
 }
 
 /*page fat headers*/
-.fat_3_header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  h1, h2, h3, h4 {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
-}
-
-.fat_dbl_header {
+.fat_headers_block {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
@@ -166,7 +157,7 @@
     }
   }
   h1, h2, h3, h4 {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
   }
 }

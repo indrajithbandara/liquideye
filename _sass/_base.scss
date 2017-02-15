@@ -80,6 +80,10 @@ a {
 p {
   margin-top: 0;
   padding-bottom: 12px;
+  .wide_paragraph & {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 strong {
@@ -151,8 +155,9 @@ tbody tr:nth-child(odd) th {
 /* Headings*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  /* text-transform: capitalize;*/
-  @include media( "screen", ">minWidth") { font-weight: 300;}
+  @include media( "screen", ">minWidth") {
+    font-weight: 300;
+  }
   line-height: 1.25;
   letter-spacing: -.025rem;
   color: $black;
@@ -161,10 +166,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 36px;
   line-height: 1.125;
-  @include media( "screen", ">minWidth") {font-size: 32px;}
-  @include media( "screen", ">bp1Width") {font-size: 34px;}
+  @include media( "screen", ">minWidth") {font-size: 40px;}
+  @include media( "screen", ">bp1Width") {font-size: 44px;}
 }
 h2 {
   font-size: 26px;
@@ -200,7 +205,7 @@ h4, h5, h6 {
 }
 
 .content {
-  max-width: 1000px;
+  max-width: 1100px;
 	margin: 0 auto;
   padding-top: $vertical-space-small;
   padding-bottom: $vertical-space;

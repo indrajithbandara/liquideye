@@ -44,10 +44,23 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container team_row">
         <div class="content">
 
-          <h2 class="center">{{site.slogan}}</h1>
+          {% include team_balls.html %}
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="content wide_paragraph">
+
+          <div class="fat_headers_block">
+            <h2 class="center">{{site.slogan}}</h2>
+            <h1 class="center">If you shoot with Canon...</h1>
+            <h3 class="center">A broad range for every application and budget.</h3>
+          </div>
+
+
 
           {{ content }}
 

@@ -1,0 +1,19 @@
+<div class="fat_headers_block">
+  <h2 class="center">The key of Liquid Eye success.</h2>
+  <h1 class="center">Conceived and designed by professional photographers.</h1>
+  <h3 class="center">Meet our team.</h3>
+</div>
+
+<div class="team_balls">
+
+{% for photographer in site.team %}
+  <a class="looper__link photographer" href="{{ photographer.url | prepend: site.baseurl }}">
+    <div class="photographer_face">
+      <img src="{{ site.baseurl }}/assets/p/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
+    </div>
+    <h4 class="photographer_name">{{ photographer.name }}</h4>
+
+  </a>
+{% endfor %}
+
+</div>

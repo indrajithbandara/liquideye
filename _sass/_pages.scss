@@ -21,6 +21,27 @@ em { color: lighten($black, 30%);}
   }
 }
 
+.team_row {
+  background-color: $menu_bg_color;
+}
+.team_balls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .photographer_name {//h4
+    font-size: 16px;
+    padding-top: 0;
+  }
+  .photographer_face {
+    border: 0 none;
+    height: 140px;
+    width: 140px;
+    min-height: 140px;
+    min-width: 140px;
+    margin: $vertical-space-small/2;
+  }
+}
+
 .team .photographer,
 .about .photographer  {
   display: -webkit-box;
