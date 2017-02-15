@@ -1,18 +1,26 @@
 .form_row {
   padding-top: $vertical-space;
   background-color: $body_color;
+  .content {
+    padding-left: $vertical-space-small;
+    padding-right: $vertical-space-small;
+    @include media( "screen", ">bp1Width") {
+      padding-left: $vertical-space;
+      padding-right: $vertical-space;
+    }
+
+  }
 }
 
 
 
 .form_block {
-
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @include media( "screen", ">minWidth"){
+  @include media( "screen", ">minWidth") {
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
@@ -22,11 +30,10 @@
   h2, h3  {
     display: block;
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: $vertical-space-small;
     padding: 0;
     @include media( "screen", ">minWidth") {
       display: inline-block;
-      margin-left: $vertical-space-small;
       margin-bottom: 0;
     }
   }
