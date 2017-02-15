@@ -195,14 +195,15 @@ h4, h5, h6 {
 }
 
 .container {
-  margin: 0 auto;
-  padding-left: $vertical-space;
-  padding-right: $vertical-space;
-  max-width: 1000px;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
 	margin: 0 auto;
+  max-width: 1000px;
+  padding-left: $vertical-space;
+  padding-right: $vertical-space;
   margin-bottom: $vertical-space;
   @include media( "screen", ">bp1Width") {
     border-top: 1px solid $hr_color;
