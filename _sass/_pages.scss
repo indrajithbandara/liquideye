@@ -115,6 +115,10 @@ em { color: lighten($black, 30%);}
   margin-left: 0;
   margin-right: 0;
 }
+.photographer_quote {
+  padding-top: $vertical-space;
+  font-size: 120%;
+}
 .photographer_quote,
 .testimonial_quote {
   font-style: italic;

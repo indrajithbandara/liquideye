@@ -1,12 +1,11 @@
 .form_row {
+  padding-top: $vertical-space;
   background-color: $menu_bg_color;
 }
 
 
 
 .form_block {
-  padding-top: $vertical-space-small/2;
-  padding-bottom: $vertical-space-small;
 
   width: 100%;
   display: flex;
@@ -24,6 +23,7 @@
     display: block;
     margin-left: 0;
     margin-bottom: 0;
+    padding: 0;
     @include media( "screen", ">minWidth") {
       display: inline-block;
       margin-left: $vertical-space-small;

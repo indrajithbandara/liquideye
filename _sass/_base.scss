@@ -200,14 +200,14 @@ h4, h5, h6 {
 }
 
 .content {
-	margin: 0 auto;
   max-width: 1000px;
+	margin: 0 auto;
+  padding-top: $vertical-space-small;
+  padding-bottom: $vertical-space;
   padding-left: $vertical-space;
   padding-right: $vertical-space;
-  margin-bottom: $vertical-space;
   @include media( "screen", ">bp1Width") {
     border-top: 1px solid $hr_color;
-    padding-top: $vertical-space-small;
   }
 }
 
