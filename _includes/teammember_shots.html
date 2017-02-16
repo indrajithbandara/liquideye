@@ -1,0 +1,48 @@
+{% if page.number_of_photos %}
+<div class="teammember_photos">
+
+  {% if page.number_of_photos >= 1 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/01.jpg" alt="{{ page.name }}">
+  </div>
+  {% endif %}
+
+  {% if page.number_of_photos >= 2 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/02.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 3 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/03.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 4 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/04.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 5 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/05.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 6 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/06.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 7 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/07.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+  {% if page.number_of_photos >= 8 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/08.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+
+  {% if page.number_of_photos >= 9 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/09.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+
+  {% if page.number_of_photos >= 10 %}
+  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/10.jpg" alt="{{ page.name }}">
+  {% endif %}
+
+</div>
+{% endif %}

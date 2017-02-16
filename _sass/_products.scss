@@ -167,17 +167,20 @@
 .product_photos {
   min-width: 100%;
   max-width: 100%;
-  height: 400px;
-  @media screen and (min-width: 320px) {
-    height: 520px;
+  .housing & {
+    height: 400px;
+    @media screen and (min-width: 320px) {
+      height: 520px;
+    }
+    @media screen and (min-width: 370px) {
+      height: 630px;
+    }
+    @include media( "screen", ">minWidth"){
+      height: 750px;
+      padding-bottom: $vertical-space-small;
+    }
   }
-  @media screen and (min-width: 370px) {
-    height: 630px;
-  }
-  @include media( "screen", ">minWidth"){
-    height: 750px;
-    padding-bottom: $vertical-space-small;
-  }
+
   @include media( "screen", ">bp1Width") {
     min-width: 50%;
     max-width: 500px;
