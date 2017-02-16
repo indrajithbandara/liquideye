@@ -51,9 +51,24 @@
                 <p>{{page.features.feature1}}</p>
                 <p>{{page.features.feature2}}</p>
                 <p>{{page.features.feature3}}</p>
+                {% if page.features.feature4 %}
                 <p>{{page.features.feature4}}</p>
+                {% endif %}
+                {% if page.features.feature5 %}
                 <p>{{page.features.feature5}}</p>
+                {% endif %}
+                {% if page.features.feature6 %}
                 <p>{{page.features.feature6}}</p>
+                {% endif %}
+                {% if page.features.feature7 %}
+                <p>{{page.features.feature7}}</p>
+                {% endif %}
+                {% if page.features.feature8 %}
+                <p>{{page.features.feature8}}</p>
+                {% endif %}
+                {% if page.features.feature9 %}
+                <p>{{page.features.feature9}}</p>
+                {% endif %}
               </div>
             </div>
 
@@ -97,6 +112,26 @@
                 <p>{{page.controls.housing.control4}}</p>
                 {% endif %}
 
+                {% if page.controls.housing.control5 %}
+                <p>{{page.controls.housing.control5}}</p>
+                {% endif %}
+
+                {% if page.controls.housing.control6 %}
+                <p>{{page.controls.housing.control6}}</p>
+                {% endif %}
+
+                {% if page.controls.housing.control7 %}
+                <p>{{page.controls.housing.control7}}</p>
+                {% endif %}
+
+                {% if page.controls.housing.control8 %}
+                <p>{{page.controls.housing.control8}}</p>
+                {% endif %}
+
+                {% if page.controls.housing.control9 %}
+                <p>{{page.controls.housing.control9}}</p>
+                {% endif %}
+
                 {% if page.controls.backplate %}
                 <p class=""><strong>On the back plate </strong></p>
                 {% endif %}
@@ -125,6 +160,18 @@
                 <p>{{page.controls.backplate.control6}}</p>
                 {% endif %}
 
+                {% if page.controls.backplate.control7 %}
+                <p>{{page.controls.backplate.control7}}</p>
+                {% endif %}
+
+                {% if page.controls.backplate.control8 %}
+                <p>{{page.controls.backplate.control8}}</p>
+                {% endif %}
+
+                {% if page.controls.backplate.control9 %}
+                <p>{{page.controls.backplate.control9}}</p>
+                {% endif %}
+
               </div>
               {% else %}
               <div class="data column">
@@ -144,7 +191,6 @@
                 {% if page.controls.control4 %}
                 <p>{{page.controls.control4}}</p>
                 {% endif %}
-
 
                 {% if page.controls.control5 %}
                 <p>{{page.controls.control5}}</p>
@@ -207,6 +253,10 @@
 
                 {% if page.included.item8 %}
                 <p>{{page.included.item8}}</p>
+                {% endif %}
+
+                {% if page.included.item9 %}
+                <p>{{page.included.item9}}</p>
                 {% endif %}
 
               </div>
