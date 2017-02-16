@@ -19,7 +19,7 @@
         <h1 class="center">{{page.title_claim}}</h1>
         <h3 class="center">{{page.undertitle_claim}}</h3>
       </div>
-      
+
       <div class="container">
         <div class="content photographer">
 
@@ -27,7 +27,10 @@
             <img src="{{ site.baseurl }}/assets/p/team/philippe-chevodian.jpg" alt="Philippe Chevodian">
           </div>
           <div class="photographer_text">
-            <p class="photographer_intro">{{ content }}</p>
+            <p class="photographer_intro">
+              {% capture about %}{% include editables/about-text.md %}{% endcapture %}
+              {{ about | markdownify }}
+            </p>
             {% if page.quote %}
             <p class="photographer_quote">{{ page.quote }}</p>
             {% endif %}

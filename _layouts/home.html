@@ -12,7 +12,7 @@
 
     {% include header.html %}
 
-    <div class="bungkus colored_background group">
+    <div class="bungkus group">
 
       <div class="slideshow_wrap">
 
@@ -44,15 +44,15 @@
         </div>
       </div>
 
-      <div class="container team_row">
+      <div class="container team_row group">
         <div class="content">
 
           {% include team_balls.html %}
 
         </div>
       </div>
-      <div class="container">
-        <div class="content wide_paragraph">
+      <div class="container group">
+        <div class="content wide_paragraph canon">
 
           <div class="fat_headers_block">
             <h2 class="center">{{site.slogan}}</h2>
@@ -60,12 +60,54 @@
             <h3 class="center">A broad range for every application and budget.</h3>
           </div>
 
+          <div class="thumb">
+            <img src="{{site.baseurl}}/assets/p/housings/c1795/04.jpg" alt="Liquid Eye Canon housing">
+          </div>
 
-
-          {{ content }}
+          <div class="text">
+            {% capture intro %}{% include editables/home-canon-text.md %}{% endcapture %}
+            {{ intro | markdownify }}
+          </div>
 
         </div>
       </div>
+
+      <div class="container group">
+        <div class="content wide_paragraph nikon">
+
+          <div class="fat_headers_block">
+            <h1 class="center">Shoot with Nikon?</h1>
+            <h3 class="center">We got you covered as well.</h3>
+          </div>
+
+          <div class="thumb">
+            <img src="{{site.baseurl}}/assets/p/housings/c1892/05.jpg" alt="Liquid Eye Nikon housing">
+          </div>
+
+          <div class="text">
+            {% capture intro %}{% include editables/home-nikon-text.md %}{% endcapture %}
+            {{ intro | markdownify }}
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container group">
+        <div class="content wide_paragraph last">
+
+          <div class="fat_headers_block">
+            <h2 class="center">Water Housing Solution to suit your needs!</h2>
+          </div>
+
+          <div class="text">
+            {% capture intro %}{% include editables/home-last-text.md %}{% endcapture %}
+            {{ intro | markdownify }}
+          </div>
+
+        </div>
+      </div>
+
 
       {% include footer.html %}
 

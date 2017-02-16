@@ -27,18 +27,30 @@ em { color: lighten($black, 30%);}
 .team_balls {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  @include media( "screen", ">minWidth") {
+    justify-content: center;
+  }
   .photographer_name {//h4
     font-size: 16px;
     padding-top: 0;
   }
   .photographer_face {
     border: 0 none;
-    height: 140px;
-    width: 140px;
-    min-height: 140px;
-    min-width: 140px;
-    margin: $vertical-space-small/2;
+    height: 90px;
+    width: 90px;
+    min-height: 90px;
+    min-width: 90px;
+    margin: $vertical-space-small/8;
+    @include media( "screen", ">minWidth") {
+      height: 140px;
+      width: 140px;
+      min-height: 140px;
+      min-width: 140px;
+      margin: $vertical-space-small/2;
+    }
+
+
   }
 }
 
@@ -374,5 +386,49 @@ em { color: lighten($black, 30%);}
   p {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+
+.wide_paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media all and (min-width: 700px) {
+    display: block;
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    @include media( "screen", ">bp1Width") {
+      text-align: justify;
+    }
+  }
+  .thumb {
+    display: block;
+    float: none;
+    clear: both;
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem 3rem;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: $vertical-space-small;
+    @media all and (min-width: 700px) {
+      width: 400px;
+      height: 400px;
+      float: left;
+      shape-outside: circle(50%);
+      margin: $vertical-space;
+    }
+  }
+}
+
+.wide_paragraph.nikon .thumb {
+  @media all and (min-width: 700px) {
+    float: right;
+    margin-top: 0;
   }
 }
