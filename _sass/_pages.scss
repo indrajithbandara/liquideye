@@ -422,6 +422,7 @@ em { color: lighten($black, 30%);}
       float: left;
       shape-outside: circle(50%);
       margin: $vertical-space;
+      margin-top: 0;
     }
   }
 }
@@ -429,6 +430,5 @@ em { color: lighten($black, 30%);}
 .wide_paragraph.nikon .thumb {
   @media all and (min-width: 700px) {
     float: right;
-    margin-top: 0;
   }
 }
