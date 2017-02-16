@@ -205,11 +205,14 @@ h4, h5, h6 {
 	margin: 0 auto;
   padding-top: $vertical-space-small;
   padding-bottom: $vertical-space;
-  padding-left: $vertical-space;
-  padding-right: $vertical-space;
   @include media( "screen", ">bp1Width") {
     border-top: 1px solid $hr_color;
   }
+}
+
+.side_padded {
+  padding-left: $vertical-space;
+  padding-right: $vertical-space;
 }
 
 .imagecontent {
