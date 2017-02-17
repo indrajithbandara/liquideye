@@ -8,7 +8,7 @@
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords}}">{% endif %}
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta name="google-site-verification" content="{{ site.google.verify }}" />
 
 
