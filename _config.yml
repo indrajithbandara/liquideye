@@ -6,11 +6,11 @@ email: rokmabox@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Liquid Eye produces light and strong water housing systems. Whether you are a beginner or a seasoned photographer Liquid Eye have a waterhousing solution to suit your needs.
 baseurl: ""
-url: "https://toybreaker.github.io/liquideye/"
+url: "https://toybreaker.github.io/liquideye"
 preview_image: liquideye_preview_image.jpg
 version: 0.9.0
 
-github_url: "https://toybreaker.github.io/liquideye/"
+github_url: "https://toybreaker.github.io/liquideye"
 github_username:  toybreaker
 repository: toybreaker/liquideye
 instagram: liquideyewaterhousings
