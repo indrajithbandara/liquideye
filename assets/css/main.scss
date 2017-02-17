@@ -7,11 +7,11 @@ $black                : #161616;
 $link_color           : #000;
 $underline_link_color : #b4e7f8;
 
-$brand_blue           : #3a81c1;
+$brand_blue           : #33a0ff;//rgba(51, 160, 255, 1), hsla(208, 100%, 60%, 1)
 $brand_yellow         : #fff200;
-$menu_bg_color        : lighten( $brand_blue, 46%);
-$body_bg_color        : lighten( $brand_blue, 43%);
-$hr_color             : rgb(214, 214, 214);
+$menu_bg_color        : lighten( $brand_blue, 36%); //#ebf6ff
+$body_bg_color        : lighten( $brand_blue, 30%); //#cce7ff
+$hr_color             : rgb(214, 214, 214); //#d6d6d6
 
 $base-font: caption;
 $base-font-size-tiny: 15px;
