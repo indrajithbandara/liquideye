@@ -3,6 +3,26 @@ layout: team_photographer
 name: jason childs
 quote: "The Liquid Eye water-housings are made by a photographer! Philippe is a bloody good photographer and knows what we need to get the best job done. He respects his craft and handcrafts the housing to professional quality. He's always looking to improve the housings and move with the Digi Photo Age. The beauty of these housings are the lightness and strength combined with being really comfortable to hold in the water. It's good to have faith in the housings that you are putting your expensive babies in! Nothing sucks more than drowning a camera and lens due to a leaky housing!"
 description: "Liquid Eye team photographer: Jason Childs lifelong fascination with the Ocean has played an important part in keeping his worldly photography in balance. Jason's Surf Photography is currently in highest demand and it continues to define the sport."
+photo01:
+caption01:
+photo02:
+caption02:
+photo03:
+caption03:
+photo04:
+caption04:
+photo05:
+caption05:
+photo06:
+caption06:
+photo07:
+caption07:
+photo08:
+caption08:
+photo09:
+caption09:
+photo10:
+caption10:
 ---
 Jason Childs lifelong fascination with the Ocean has played an important part in keeping his worldly photography in balance. A passionate surfer, Jason has established himself as one of the most valued and prolifically published surf photographers in the sport.
 

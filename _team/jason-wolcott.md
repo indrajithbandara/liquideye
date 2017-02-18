@@ -3,6 +3,26 @@ layout: team_photographer
 name: jason wolcott
 quote: "Liquid Eye water-housing system will become and integral part of your photographic process. Light weight, strong, and elegant. I could not ask for more with a water-housing system."
 description: "Liquid Eye team photographer: As a photographer Jason has experienced success personally and professionally while his love of the ocean has inspired his craft. While his subject matter is diverse he draws from his 20 years as a waterman and affinity for the ocean to evoke an emotional response to his photographs."
+photo01:
+caption01:
+photo02:
+caption02:
+photo03:
+caption03:
+photo04:
+caption04:
+photo05:
+caption05:
+photo06:
+caption06:
+photo07:
+caption07:
+photo08:
+caption08:
+photo09:
+caption09:
+photo10:
+caption10:
 ---
 Born in Los Angeles in 1975 Jason Wolcott, like his photographic art is a product of his eclectic environment whilst growing up among the different regions of California.
 

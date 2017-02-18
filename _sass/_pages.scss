@@ -448,3 +448,16 @@ em { color: lighten($black, 30%);}
     float: right;
   }
 }
+
+.teammember_photos {
+  figure {position: relative;}
+  figcaption {
+    font-size: 13px;
+    position: absolute;
+    right: 5%;
+    bottom: $vertical-space-small;
+    text-transform: capitalize;
+    color: white;
+  }
+
+}

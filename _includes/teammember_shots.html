@@ -1,47 +1,73 @@
-{% if page.number_of_photos %}
-<div class="teammember_photos">
+{% if page.photo01 %}
+<div class="teammember_photos group">
 
-  {% if page.number_of_photos >= 1 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/01.jpg" alt="{{ page.name }}">
-  </div>
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo01}}" alt="{{page.caption01}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption01}} | {{page.name }}</figcaption>
+  </figure>
+
+
+  {% if page.photo02 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo02}}" alt="{{page.caption02}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption02}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 2 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/02.jpg" alt="{{ page.name }}">
+  {% if page.photo03 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo03}}" alt="{{page.caption03}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption03}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 3 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/03.jpg" alt="{{ page.name }}">
+  {% if page.photo04 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo04}}" alt="{{page.caption04}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption04}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 4 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/04.jpg" alt="{{ page.name }}">
+  {% if page.photo05 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo05}}" alt="{{page.caption05}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption05}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 5 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/05.jpg" alt="{{ page.name }}">
+  {% if page.photo06 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo06}}" alt="{{page.caption06}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption06}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 6 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/06.jpg" alt="{{ page.name }}">
+  {% if page.photo07 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo07}}" alt="{{page.caption07}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption07}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 7 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/07.jpg" alt="{{ page.name }}">
+  {% if page.photo08 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo08}}" alt="{{page.caption08}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption08}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-  {% if page.number_of_photos >= 8 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/08.jpg" alt="{{ page.name }}">
+  {% if page.photo09 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo09}}" alt="{{page.caption09}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption09}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
-
-  {% if page.number_of_photos >= 9 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/09.jpg" alt="{{ page.name }}">
-  {% endif %}
-
-
-  {% if page.number_of_photos >= 10 %}
-  <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/10.jpg" alt="{{ page.name }}">
+  {% if page.photo10 %}
+  <figure>
+    <img src="{{site.baseurl}}/assets/p/teamshots/{{page.name|slugify}}/{{page.photo10}}" alt="{{page.caption10}} | {{page.name|upcase}}">
+    <figcaption>{{page.caption10}} | {{page.name }}</figcaption>
+  </figure>
   {% endif %}
 
 </div>

@@ -3,6 +3,26 @@ layout: team_photographer
 name: tim mckenna
 quote: "Liquid eye water-housing have been over the years the best solution for my action water-sport and underwater photography. They are the lightest, most compact and strongest housings on the market. Their exclusive two stage trigger is amazing. I highly recommend them."
 description: "Liquid Eye team photographer: Leading figure in action sport photography, Tim McKenna has become recognized as one of the best outdoor photographers in the world, inspiring his generation by revealing the sheer beauty of the elements through images."
+photo01:
+caption01:
+photo02:
+caption02:
+photo03:
+caption03:
+photo04:
+caption04:
+photo05:
+caption05:
+photo06:
+caption06:
+photo07:
+caption07:
+photo08:
+caption08:
+photo09:
+caption09:
+photo10:
+caption10:
 ---
 Born in Sydney in 1968, close to Australia’s famous surfing beaches, Tim grew up on the Atlantic coast of S.W. France before returning to Australia in 1986 where he obtained a Bachelor of Arts degree from Queensland University.
 
