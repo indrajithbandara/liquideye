@@ -5,23 +5,23 @@
   <p class="red">* required field</p>
 
   <label for="email" class="red">Email *</label>
-  <input type="text" name="entry.978375547" id="entry.978375547"><br>
+  <input type="email" name="entry.978375547" id="entry.978375547" required><br>
   <label for="first_name" class="red">First name *</label>
-  <input type="text" name="entry.717659969" id="entry.717659969"><br>
-  <label for="first_name" class="red">Last name *</label>
-  <input type="text" name="entry.586060687" id="entry.586060687"><br>
+  <input type="text" name="entry.717659969" id="entry.717659969" required><br>
+  <label for="last_name" class="red">Last name *</label>
+  <input type="text" name="entry.586060687" id="entry.586060687" required><br>
 
   <label for="address">Address</label>
   <input type="text" name="entry.1453021693" id="entry.1453021693"><br>
 
   <label for="city" class="red">City *</label>
-  <input type="text" name="entry.1950928707" id="entry.1950928707"><br>
+  <input type="text" name="entry.1950928707" id="entry.1950928707" required><br>
 
   <label for="zipcode" class="red">ZIP Code *</label>
-  <input type="text" name="entry.1576244111" id="entry.1576244111"><br>
+  <input type="text" name="entry.1576244111" id="entry.1576244111" required><br>
 
   <label for="country" class="red">Country *</label>
-  <select name="entry.32481403" id="entry.32481403">
+  <select name="entry.32481403" id="entry.32481403" required>
   	<option value="">Choose a country</option>
   	<option value="AF">Afghanistan</option>
     <option value="AX">Åland Islands</option>
@@ -276,25 +276,25 @@
   <br>
 
   <label for="age" class="red">Age *</label>
-  <input type="number" name="entry.108985673" id="entry.108985673"><br>
+  <input type="number" name="entry.108985673" id="entry.108985673" required><br>
 
   <label for="phone">Phone</label>
-  <input type="text" name="entry.593165579" id="entry.593165579"><br>
+  <input type="tel" name="entry.593165579" id="entry.593165579"><br>
 
-  <label for="skype">WhatsApp</label>
-  <input type="text" name="entry.1344506268" id="entry.1344506268"><br>
+  <label for="whatsapp">WhatsApp</label>
+  <input type="tel" name="entry.1344506268" id="entry.1344506268"><br>
 
   <label for="skype">Skype</label>
   <input type="text" name="entry.581501699" id="entry.581501699"><br>
 
   <label for="camera_brand" class="red">Camera Brand *</label>
-  <input type="text" name="entry.761318757" id="entry.761318757"><br>
+  <input type="text" name="entry.761318757" id="entry.761318757" required><br>
 
   <label for="camera_model" class="red">Camera Model *</label>
-  <input type="text" name="entry.1790509187" id="entry.1790509187"><br>
+  <input type="text" name="entry.1790509187" id="entry.1790509187" required><br>
 
   <label for="camera_lens" class="red">Camera Lens(es) *</label>
-  <input type="text" name="entry.953309171" id="entry.953309171"><br><br>
+  <input type="text" name="entry.953309171" id="entry.953309171" required><br><br>
 
   <p class="showmap">Choose your currency depending on
     <a class="underline" id="showmap" href="#" title="Choose your currency depending on your location">your location. See map.</a>
@@ -306,14 +306,14 @@
 
   <label for="currency">Currency</label>
   <select name="entry.334860376" id="entry.334860376">
-  	<option value="usd">USD</option>
-  	<option value="aud">AUD</option>
-  	<option value="eur">EUR</option>
+  	<option value="USD">USD</option>
+  	<option value="AUD">AUD</option>
+  	<option value="EUR">EUR</option>
   </select>
   <br>
 
   <label for="how_did_you_hear" class="red">How did you learn about us? *</label>
-  <select name="entry.1862800491" id="entry.1862800491">
+  <select name="entry.1862800491" id="entry.1862800491" required>
   	<option value="">Please choose</option>
   	<option value="search_engine">Search Engine</option>
   	<option value="forum">Forum</option>
@@ -327,10 +327,10 @@
   <p>Before writing your message please read our <a class="underline" href="{{site.baseurl}}/frequently-asked-questions/">FAQ</a> and <a class="underline" href="{{site.baseurl}}/terms-and-conditions/">Terms and Conditions</a>.</p>
 
   <label for="subject" class="red">Subject *</label>
-  <input type="text" name="entry.1732720290" id="entry.1732720290"><br>
+  <input type="text" name="entry.1732720290" id="entry.1732720290" required><br>
 
   <label for="message" class="red">Message *</label>
-  <textarea name="entry.1734430910" id="entry.1734430910"></textarea><br>
+  <textarea name="entry.1734430910" id="entry.1734430910" required></textarea><br>
 
   <input type="submit" value="Submit">
 </form>
