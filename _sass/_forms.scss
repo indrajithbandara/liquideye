@@ -63,24 +63,34 @@
 
 
 .contact {
+  .side_padded {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .red {
-    max-width: 500px;
     margin: 0 auto;
     color: red;
   }
 }
 
 
-
 .contact_form {
-  max-width: 500px;
-  margin: 0 auto;
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+  }
   select, textarea, input {
+    border: 1px solid $hr_color;
+    margin-top: $vertical-space-small;
     font-size: 15px;
     height: 30px;
-    width: 170px;
+    min-width: 100%;
     @include media( "screen", ">minWidth") {
-      width: 300px;
+      margin-top: 0;
+      min-width: 100px;
+      width: 350px;
     }
   }
   textarea {
@@ -91,7 +101,7 @@
   select {
     background-color: white;
     border-radius: 0;
-    border: 1px solid black;
+    border: 1px solid $hr_color;
   }
   input[type="submit"] {
     margin-top: $vertical-space-small;
@@ -120,12 +130,15 @@
       top: -70px;
     }
   }
-  
+
   .showmap {
     padding-bottom: 0;
   }
 }
 
 a.underline {
-  text-decoration: underline;
+  border-bottom: 1px solid black;
+  &:hover {
+    opacity: .75;
+  }
 }
