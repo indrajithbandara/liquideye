@@ -1,0 +1,50 @@
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSclPPFQQUx-3I1y2l5qHBJxuU3R4wgbA9MBsUxgLQX-MLwRrA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+  <label for="email">Email:</label>
+  <input type="text" name="entry.978375547" id="entry.978375547"><br>
+  <label for="first_name">First name:</label> 
+  <input type="text" name="entry.717659969" id="entry.717659969"><br>
+  Last name:
+  <input type="text" name="entry.586060687" id="entry.586060687"><br>
+  Address:
+  <input type="text" name="entry.1972642849" id="entry.1972642849"><br>
+  City:
+  <input type="text" name="entry.1150060817" id="entry.1150060817"><br>
+  Zip code:
+  <input type="text" name="entry.489289021" id="entry.489289021"><br>
+  Country:
+  <input type="text" name="entry.1488644498" id="entry.1488644498"><br>
+  Age:
+  <input type="text" name="entry.1948498449" id="entry.1948498449"><br>
+  Phone:
+  <input type="text" name="entry.495314252" id="entry.495314252"><br>
+  Skype:
+  <input type="text" name="entry.1664954486" id="entry.1664954486"><br>
+  Camera Brand:
+  <input type="text" name="entry.1650240975" id="entry.1650240975"><br>
+  Camera Model:
+  <input type="text" name="entry.1295151086" id="entry.1295151086"><br>
+  Camera Lens(es):
+  <input type="text" name="entry.474265265" id="entry.474265265"><br>
+  Currency:
+  <input type="text" name="entry.1729044644" id="entry.1729044644"><br>
+  Where did you hear about us:
+  <input type="text" name="entry.106655832" id="entry.106655832"><br>
+  Message:
+  <input type="text" name="entry.1149518739" id="entry.1149518739"><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script type="text/javascript">var submitted=false;</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
+<script src="{{site.baseurl}}/assets/j/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    $('#gform > *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+  });
+</script>

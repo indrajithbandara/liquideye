@@ -59,5 +59,73 @@
       text-align: center!important;
     }
   }
+}
 
+
+.contact {
+  .red {
+    max-width: 500px;
+    margin: 0 auto;
+    color: red;
+  }
+}
+
+
+
+.contact_form {
+  max-width: 500px;
+  margin: 0 auto;
+  select, textarea, input {
+    font-size: 15px;
+    height: 30px;
+    width: 170px;
+    @include media( "screen", ">minWidth") {
+      width: 300px;
+    }
+  }
+  textarea {
+    margin-top: $vertical-space-small;
+    height: 90px;
+  }
+
+  select {
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid black;
+  }
+  input[type="submit"] {
+    margin-top: $vertical-space-small;
+    border: 0 none;
+    height: 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: $vertical-space-small;
+    background-color: $brand_blue;
+    color: white;
+  }
+  label {
+    padding-top: $vertical-space-small;
+    display: block;
+    width: 100%;
+    @include media( "screen", ">minWidth") {
+      display: inline-block;
+      min-width: 160px;
+      width: 160px;
+    }
+  }
+  label[for="message"] {
+    @include media( "screen", ">minWidth") {
+      position: relative;
+      top: -70px;
+    }
+  }
+  
+  .showmap {
+    padding-bottom: 0;
+  }
+}
+
+a.underline {
+  text-decoration: underline;
 }
