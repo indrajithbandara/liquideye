@@ -1,3 +1,4 @@
+//home
 .form_row {
   padding-top: $vertical-space;
   background-color: $body_color;
@@ -62,6 +63,7 @@
 }
 
 
+//contact page
 .contact {
   .form {
     padding-top: $vertical-space;
@@ -95,6 +97,7 @@
       margin-top: 0;
       min-width: 100px;
       width: 350px;
+      text-align: left;
     }
   }
   textarea {
