@@ -79,7 +79,7 @@
 
 .contact_form {
   text-align: center;
-  @include media( "screen", ">minWidth") {
+  @media all and (min-width: 700px) {
     text-align: left;
     margin: 0 auto;
     max-width: 600px;
@@ -90,7 +90,8 @@
     font-size: 15px;
     height: 30px;
     min-width: 100%;
-    @include media( "screen", ">minWidth") {
+    text-align: center;
+    @media all and (min-width: 700px) {
       margin-top: 0;
       min-width: 100px;
       width: 350px;
@@ -121,14 +122,14 @@
     padding-top: $vertical-space-small;
     display: block;
     width: 100%;
-    @include media( "screen", ">minWidth") {
+    @media all and (min-width: 700px) {
       display: inline-block;
       min-width: 160px;
       width: 160px;
     }
   }
   label[for="message"] {
-    @include media( "screen", ">minWidth") {
+    @media all and (min-width: 700px) {
       position: relative;
       top: -70px;
     }
