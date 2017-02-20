@@ -17,7 +17,7 @@
       <div class="container">
         <div class="content side_padded form">
 
-          {% include form_simple.html %}
+          {% include form.html %}
 
         </div>
       </div>
@@ -25,6 +25,20 @@
       {% include footer.html %}
 
     </div>
+
+    <script type="text/javascript">var submitted=false;</script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
+    {% include script_jquery.html %}
+
+    <script type="text/javascript">
+      $('#gform').on('submit', function(e) {
+        $('#gform > *').fadeOut(2000);
+        $('#gform').prepend('Your message has been sent. If you do not receive a reply within 72 hours, then please use this direct email contact@liquideye-whs.com, thank you!');
+      });
+    </script>
 
     {% include script_ext_link.html %}
 

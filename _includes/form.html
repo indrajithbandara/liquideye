@@ -334,17 +334,3 @@
 
   <input type="submit" value="Submit">
 </form>
-
-<script type="text/javascript">var submitted=false;</script>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-
-<script src="{{site.baseurl}}/assets/j/jquery-3.1.1.min.js"></script>
-
-<script type="text/javascript">
-  $('#gform').on('submit', function(e) {
-    $('#gform > *').fadeOut(2000);
-    $('#gform').prepend('Your message has been sent. If you do not receive a reply within 72 hours, then please use this direct email contact@liquideye-whs.com, thank you!');
-  });
-</script>
