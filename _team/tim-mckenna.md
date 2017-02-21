@@ -3,20 +3,20 @@ layout: team_photographer
 name: tim mckenna
 quote: "Liquid eye water-housing have been over the years the best solution for my action water-sport and underwater photography. They are the lightest, most compact and strongest housings on the market. Their exclusive two stage trigger is amazing. I highly recommend them."
 description: "Liquid Eye team photographer: Leading figure in action sport photography, Tim McKenna has become recognized as one of the best outdoor photographers in the world, inspiring his generation by revealing the sheer beauty of the elements through images."
-photo01:
-caption01:
-photo02:
-caption02:
-photo03:
-caption03:
-photo04:
-caption04:
-photo05:
-caption05:
-photo06:
-caption06:
-photo07:
-caption07:
+photo01: 01.jpg
+caption01: Tahiti
+photo02: 02.jpg
+caption02: Tahiti
+photo03: 03.jpg
+caption03: Tahiti
+photo04: 04.jpg
+caption04: Tahiti
+photo05: 05.jpg
+caption05: Tahiti
+photo06: 06.jpg
+caption06: Tahiti
+photo07: 07.jpg
+caption07: Tahiti
 photo08:
 caption08:
 photo09:
