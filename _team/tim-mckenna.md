@@ -15,12 +15,12 @@ photo05: 05.jpg
 caption05: Tahiti
 photo06: 06.jpg
 caption06: Tahiti
-photo07: 07.jpg
-caption07: Tahiti
-photo08:
-caption08:
-photo09:
-caption09:
+photo07: 09.jpg
+caption07: MerBora
+photo08: 08.jpg
+caption08: Tahiti
+photo09: 07.jpg
+caption09: Tahiti
 photo10:
 caption10:
 ---
