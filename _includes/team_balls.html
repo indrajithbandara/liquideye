@@ -11,7 +11,9 @@
     <div class="photographer_face">
       <img src="{{ site.baseurl }}/assets/p/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
     </div>
-    <h4 class="photographer_name">{{ photographer.name }}</h4>
+    <h4 class="photographer_name">
+      <span>{{ photographer.name }}</span>
+    </h4>
 
   </a>
 {% endfor %}

@@ -32,7 +32,8 @@
                   <img src="{{ site.baseurl }}/assets/p/team/{{ photographer.name | slugify: 'pretty' }}.jpg" alt="{{ photographer.name }}">
                 </div>
                 <div class="photographer_text">
-                  <h2 class="photographer_name">{{ photographer.name }}</h2>
+                  <h2 class="photographer_name">
+                    <span>{{ photographer.name }}</span></h2>
 
                   {% if photographer.quote %}
                     <p class="photographer_quote">{{ photographer.quote }}</p>

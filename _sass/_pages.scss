@@ -40,9 +40,15 @@ em { color: lighten($black, 30%);}
   .photographer_name {/*h4*/
     font-size: 16px;
     padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 14px;
+    span {
+      padding-bottom: 3px;
+      border-bottom: 1px solid transparent;
+    }
   }
   .photographer_face {
-    border: 0 none;
+    // border: 0 none;
     height: 90px;
     width: 90px;
     min-height: 90px;
@@ -80,8 +86,10 @@ em { color: lighten($black, 30%);}
         flex-direction: row;
   }
 }
-.team a:hover .photographer_face {
-  border: 5px solid $brand_blue;
+.team a:hover .photographer_face,
+.team_balls a:hover .photographer_face,
+.team_balls a:hover .photographer_name span {
+  border-color: $brand_blue;
 }
 .team_photographer .photographer {
   @media all and (min-width: 660px) {
@@ -91,7 +99,7 @@ em { color: lighten($black, 30%);}
   }
 }
 .photographer_face {
-  border: 5px solid transparent;
+  border: 3px solid transparent;
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -130,13 +138,19 @@ em { color: lighten($black, 30%);}
   margin-top: 0;
   text-align: center;
   width: 100%;
+  span {
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+  }
   @media all and (min-width: 660px) {
     text-align: left;
   }
-  .team a:hover & {
-    color: $brand_blue;
-  }
+
 }
+.team a:hover .photographer_name span  {
+  border-color: $brand_blue;
+}
+
 
 .photographer_text {
   display: -webkit-box;
@@ -395,53 +409,54 @@ em { color: lighten($black, 30%);}
   }
 }
 
+//
+// .wide_paragraph {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//       -ms-flex-direction: column;
+//           flex-direction: column;
+//   -webkit-box-align: center;
+//       -ms-flex-align: center;
+//           align-items: center;
+//   -webkit-box-pack: center;
+//       -ms-flex-pack: center;
+//           justify-content: center;
+//   @media all and (min-width: 700px) {
+//     display: block;
+//   }
+//   p {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     @include media( "screen", ">bp1Width") {
+//       text-align: justify;
+//     }
+//   }
+//   .thumb {
+//     display: block;
+//     float: none;
+//     clear: both;
+//     width: 300px;
+//     height: 300px;
+//     padding: 1.5rem 3rem;
+//     background-color: white;
+//     border-radius: 50%;
+//     overflow: hidden;
+//     margin-bottom: $vertical-space-small;
+//     @media all and (min-width: 700px) {
+//       width: 400px;
+//       height: 400px;
+//       float: left;
+//       -webkit-shape-outside: circle(50%);
+//               shape-outside: circle(50%);
+//       margin: $vertical-space;
+//       margin-top: 0;
+//     }
+//   }
+// }
 
-.wide_paragraph {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  @media all and (min-width: 700px) {
-    display: block;
-  }
-  p {
-    max-width: 800px;
-    margin: 0 auto;
-    @include media( "screen", ">bp1Width") {
-      text-align: justify;
-    }
-  }
-  .thumb {
-    display: block;
-    float: none;
-    clear: both;
-    width: 300px;
-    height: 300px;
-    padding: 1.5rem 3rem;
-    background-color: white;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: $vertical-space-small;
-    @media all and (min-width: 700px) {
-      width: 400px;
-      height: 400px;
-      float: left;
-      -webkit-shape-outside: circle(50%);
-              shape-outside: circle(50%);
-      margin: $vertical-space;
-      margin-top: 0;
-    }
-  }
-}
 
 .wide_paragraph.nikon .thumb {
   @media all and (min-width: 700px) {
@@ -458,6 +473,15 @@ em { color: lighten($black, 30%);}
     bottom: $vertical-space-small;
     text-transform: capitalize;
     color: white;
+  }
+
+}
+
+.cameras_row {
+  display: flex;
+  flex-direction: column;
+  @include media( "screen", ">bp1Width") {
+    flex-direction: row;
   }
 
 }
