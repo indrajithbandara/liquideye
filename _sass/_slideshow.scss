@@ -1,7 +1,9 @@
 .slideshow {
   position: relative;
   box-sizing: border-box;
-  //overflow: hidden;
+  .home & {
+    overflow: hidden;
+  }
   &.slideshow-padding {
     padding-bottom: 40px;
   }
