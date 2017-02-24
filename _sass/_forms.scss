@@ -20,6 +20,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .home & {
+    padding-top: $vertical-space;
+  }
   @include media( "screen", ">minWidth") {
     flex-direction: row;
     align-items: baseline;
