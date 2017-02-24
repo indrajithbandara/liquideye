@@ -26,17 +26,16 @@
     justify-content: center;
   }
 
-
-  h2, h3  {
+  .form_title  {
     display: block;
     margin-left: 0;
     margin-bottom: $vertical-space-small;
     padding: 0;
     @include media( "screen", ">minWidth") {
       display: inline-block;
-      margin-bottom: 0;
     }
   }
+
   form {
     padding: 8px;
     display: block;
@@ -48,8 +47,8 @@
       display: inline-block;
       margin-left: $vertical-space-small;
     }
-
   }
+
   select {
     border: 0 none;
     font-size: 20px;
@@ -58,6 +57,21 @@
     option {
       text-align: center!important;
     }
+  }
+}
+
+
+.backplate_chooser {
+  margin-top: $vertical-space/2;
+  .form_block {
+    flex-direction: column;
+    justify-content: flex-start;
+    @include media( "screen", ">maxWidth") {
+      flex-direction: row;
+    }
+  }
+  form {
+    margin-left: 0;
   }
 }
 

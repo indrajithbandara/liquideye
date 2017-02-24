@@ -409,60 +409,6 @@ em { color: lighten($black, 30%);}
   }
 }
 
-//
-// .wide_paragraph {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: vertical;
-//   -webkit-box-direction: normal;
-//       -ms-flex-direction: column;
-//           flex-direction: column;
-//   -webkit-box-align: center;
-//       -ms-flex-align: center;
-//           align-items: center;
-//   -webkit-box-pack: center;
-//       -ms-flex-pack: center;
-//           justify-content: center;
-//   @media all and (min-width: 700px) {
-//     display: block;
-//   }
-//   p {
-//     max-width: 800px;
-//     margin: 0 auto;
-//     @include media( "screen", ">bp1Width") {
-//       text-align: justify;
-//     }
-//   }
-//   .thumb {
-//     display: block;
-//     float: none;
-//     clear: both;
-//     width: 300px;
-//     height: 300px;
-//     padding: 1.5rem 3rem;
-//     background-color: white;
-//     border-radius: 50%;
-//     overflow: hidden;
-//     margin-bottom: $vertical-space-small;
-//     @media all and (min-width: 700px) {
-//       width: 400px;
-//       height: 400px;
-//       float: left;
-//       -webkit-shape-outside: circle(50%);
-//               shape-outside: circle(50%);
-//       margin: $vertical-space;
-//       margin-top: 0;
-//     }
-//   }
-// }
-
-
-.wide_paragraph.nikon .thumb {
-  @media all and (min-width: 700px) {
-    float: right;
-  }
-}
 
 .teammember_photos {
   figure {position: relative;}
@@ -483,5 +429,4 @@ em { color: lighten($black, 30%);}
   @include media( "screen", ">bp1Width") {
     flex-direction: row;
   }
-
 }

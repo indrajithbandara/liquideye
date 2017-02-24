@@ -1,27 +1,9 @@
 ---
 layout: housing
 name: c2100
-backplate: basic
+backplate: Canon 5D Mk II
 level: professional
-price: 895
-pro_model01: Canon 5D
-pro_model02: Canon 5D Mk II
-pro_model03: Canon 5D Mk III
-pro_model04: Canon 5D Mk VI
-pro_model05: Canon 6D
-pro_model06: Canon 7D
-pro_model07: Canon 7D Mk II
-pro_model08: Canon 60D
-pro_model09: Canon 70D
-pro_model10: Nikon D500
-pro_model11: Nikon D600
-pro_model12: Nikon D610
-pro_model13: Nikon D700
-pro_model14: Nikon D750
-pro_model15: Nikon D800
-pro_model16: Nikon D810
-pro_model17: Nikon D7000
-pro_model18: Nikon D7200
+price: 1495
 status: new # new | sale
 number_of_photos: 6
 features:
@@ -46,11 +28,17 @@ controls:
   control1: Front shutter button
   control2: Zoom control
  backplate:
-   control1: Plain back plate with no controls.
+   control1: AF Point Selection
+   control2: Star
+   control3: AF On
+   control4: Multi- Controller 2-Way (Q Menu)
+   control5: Set, Playback, Live View, Menu,
+   control6: Rear Quick Control Dial
+   control7: Soft Ergonomic Rubber Eye Cup
 included:
   item1: C2100 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
   item2: Camera Base Plate and Tray.
-  item3: Back Plate with no controls.
+  item3: Back Plate with Controls.
   item4: PG5 Dual Stage AF Pistol Grip with Wrist Leash.
   item5: L-Side Grip
   item6: L-LP/65 Port

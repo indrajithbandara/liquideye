@@ -1,7 +1,7 @@
 .slideshow {
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
+  //overflow: hidden;
   &.slideshow-padding {
     padding-bottom: 40px;
   }
@@ -54,7 +54,7 @@
 /* ------ INDICATORS ------*/
 .slideshow-indicators {
   position: absolute;
-  bottom: 5px;
+  bottom: -15px;
   padding: 0;
   margin: 0;
   height: 30px;

@@ -199,16 +199,25 @@
     padding-right: 0;
   }
   .price {
+    padding-top: $vertical-space-small;
     font-size: 32px;
     font-weight: 300;
     &:before {
       content: "USD";
       padding-right: $vertical-space-small;
     }
+    text-align: center;
+    @include media( "screen", ">minWidth") {
+      text-align: left;
+    }
   }
   .order_button {
     min-width: 0;
-    padding-top: $vertical-space;
+    padding-top: $vertical-space/2;
+    text-align: center;
+    @include media( "screen", ">minWidth") {
+      text-align: left;
+    }
     a {
       padding: $vertical-space-small;
       color: white;
@@ -218,6 +227,10 @@
     span {
       font-size: 1.3rem;
     }
+  }
+
+  .form_title {
+
   }
 }
 
@@ -286,5 +299,48 @@
   span {
     padding: 5px;
     border: 1px solid $hr_color;
+  }
+}
+
+
+
+//pro or basic blocks
+.section {
+  margin-top: $vertical-space;
+  border-top:  1px solid $hr_color;
+  padding-top: $vertical-space;
+  .with_borders {//h3
+    border: 1px solid $hr_color;
+    padding: 2px 8px;
+    margin-right: $vertical-space-small;
+  }
+  .product_intro & {
+    border-top-color:  transparent;
+    text-align: center;
+    @include media( "screen", ">minWidth") {
+      border-top-color:  $hr_color;
+      text-align: left;
+    }
+
+  }
+}
+
+.version_title {
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    text-align: left;
+    display: inline;
+  }
+}
+.version_detail {
+  display: block;
+  padding-top: $vertical-space-small;
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    text-align: left;
+  }
+  @include media( "screen", ">maxWidth") {
+    padding-top: 0;
+    display: inline;
   }
 }

@@ -27,52 +27,58 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="professional" %}
-              <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name}}">
-                {% if housing.status %}
-                <span class="status {{ housing.status }}">
-                  <span class="status_text">{{ housing.status }}</span>
-                </span>
+                {% if housing.backplate=="basic" %}
+                <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
+                  {% if housing.status %}
+                  <span class="status {{ housing.status }}">
+                    <span class="status_text">{{ housing.status }}</span>
+                  </span>
+                  {% endif %}
+                  <div class="product_block">
+                    <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name }}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                    <div class="product_group"><span>{{ housing.level }}</span></div>
+                    <h3>{{ housing.name }}</h3>
+                  </div>
+                </a>
                 {% endif %}
-                <div class="product_block">
-                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                  <div class="product_group"><span>{{ housing.level }}</span></div>
-                  <h3>{{ housing.name }}</h3>
-                </div>
-              </a>
               {% endif %}
             {% endfor %}
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="intermediate" %}
-              <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name}}">
-                {% if housing.status %}
-                <span class="status {{ housing.status }}">
-                  <span class="status_text">{{ housing.status }}</span>
-                </span>
+                {% if housing.backplate=="basic" %}
+                <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
+                  {% if housing.status %}
+                  <span class="status {{ housing.status }}">
+                    <span class="status_text">{{ housing.status }}</span>
+                  </span>
+                  {% endif %}
+                  <div class="product_block">
+                    <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name }}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                    <div class="product_group"><span>{{ housing.level }}</span></div>
+                    <h3>{{ housing.name }}</h3>
+                  </div>
+                </a>
                 {% endif %}
-                <div class="product_block">
-                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                  <div class="product_group"><span>{{ housing.level }}</span></div>
-                  <h3>{{ housing.name }}</h3>
-                </div>
-              </a>
               {% endif %}
             {% endfor %}
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="beginner" %}
-              <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name}}">
-                {% if housing.status %}
-                <span class="status {{ housing.status }}">
-                  <span class="status_text">{{ housing.status }}</span>
-                </span>
+                {% if housing.backplate=="basic" %}
+                <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
+                  {% if housing.status %}
+                  <span class="status {{ housing.status }}">
+                    <span class="status_text">{{ housing.status }}</span>
+                  </span>
+                  {% endif %}
+                  <div class="product_block">
+                    <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name }}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
+                    <div class="product_group"><span>{{ housing.level }}</span></div>
+                    <h3>{{ housing.name }}</h3>
+                  </div>
+                </a>
                 {% endif %}
-                <div class="product_block">
-                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/housings/{{ housing.name}}/01.jpg" alt="Liquid Eye model {{ housing.name }}">
-                  <div class="product_group"><span>{{ housing.level }}</span></div>
-                  <h3>{{ housing.name }}</h3>
-                </div>
-              </a>
               {% endif %}
             {% endfor %}
 
