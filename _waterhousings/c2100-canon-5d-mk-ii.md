@@ -32,9 +32,12 @@ controls:
    control2: Star
    control3: AF On
    control4: Multi- Controller 2-Way (Q Menu)
-   control5: Set, Playback, Live View, Menu,
-   control6: Rear Quick Control Dial
-   control7: Soft Ergonomic Rubber Eye Cup
+   control5: Set
+   control6: Playback
+   control7: Live View
+   control8: Menu
+   control9: Rear Quick Control Dial
+   control10: Soft Ergonomic Rubber Eye Cup
 included:
   item1: C2100 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
   item2: Camera Base Plate and Tray.
