@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ site.title_long | escape }} • {{ page.title | capitalize }}{% else %}{{ site.title_long | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ site.title_long | escape }} • {{ page.title | upcase }}{% else %}{{ site.title_long | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords}}">{% endif %}
 
