@@ -179,6 +179,9 @@
       height: 750px;
       padding-bottom: $vertical-space-small;
     }
+    @include media( "screen", ">bp1Width"){
+      padding-top: $vertical-space;
+    }
   }
 
   @include media( "screen", ">bp1Width") {

@@ -5,7 +5,7 @@ backplate: Canon 70D
 level: professional
 price: 1590
 status: new # new | sale
-number_of_photos: 6
+number_of_photos: 3
 features:
   feature1: High-strength, extremely durable polyurethane.
   feature2: Ergonomically designed stainless steel controls.
