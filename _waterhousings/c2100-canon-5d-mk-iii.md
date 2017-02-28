@@ -1,9 +1,10 @@
 ---
 layout: housing
 name: c2100
-backplate: Canon 5D Mk III
 level: professional
 price: 1590
+backplate: Canon 5D Mk III
+backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 3
 features:

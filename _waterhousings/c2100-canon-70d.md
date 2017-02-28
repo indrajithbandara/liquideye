@@ -2,6 +2,7 @@
 layout: housing
 name: c2100
 backplate: Canon 70D
+backplate_variants: many # many | none
 level: professional
 price: 1590
 status: new # new | sale

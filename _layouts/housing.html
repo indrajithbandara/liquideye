@@ -34,155 +34,27 @@
               <h2>Product Overview</h2>
               <div class="">{{content}}</div>
 
-              {% if page.backplate=="basic" %}
-                <div class="basic section group">
-                  <h3 class="version_title with_borders">Basic Back Plate</h3>
-                  <span class="version_detail">Plain Back Plate with no controls</span>
+                {% if page.backplate_variants == "many" %}
 
-                  <div class="price">{{page.price}}</div>
-                  <div class="order_button">
-                    <a href="{{site.baseurl}}/contact/"><span>Order Now</span></a>
-                  </div>
-                </div>
+                  {% if page.backplate == "basic" %}
 
+                    {% include backplate_basic.html %}
 
-                <div class="pro section group">
-                  <h3 class="version_title with_borders">Pro Back Plate</h3>
-                  <span class="version_detail">Back Plate with functions controls</span>
-                  <div class="backplate_chooser group">
+                    {% include backplate_chooser.html %}
 
-                    <script language="javascript" type="text/javascript">
-                      // see thesitewizard.com/archive/navigation.shtml
-                      function menu_goto( menuform ){
-                        var baseurl = "{{site.baseurl}}" ;
-                        selecteditem = menuform.newurl.selectedIndex ;
-                        newurl = menuform.newurl.options[ selecteditem ].value ;
-                        if (newurl.length != 0) {
-                          location.href = baseurl + newurl ;
-                        }
-                      }
-                    </script>
+                  {% else %}
 
-                    <div class="form_block">
+                    {% include backplate_pro.html %}
 
-                      <h4 class="form_title inline-block">Choose Back Plate for&nbsp;&nbsp;</h4>
+                    {% include backplate_see_basic.html %}
 
-                      <form action="camera_to_housing">
-                        <select name="newurl" onchange="menu_goto(this.form)">
-                          <option value="" selected="selected">&nbsp;camera</option>
+                  {% endif %}
 
-                          {% if page.pro_model01 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model01 | slugify}}/">{{page.pro_model01}}</option>
-                          {% endif %}
+                {% else %}
 
-                          {% if page.pro_model02 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model02 | slugify}}/">{{page.pro_model02}}</option>
-                          {% endif %}
+                  {% include backplate_pro.html %}
 
-                          {% if page.pro_model03 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model03 | slugify}}/">{{page.pro_model03}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model04 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model04 | slugify}}/">{{page.pro_model04}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model05 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model05 | slugify}}/">{{page.pro_model05}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model06 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model06 | slugify}}/">{{page.pro_model06}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model07 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model07 | slugify}}/">{{page.pro_model07}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model08 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model08 | slugify}}/">{{page.pro_model08}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model09 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model09 | slugify}}/">{{page.pro_model09}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model10 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model10 | slugify}}/">{{page.pro_model10}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model11 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model11 | slugify}}/">{{page.pro_model11}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model12 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model12 | slugify}}/">{{page.pro_model12}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model13 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model13 | slugify}}/">{{page.pro_model13}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model14 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model14 | slugify}}/">{{page.pro_model14}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model15 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model15 | slugify}}/">{{page.pro_model15}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model16 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model16 | slugify}}/">{{page.pro_model16}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model17 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model17 | slugify}}/">{{page.pro_model17}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model18 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model18 | slugify}}/">{{page.pro_model18}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model19 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model19 | slugify}}/">{{page.pro_model19}}</option>
-                          {% endif %}
-
-                          {% if page.pro_model20 %}
-                          <option value="/water-housings/{{page.name}}-{{page.pro_model20 | slugify}}/">{{page.pro_model20}}</option>
-                          {% endif %}
-
-                        </select>
-                      </form>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              {% else %}
-
-              <div class="pro section group">
-                <h3 class="version_title with_borders">Pro Back Plate</h3>
-                <span class="version_detail">Back Plate with functions controls</span>
-
-                <div class="price">{{page.price}}</div>
-                <div class="order_button">
-                  <a href="{{site.baseurl}}/contact/"><span>Order Now</span></a>
-                </div>
-              </div>
-
-              <div class="basic section group">
-                <div class="see_basic_model">
-                  <a class="link_underline" href="{{site.baseurl}}/water-housings/{{page.name}}">
-                      <span>See the Basic Back Plate version</span>
-                  </a>
-                </div>
-              </div>
-
-              {% endif %}
-
-
+                {% endif %}
 
             </div>
 
