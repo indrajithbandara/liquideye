@@ -297,11 +297,11 @@
   <input type="text" name="entry.953309171" id="entry.953309171" required><br><br>
 
   <p class="showmap">Choose your currency depending on
-    <a class="underline" id="showmap" href="#" title="Choose your currency depending on your location">your location. See map.</a>
+    <span class="underline" id="showmap" title="Choose your currency depending on your location">your location. See map.</span>
   </p>
 
   <p class="hide" id="currency_map">
-    <img src="{{site.baseurl}}/assets/p/currency_map.png" alt="Choose your currency depending on your location">
+    {% include svg/use.html id="icn--currencymap" class="currencymap" %}
   </p>
 
   <label for="currency">Currency</label>
@@ -309,6 +309,7 @@
   	<option value="USD">USD</option>
   	<option value="AUD">AUD</option>
   	<option value="EUR">EUR</option>
+  	<option value="Other">Other</option>
   </select>
   <br>
 
