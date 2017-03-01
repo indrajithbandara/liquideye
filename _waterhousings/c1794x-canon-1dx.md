@@ -1,9 +1,10 @@
 ---
 layout: housing
 name: c1794x
-backplate: Canon 1DX
 level: professional
 price: 1890
+backplate: Canon 1DX
+backplate_variants: many # many | none
 status: # new | sale
 number_of_photos: 6
 features:
