@@ -27,7 +27,7 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="professional" %}
-                {% if housing.backplate=="basic" %}
+                {% if housing.backplate=="basic" or housing.backplate_variants=="none" %}
                 <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
                   {% if housing.status %}
                   <span class="status {{ housing.status }}">
@@ -45,7 +45,7 @@
             {% endfor %}
 
             {% for housing in site.waterhousings %}
-              {% if housing.level=="intermediate" %}
+              {% if housing.level=="intermediate" or housing.backplate_variants=="none" %}
                 {% if housing.backplate=="basic" %}
                 <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
                   {% if housing.status %}
@@ -65,7 +65,7 @@
 
             {% for housing in site.waterhousings %}
               {% if housing.level=="beginner" %}
-                {% if housing.backplate=="basic" %}
+                {% if housing.backplate=="basic" or housing.backplate_variants=="none" %}
                 <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{ housing.name }}">
                   {% if housing.status %}
                   <span class="status {{ housing.status }}">
