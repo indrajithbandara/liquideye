@@ -428,5 +428,31 @@ em { color: lighten($black, 30%);}
   flex-direction: column;
   @include media( "screen", ">bp1Width") {
     flex-direction: row;
+    flex-wrap: wrap;
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+    }
+  }
+  @include media( "screen", ">maxWidth") {
+    .content {
+      width: 24%;
+    }
+  }
+  .text {
+    padding-left: $vertical-space-small/2;
+    padding-right: $vertical-space-small/2;
+  }
+}
+
+
+.thumb_images {
+  position: relative;
+  svg {
+    position: absolute;
+    width: 60%;
+    top: 45%;
+    left: 20%;
   }
 }

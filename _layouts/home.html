@@ -50,10 +50,9 @@
         </div>
       </div>
 
-      <div class="container cameras_row group">
+      <div class="container cameras_row group side_padded">
 
-        <div class="container group">
-          <div class="content side_padded canon ">
+          <div class="content canon ">
 
             <div class="fat_headers_block">
               <h2 class="center">Using Canon?</h2>
@@ -61,7 +60,13 @@
             </div>
 
             <div class="thumb">
-              <img src="{{site.baseurl}}/assets/p/housings/c2100/01.jpg" alt="Liquid Eye Canon housing">
+              <div class="thumb_images">
+
+                <img src="{{site.baseurl}}/assets/p/housings/c2100/01.jpg" alt="Liquid Eye Canon housing">
+
+                {% include jpg_cut_canon7dmk2.html %}
+
+              </div>
             </div>
 
             <div class="text">
@@ -70,38 +75,22 @@
             </div>
 
           </div>
-        </div>
 
-        <div class="container group">
-          <div class="content side_padded nikon">
-
-            <div class="fat_headers_block">
-              <h2 class="center">Shoot with Nikon?</h2>
-              <h4 class="center">We got you covered as well.</h4>
-            </div>
-
-            <div class="thumb">
-              <img src="{{site.baseurl}}/assets/p/housings/c2100/02.jpg" alt="Liquid Eye Nikon housing">
-            </div>
-
-            <div class="text">
-              {% capture intro %}{% include editables/home-nikon-text.md %}{% endcapture %}
-              {{ intro | markdownify }}
-            </div>
-
-          </div>
-        </div>
-
-        <div class="container group">
-          <div class="content side_padded last">
+          <div class="content sony">
 
             <div class="fat_headers_block">
               <h2 class="center">Sony and more!</h2>
-              <h4 class="center">Mirrorless? Video? You can...</h4>
+              <h4 class="center">Mirrorless? Video? You can with our newest jewel.</h4>
             </div>
 
             <div class="thumb">
-              <img src="{{site.baseurl}}/assets/p/housings/c6300/01.jpg" alt="Liquid Eye Sony housing">
+              <div class="thumb_images">
+
+                <img src="{{site.baseurl}}/assets/p/housings/c6300sp/01.jpg" alt="Liquid Eye Sony housing">
+
+                {% include jpg_cut_sonya6000.html %}
+
+            </div>
             </div>
 
             <div class="text">
@@ -110,7 +99,54 @@
             </div>
 
           </div>
-        </div>
+
+          <div class="content nikon">
+
+            <div class="fat_headers_block">
+              <h2 class="center">Shoot with Nikon?</h2>
+              <h4 class="center">We got you completely covered as well.</h4>
+            </div>
+
+            <div class="thumb">
+              <div class="thumb_images">
+
+                <img src="{{site.baseurl}}/assets/p/housings/c2050/03.jpg" alt="Liquid Eye Nikon housing">
+
+                {% include jpg_cut_nikond5200.html %}
+
+              </div>
+            </div>
+
+            <div class="text">
+              {% capture intro %}{% include editables/home-nikon-text.md %}{% endcapture %}
+              {{ intro | markdownify }}
+            </div>
+
+          </div>
+
+          <div class="content canon ">
+
+            <div class="fat_headers_block">
+              <h2 class="center">Canon Pro?</h2>
+              <h4 class="center">Top of the line stuff...</h4>
+            </div>
+
+            <div class="thumb">
+              <div class="thumb_images">
+
+                <img src="{{site.baseurl}}/assets/p/housings/c1794x/01.jpg" alt="Liquid Eye Canon 1DX housing">
+
+                {% include jpg_cut_canon1dxmk2.html %}
+
+              </div>
+            </div>
+
+            <div class="text">
+              {% capture intro %}{% include editables/home-canon1D-text.md %}{% endcapture %}
+              {{ intro | markdownify }}
+            </div>
+
+          </div>
 
       </div>
 
