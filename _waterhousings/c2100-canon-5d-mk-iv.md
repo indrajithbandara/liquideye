@@ -7,6 +7,7 @@ backplate: Canon 5D Mk IV
 backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 3
+photos_dir: c2100-canon-5d-mk-iv
 features:
   feature1: High-strength, extremely durable polyurethane.
   feature2: Ergonomically designed stainless steel controls.

@@ -2,50 +2,54 @@
 layout: housing
 name: c1794x2
 level: professional
-price: 1890
+price: 1690
 backplate: Canon 1DX
 backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 4
+photos_dir: c1794x2-canon-1dx
 features:
-  feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1DX.
+  feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1D.
   feature2: An ergonomic glove-fit design that makes this housing feel and operate like your DLSR.
   feature3: Captured stainless hex-head screw closure system. Our 6 screws closure system insures a tight, even seal, while eliminating the problems of screw loss and corrosion.
   feature4: Silicon eyecup to eliminate parasite light when shooting.
   feature5: Constructed using Liquid Eye’s proprietary high strength and ultra light epoxy resin sandwiched core technology.
 specifications:
-  width: 210mm
-  height: 215mm
-  depth: 150mm
-  weight: ± 1.25 (housing & back plate only)
+  width: 205mm (8.07”)
+  height: 210mm (8.27”)
+  depth: 114mm (4.49”)
+  weight: ± 880gr. (1.94 lbs.) Housing Only.  
   material: |
-   - Sandwich epoxy fiberglass body
-   - Stainless steel controls
-   - Acrylic back plate with rubber eye cup
-  depth_rating: 6m
+   - Sandwich epoxy fiberglass body.
+   - Plexiglas Back Plate.
+   - Stainless Steel and Durable Composite Controls.
+   - Polyester Resin and Fiberglass Side Grip and Pistol Grip.
+  depth_rating: 10m (33ft.)
 controls:
  housing:
   control1: Zoom control
   control2: Shutter
  backplate:
-   control1: Playback
-   control2: Menu
-   control3: Multicontroler
-   control4: Back dial
-   control5: AF on (star button CF)
-   control6: Others controls can be added on the back plate upon request. Additional cost, ask for prices.
+   control1: Star Button
+   control2: Quick Control (Q Menu)
+   control3: Multi-Controller 1-Way (R)
+   control4: Playback
+   control5: Rear Quick Control Dial
+   control6: Live View Movie Shooting Switch
+   control7: Soft Ergonomic Rubber Eye Cup
 included:
-  item1: PG3 pistol grip
-  item2: Rubber wrist leash
-  item3: Tool kit
+  item1: C1794X2 Water Housing with Front Shutter, Zoom Control and Electronic Cabling
+  item2: Back Plate with Controls
+  item3: PG5 Dual Stage AF Pistol Grip with Wrist Leash
   item4: 1 year limited warranty
+  item5: L-Side Grip
+  item6: L-LP/65 Port (or credit of USD 180 towards the port of your choice)
+  item7: Tool kit – 3 Hex Keys (1.5 mm, 2 mm, 4 mm),  Spare Camera Plug and ILS Switch, 2 Spare 5x16  SS Hex screws, 2 spare 5x12 mm  SS Flat Head Machine Screws, Packet of Marine Grease
 ---
-Designed to work with the Canon EOS 1DX and 1DX.
+The housing is made from high- strength, extremely durable sandwich epoxy fiberglass construction. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control.
 
-Built with a sandwich epoxy fiberglass construction. The controls are tactile using stainless steel and high strength plastics.
+A Plexiglas back plate is secured using 6 recessed and captured hex drive stainless steel bolts. Our 6-screw closure system insures a tight, even seal, while eliminating the problems of screw loss, corrosion, accidental opening and dangerous exposed metal edges.
 
-Featuring an interchangeable port system for the Canon lens series and the pistol grip PG3 with proprietary Liquid Eye double stage trigger.
+The C1794X2 package includes the L-LP/65 port and features an interchangeable port system for the Canon lens series. This water housing uses the LP Series Lens Port system.
 
-6 captured nested hex screws to insure the closure.
-
-It is equipped with an upper window for the top LCD and it is right and left hand side handle ready.
+The proprietary PG5 AF Dual Stage Pistol Grip allows for both focusing and firing using one button. The initial AF portion of the trigger stroke has been lengthened relative the shutter release portion of the trigger stroke to give you greater AF control. This helps you avoid accidental mis-fires while swimming.
