@@ -1,15 +1,14 @@
 ---
 layout: housing
-name: c1794x
+name: c1794x2
 level: professional
 price: 1890
-backplate: basic
+backplate: Canon 1DX
 backplate_variants: many # many | none
-pro_model01: Canon 1DX
-status: # new | sale
-number_of_photos: 6
+status: new # new | sale
+number_of_photos: 4
 features:
-  feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1Dx
+  feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1DX.
   feature2: An ergonomic glove-fit design that makes this housing feel and operate like your DLSR.
   feature3: Captured stainless hex-head screw closure system. Our 6 screws closure system insures a tight, even seal, while eliminating the problems of screw loss and corrosion.
   feature4: Silicon eyecup to eliminate parasite light when shooting.
@@ -29,14 +28,19 @@ controls:
   control1: Zoom control
   control2: Shutter
  backplate:
-   control1: Basic Back Plate with no controls.
+   control1: Playback
+   control2: Menu
+   control3: Multicontroler
+   control4: Back dial
+   control5: AF on (star button CF)
+   control6: Others controls can be added on the back plate upon request. Additional cost, ask for prices.
 included:
   item1: PG3 pistol grip
   item2: Rubber wrist leash
   item3: Tool kit
   item4: 1 year limited warranty
 ---
-Designed to work with the Canon EOS 1Dx.
+Designed to work with the Canon EOS 1DX and 1DX.
 
 Built with a sandwich epoxy fiberglass construction. The controls are tactile using stainless steel and high strength plastics.
 
