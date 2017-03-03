@@ -18,7 +18,7 @@ specifications:
   width: 200mm (7.75”)
   height: 180mm (7”)
   depth: 110mm (4.25”)
-  weight: 575gr. (1.26lbs.) Housing Only. 1693gr. (3.7lbs.) Complete with Back Plate, Pistol, Side Grip and Port.
+  weight: 575gr.(1.26lbs.) Housing Only. - 1693gr.(3.7lbs.) Complete.
   material: |
    - Polyurethane Body, Ports, Side Grip, Base Plate and Tray.
    - Plexiglas Back Plate.
