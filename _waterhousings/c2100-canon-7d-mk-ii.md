@@ -18,7 +18,7 @@ specifications:
   width: 200mm (7.75”)
   height: 180mm (7”)
   depth: 110mm (4.25”)
-  weight: 1693gr. (3.7lbs.) Complete with Back Plate, Pistol, Side Grip and Port.
+  weight: 575gr. (1.26lbs.) Housing Only. 1693gr. (3.7lbs.) Complete with Back Plate, Pistol, Side Grip and Port.
   material: |
    - Polyurethane Body, Ports, Side Grip, Base Plate and Tray.
    - Plexiglas Back Plate.
@@ -45,7 +45,7 @@ included:
   item2: Camera Base Plate and Tray.
   item3: Back Plate with Controls.
   item4: PG5 Dual Stage AF Pistol Grip with Wrist Leash.
-  item5: L-Side Grip.
+  item5: Left Side Grip.
   item6: L-LP/65 Port. (Or credit of USD 180 towards the port of your choice).
   item7: Tool kit – 3 Hex Keys (1.5mm, 2mm, 4mm), Spare Camera Plug and ILS Switch, 2 Spare 5x16 SS Hex screws, 2 spare 5x12mm SS Flat Head Machine Screws, Packet of Marine Grease.
 ---
