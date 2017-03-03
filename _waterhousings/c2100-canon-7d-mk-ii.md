@@ -6,7 +6,7 @@ backplate_variants: many # many | none
 level: professional
 price: 1590
 status: new # new | sale
-number_of_photos: 3
+number_of_photos: 4
 photos_dir: c2100-canon-7d-mk-ii
 features:
   feature1: High-strength, extremely durable polyurethane.
