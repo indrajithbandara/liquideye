@@ -24,9 +24,7 @@
 
           <div class="product_top_block">
 
-            <div class="product_photos">
-              <img src="{{site.baseurl}}/assets/p/accessories/pistols/{{page.name}}/01.jpg" alt="Liquid Eye {{ page.name }} pistol">
-            </div>
+            {% include pistol_photos.html %}
 
             <div class="product_intro">
               <h2>Product Overview</h2>
@@ -171,6 +169,20 @@
       {% include footer.html %}
 
     </div>
+
+    {% include script_slideshow.html %}
+
+    <script type="text/javascript">
+      var slideshowEl = document.querySelector('.slideshow');
+      Slideshow(slideshowEl, {
+        allowSwipe: true,
+        showIndicators: true,
+        autoplay: true,
+        // infinite loop
+        loopSlides: true,
+        transitionEffect: "fade"
+      });
+    </script>
 
     {% include script_ext_link.html %}
 

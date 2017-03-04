@@ -167,7 +167,8 @@
 .product_photos {
   min-width: 100%;
   max-width: 100%;
-  .housing & {
+  .housing &,
+  .pistol & {
     height: 400px;
     @media screen and (min-width: 320px) {
       height: 520px;
