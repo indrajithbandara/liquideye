@@ -16,3 +16,39 @@
 .qr_liquideye_co {
  height: 100px;
 }
+
+//home_cameras postioning
+
+.thumb_images {
+  img {
+    padding-bottom: $vertical-space-small;
+  }
+  .sony & {
+    img {
+      padding-top: $vertical-space;
+      min-width: 85%;
+      max-width: 85%;
+    }
+  }
+  position: relative;
+  svg {
+    position: absolute;
+    width: 50%;
+    bottom: 8%;
+    right: 20%;
+  }
+}
+
+.thumb_images {
+  .canon7dmk2,
+  .nikond5200 {
+    bottom: 20%;
+    right: 5%;
+  }
+  .nikond800,
+  .canon600d {
+    left: 5%;
+    right: 45%;
+  }
+
+}

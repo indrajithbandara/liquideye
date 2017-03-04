@@ -445,14 +445,3 @@ em { color: lighten($black, 30%);}
     padding-right: $vertical-space-small/2;
   }
 }
-
-
-.thumb_images {
-  position: relative;
-  svg {
-    position: absolute;
-    width: 60%;
-    top: 45%;
-    left: 20%;
-  }
-}
