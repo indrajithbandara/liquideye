@@ -150,7 +150,7 @@
     padding-left: $vertical-space;
     padding-right: $vertical-space;
   }
-  @include media( "screen", ">bp1Width") {
+  @media screen and (min-width: 1000px) {
     padding-right: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -176,16 +176,20 @@
     @media screen and (min-width: 370px) {
       height: 630px;
     }
-    @include media( "screen", ">minWidth"){
+    @include media( "screen", ">minWidth") {
       height: 750px;
       padding-bottom: $vertical-space-small;
     }
-    @include media( "screen", ">bp1Width"){
+    @media screen and (min-width: 1000px) {
+      height: 950px;
       padding-top: $vertical-space;
+    }
+    @include media( "screen", ">maxWidth") {
+      height: 1070px;
     }
   }
 
-  @include media( "screen", ">bp1Width") {
+  @media screen and (min-width: 1000px) {
     min-width: 50%;
     max-width: 500px;
     margin-right: $vertical-space;
@@ -347,4 +351,8 @@
     padding-top: 0;
     display: inline;
   }
+}
+
+.housing .slideshow-slide {
+  min-height: 100px;
 }

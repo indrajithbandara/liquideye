@@ -445,3 +445,27 @@ em { color: lighten($black, 30%);}
     padding-right: $vertical-space-small/2;
   }
 }
+
+
+.team .looper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.testimonials .looper,
+.about .content {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.page .content {
+  max-width: 1200px;
+  @include media( "screen", ">maxWidth") {
+    p {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+}

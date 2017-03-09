@@ -3,11 +3,11 @@ layout: housing
 name: c1794x2
 level: professional
 price: 1690
-backplate: Canon 1D
+backplate: Canon 1DX Mk II
 backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 4
-photos_dir: c1794x2-canon-1d
+photos_dir: c1794x2-canon-1dx-mk-ii
 features:
   feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1D.
   feature2: An ergonomic glove-fit design that makes this housing feel and operate like your DLSR.
