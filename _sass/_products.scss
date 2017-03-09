@@ -146,12 +146,9 @@
   -webkit-box-align: center;
           -ms-flex-align: center;
       align-items: center;
-  @include media( "screen", ">minWidth") {
+  @media screen and (min-width: 1000px) {
     padding-left: $vertical-space;
     padding-right: $vertical-space;
-  }
-  @media screen and (min-width: 1000px) {
-    padding-right: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -162,6 +159,7 @@
   }
   @include media( "screen", ">maxWidth") {
     padding-left: 0;
+    padding-right: 0;
   }
 }
 .product_photos {
@@ -171,10 +169,10 @@
   .pistol & {
     height: 400px;
     @media screen and (min-width: 320px) {
-      height: 520px;
+      height: 500px;
     }
     @media screen and (min-width: 370px) {
-      height: 630px;
+      height: 500px;
     }
     @include media( "screen", ">minWidth") {
       height: 750px;
