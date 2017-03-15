@@ -167,23 +167,13 @@
   max-width: 100%;
   .housing &,
   .pistol & {
-    height: 400px;
-    @media screen and (min-width: 320px) {
-      height: 500px;
-    }
-    @include media( "screen", ">minWidth") {
-      height: 650px;
-      padding-bottom: $vertical-space-small;
-    }
-    @media screen and (min-width: 600px) {
-      height: 750px;
-    }
+    height: 110vw;
     @media screen and (min-width: 1000px) {
-      height: 950px;
+      height: 60vw;
       padding-top: $vertical-space;
     }
-    @include media( "screen", ">maxWidth") {
-      height: 1070px;
+    @media all and (min-width: 1600px) {
+      height: 900px;
     }
   }
 

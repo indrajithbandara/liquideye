@@ -203,7 +203,6 @@ h4, h5, h6 {
 
 .content {
   max-width: 1500px;
-  max-width: 100%;
 	margin: 0 auto;
   padding-top: $vertical-space-small;
   padding-bottom: $vertical-space;
@@ -215,8 +214,12 @@ h4, h5, h6 {
 
 
 .side_padded {
-  padding-left: $vertical-space;
-  padding-right: $vertical-space;
+  padding-left: $vertical-space-small;
+  padding-right: $vertical-space-small;
+  @include media( "screen", ">minWidth") {
+    padding-left: $vertical-space;
+    padding-right: $vertical-space;
+  }
 }
 
 .imagecontent {
