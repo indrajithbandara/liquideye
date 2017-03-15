@@ -18,7 +18,7 @@ specifications:
   width: 200mm (7.75”)
   height: 180mm (7”)
   depth: 110mm (4.25”)
-  weight: 1693gr. (3.7lbs.) Complete with Back Plate, Pistol, Side Grip and Port.
+  weight: 575gr. (1.26lbs.) Housing Only - 1693gr. (3.7lbs.) Complete.
   material: |
    - Polyurethane Body, Ports, Side Grip, Base Plate and Tray.
    - Plexiglas Back Plate.
@@ -31,14 +31,15 @@ controls:
   control2: Zoom control
  backplate:
    control1: AF Point Selection
-   control2: Star
+   control2: Magnify/Reduce Button
    control3: AF On
-   control4: Multi-Controller 1-Way
-   control5: Set
-   control6: Playback
-   control7: Rear Quick Control Dial
-   control8: Live View Shooting Movie Combo Switch with Start/Stop Button
-   control9: Soft Ergonomic Rubber Eye Cup
+   control4: Quick Control (Q Menu)
+   control5: Multi-Controller 1-Way
+   control6: Set
+   control7: Playback
+   control8: Rear Quick Control Dial
+   control9: Live View Shooting Movie Combo Switch with Start/Stop Button
+   control10: Soft Ergonomic Rubber Eye Cup
 included:
   item1: C2100 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
   item2: Camera Base Plate and Tray.
