@@ -6,7 +6,7 @@ price: 1590
 backplate: Canon 5D Mk III
 backplate_variants: many # many | none
 status: new # new | sale
-number_of_photos: 3
+number_of_photos: 4
 photos_dir: c2100-canon-5d-mk-iii
 features:
   feature1: High-strength, extremely durable polyurethane.
