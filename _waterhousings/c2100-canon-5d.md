@@ -24,7 +24,7 @@ specifications:
    - Plexiglas Back Plate.
    - Stainless Steel and Durable Composite Controls.
    - Polyester Resin and Fiberglass Pistol Grip.
-  depth_rating: 6m
+  depth_rating: 10m (33ft.) 
 controls:
  housing:
   control1: Front shutter button
@@ -32,12 +32,11 @@ controls:
  backplate:
    control1: AF Point Selection
    control2: Star
-   control3: AF On
-   control4: Multi- Controller 2-Way (Q Menu)
-   control5: Set
-   control6: Playback
-   control7: Rear Quick Control Dial
-   control8: Soft Ergonomic Rubber Eye Cup
+   control3: Multi- Controller 2-Way (Q Menu)
+   control4: Set
+   control5: Playback
+   control6: Rear Quick Control Dial
+   control7: Soft Ergonomic Rubber Eye Cup
 included:
   item1: C2100 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
   item2: Camera Base Plate and Tray.
