@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-  <body class="accessory pistol">
+  <body class="accessory grip">
 
     {% include svg/defs.html %}
 
@@ -19,12 +19,12 @@
 
           <div class="fat_headers_block">
             <h3 class="center">{{ site.slogan }}</h3>
-            <h1 class="center">{{ page.name | upcase }} Pistol Grip</h1>
+            <h1 class="center">{{ page.display_name | upcase }}</h1>
           </div>
 
           <div class="product_top_block">
 
-            {% include photos_pistol.html %}
+            {% include photos_grip.html %}
 
             <div class="product_intro">
               <h2>Product Overview</h2>
@@ -101,7 +101,7 @@
             <div class="data_block product_specifications row">
               {% include product_whatsinthebox.html %}
             </div>
-
+            
           </div>
 
         </div>

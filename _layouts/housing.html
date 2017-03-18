@@ -27,7 +27,7 @@
 
           <div class="product_top_block">
 
-            {% include housing_photos.html %}
+            {% include photos_housing.html %}
 
             <div class="product_intro">
 
@@ -65,49 +65,11 @@
             <h2>Product Information</h2>
 
             <div class="data_block product_specifications row">
-              <div class="title column">
-                <h3>Features</h3>
-              </div>
-              <div class="data column">
-                <p>{{page.features.feature1}}</p>
-                <p>{{page.features.feature2}}</p>
-                <p>{{page.features.feature3}}</p>
-                {% if page.features.feature4 %}
-                <p>{{page.features.feature4}}</p>
-                {% endif %}
-                {% if page.features.feature5 %}
-                <p>{{page.features.feature5}}</p>
-                {% endif %}
-                {% if page.features.feature6 %}
-                <p>{{page.features.feature6}}</p>
-                {% endif %}
-                {% if page.features.feature7 %}
-                <p>{{page.features.feature7}}</p>
-                {% endif %}
-                {% if page.features.feature8 %}
-                <p>{{page.features.feature8}}</p>
-                {% endif %}
-                {% if page.features.feature9 %}
-                <p>{{page.features.feature9}}</p>
-                {% endif %}
-              </div>
+              {% include product_features.html %}
             </div>
 
-
             <div class="data_block product_specifications row">
-              <div class="title column">
-                <h3>Tech Specs</h3>
-              </div>
-              <div class="data column">
-                <p>Depth rating: {{page.specifications.depth_rating}}</p>
-                <p class=""><strong>Size and Weight</strong></p>
-                <p>Width: {{page.specifications.width}}</p>
-                <p>Height: {{page.specifications.height}}</p>
-                <p>Depth: {{page.specifications.depth}}</p>
-                <p>Weight: {{page.specifications.weight}}</p>
-                <p class=""><strong>Material</strong></p>
-                {{page.specifications.material | markdownify }}
-              </div>
+              {% include product_specs.html %}
             </div>
 
 
@@ -261,48 +223,7 @@
 
 
             <div class="data_block product_specifications row">
-              <div class="title column">
-                <h3>What’s in the Box</h3>
-              </div>
-
-              <div class="data column">
-
-                <p>{{page.included.item1}}</p>
-
-                {% if page.included.item2 %}
-                <p>{{page.included.item2}}</p>
-                {% endif %}
-
-                {% if page.included.item3 %}
-                <p>{{page.included.item3}}</p>
-                {% endif %}
-
-                {% if page.included.item4 %}
-                <p>{{page.included.item4}}</p>
-                {% endif %}
-
-                {% if page.included.item5 %}
-                <p>{{page.included.item5}}</p>
-                {% endif %}
-
-                {% if page.included.item6 %}
-                <p>{{page.included.item6}}</p>
-                {% endif %}
-
-                {% if page.included.item7 %}
-                <p>{{page.included.item7}}</p>
-                {% endif %}
-
-                {% if page.included.item8 %}
-                <p>{{page.included.item8}}</p>
-                {% endif %}
-
-                {% if page.included.item9 %}
-                <p>{{page.included.item9}}</p>
-                {% endif %}
-
-              </div>
-
+              {% include product_whatsinthebox.html %}
             </div>
 
           </div>

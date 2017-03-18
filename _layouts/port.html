@@ -44,33 +44,11 @@
             <h2>Product Information</h2>
 
             <div class="data_block product_specifications row">
-              <div class="title column">
-                <h3>Features</h3>
-              </div>
-              <div class="data column">
-                <p>{{page.features.feature1}}</p>
-                <p>{{page.features.feature2}}</p>
-                <p>{{page.features.feature3}}</p>
-                <p>{{page.features.feature4}}</p>
-                <p>{{page.features.feature5}}</p>
-                <p>{{page.features.feature6}}</p>
-              </div>
+              {% include product_features.html %}
             </div>
 
-
             <div class="data_block product_specifications row">
-              <div class="title column">
-                <h3>Tech Specs</h3>
-              </div>
-              <div class="data column">
-                <p class=""><strong>Size and Weight</strong></p>
-                <p>Width: {{page.specifications.width}}</p>
-                <p>Height: {{page.specifications.height}}</p>
-                <p>Depth: {{page.specifications.depth}}</p>
-                <p>Weight: {{page.specifications.weight}}</p>
-                <p class=""><strong>Material</strong></p>
-                {{page.specifications.material | markdownify }}
-              </div>
+              {% include product_specs.html %}
             </div>
 
           </div>

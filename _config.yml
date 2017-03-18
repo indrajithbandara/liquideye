@@ -49,13 +49,16 @@ collections:
    permalink: /water-housings/:path/
   pistols:
    output: true
-   permalink: /pistols/:path/
+   permalink: /accessories/pistols/:path/
+  grips:
+   output: true
+   permalink: /accessories/grips/:path/
   ports:
    output: true
-   permalink: /ports/:path/
+   permalink: /accessories/ports/:path/
   spareparts:
    output: true
-   permalink: /spare-parts/:path/
+   permalink: /accessories/spare-parts/:path/
   gearsleeves:
    output: true
-   permalink: /gear-sleeves/:path/
+   permalink: /accessories/gear-sleeves/:path/

@@ -28,7 +28,7 @@
 
             <!-- pistols-looper -->
             {% for pistol in site.pistols %}
-              <a class="looper__link pistol" href="{{ site.baseurl }}/pistols/{{ pistol.name}}">
+              <a class="looper__link pistol" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
                 <div class="product_block">
                   <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
                   <div class="product_group"><span>Pistol Grip</span></div>
@@ -37,9 +37,22 @@
               </a>
             {% endfor %}
 
+
+            <!-- grips-looper -->
+            {% for grip in site.grips %}
+              <a class="looper__link grip" href="{{ site.baseurl }}/accessories/grips/{{grip.name}}">
+                <div class="product_block">
+                  <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{grip.photos_dir}}/01.jpg" alt="Liquid Eye grips: {{grip.display_name}}">
+                  <div class="product_group"><span>Grip</span></div>
+                  <h3>{{ grip.display_name }}</h3>
+                </div>
+              </a>
+            {% endfor %}
+
+
             <!-- ports-looper -->
             {% for port in site.ports %}
-              <a class="looper__link port" href="{{ site.baseurl }}/ports/{{ port.name}}">
+              <a class="looper__link port" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
                 <div class="product_block">
                   <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.png" alt="Liquid Eye Front Ports: {{ port.name }}">
                   <div class="product_group"><span>Front Port</span></div>
@@ -51,7 +64,7 @@
 
             <!-- gear-sleeves-looper -->
             {% for gearsleeve in site.gearsleeves %}
-              <a class="looper__link port" href="{{ site.baseurl }}/gear-sleeves/{{ gearsleeve.name}}">
+              <a class="looper__link port" href="{{ site.baseurl }}/accessories/gear-sleeves/{{ gearsleeve.name}}">
                 <div class="product_block">
                   <img class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/gear-sleeves/{{ gearsleeve.name | downcase }}/01.png" alt="Liquid Eye Gear Sleeve: {{ gearsleeve.name }}">
                   <div class="product_group">
@@ -65,7 +78,7 @@
 
             <!-- spare-parts-looper -->
             {% for sparepart in site.spareparts %}
-              <a class="looper__link port" href="{{ site.baseurl }}/spare-parts/{{ sparepart.name}}">
+              <a class="looper__link port" href="{{ site.baseurl }}/accessories/spare-parts/{{ sparepart.name}}">
                 <div class="product_block">
                   <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/spare-parts/{{ sparepart.name | downcase }}/01.png" alt="Liquid Eye Spare Parts: {{ sparepart.name }}">
                   <div class="product_group"><span>Spare Part</span></div>
