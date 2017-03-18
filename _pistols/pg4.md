@@ -2,6 +2,8 @@
 layout: pistol
 name: pg4
 accessory_group: pistols
+price: ...
+number_of_photos: 2
 features:
   feature1: Designed to fit all our E-models and Pro-models
   feature2: Constructed using Liquid Eye’s proprietary hight strength and ultra weight epoxy resin sandwiched core technology

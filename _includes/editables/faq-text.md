@@ -95,7 +95,7 @@ The PG4 pistol grip has a single stage trigger. This trigger is intended for pre
 
 The PG3 pistol grip has a dual stage trigger that mimics perfectly the two stages of the shutter button on your DLSR. The initial stage of the trigger stroke activates the AF and the final stage of the trigger stroke activates the shutter.
 
-The initial AF portion of the trigger stroke has been lengthened relative the shutter release portion of the trigger stroke to give you greater AF control while swimming, and to avoid accidental miss-fires.
+The initial AF portion of the trigger stroke has been lengthened relative the shutter release portion of the trigger stroke to give you greater AF control while swimming, and to avoid accidental mis-fires.
 
 ### **What basic controls do your video water-housings have?**
 

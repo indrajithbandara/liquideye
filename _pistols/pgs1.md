@@ -3,8 +3,7 @@ layout: pistol
 name: pgs1
 accessory_group: pistols
 price: 150
-number_of_photos: 4
-photos_dir: pgs1
+number_of_photos: 3
 features:
   feature1: Dual Stage AF Pistol Grip allows for both focusing and firing using one button.
   feature2: Constructed using Liquid Eye’s proprietary hight strength and ultra weight epoxy resin sandwiched core technology.
