@@ -119,7 +119,7 @@
             -ms-flex-pack: end;
         justify-content: flex-end;
   }
-  h3 {
+  h3, h4 {
     text-transform: uppercase;
     padding-top: $vertical-space-small/2;
   }
@@ -165,7 +165,8 @@
   min-width: 100%;
   max-width: 100%;
   .housing &,
-  .pistol & {
+  .pistol &,
+  .grip & {
     height: 110vw;
     @media screen and (min-width: 1000px) {
       height: 60vw;
@@ -193,19 +194,7 @@
   @include media( "screen", ">maxWidth") {
     padding-right: 0;
   }
-  .price {
-    padding-top: $vertical-space-small;
-    font-size: 32px;
-    font-weight: 300;
-    &:before {
-      content: "USD";
-      padding-right: $vertical-space-small;
-    }
-    text-align: center;
-    @include media( "screen", ">minWidth") {
-      text-align: left;
-    }
-  }
+
   .order_button {
     min-width: 0;
     padding-top: $vertical-space/2;
@@ -226,6 +215,21 @@
 
   .form_title {
 
+  }
+
+}
+
+.price {
+  padding-top: $vertical-space-small;
+  font-size: 32px;
+  font-weight: 300;
+  &:before {
+    content: "USD";
+    padding-right: $vertical-space-small;
+  }
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    text-align: left;
   }
 }
 
@@ -342,4 +346,45 @@
 
 .housing .slideshow-slide {
   min-height: 100px;
+}
+
+
+.recommended_accessories {
+  padding-top: $vertical-space;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    margin-top: $vertical-space;
+    padding-bottom: $vertical-space;
+    border-bottom: 1px solid $hr_color;
+  }
+  @include media( "screen", ">minWidth") {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    a {
+      border-bottom: 0 none;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-left: $vertical-space-small;
+      margin-right: $vertical-space-small;
+      &.have1 {
+        flex-basis: 75%;
+      }
+      &.have2 {
+        flex-basis: 50%;
+      }
+      &.have3 {
+        flex-basis: 33%;
+      }
+      &.have4 {
+        flex-basis: 25%;
+      }
+    }
+  }
+  .product_block img {
+    min-width: 1px;
+  }
 }
