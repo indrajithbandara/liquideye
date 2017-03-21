@@ -31,12 +31,12 @@ controls:
   control2: Zoom control
  backplate:
    control1: AF Point Selection
-   control2: Star
-   control3: AF On
-   control4: Quick Control (Q Menu)
-   control5: Multi-Controller 1-Way
-   control6: Set
-   control7: Playback
+   control2: AF On
+   control3: Quick Control (Q Menu)
+   control4: Multi-Controller 1-Way
+   control5: Set
+   control6: Playback
+   control7: Magnify Reduce
    control8: Rear Quick Control Dial
    control9: Live View Shooting Movie Combo Switch with Start/Stop Button
    control10: Soft Ergonomic Rubber Eye Cup
