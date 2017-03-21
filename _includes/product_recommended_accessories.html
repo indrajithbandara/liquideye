@@ -1,218 +1,251 @@
-{% if content and page.accessories.accessory1 %}
+{% if content and page.accessories %}
+<div class="product_data group side_padded">
+  <h2>Recommended accessories</h2>
 
-  {% if page.accessories.accessory1.type=="pistol" %}
-    {% for pistol in site.pistols %}
-        {% if page.accessories.accessory1.name contains pistol.name %}
-        <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
-            <div class="product_group"><span>Pistol Grip</span></div>
-            <h4>{{ pistol.name }}</h4>
-            <div class="description">{{ pistol.content }}</div>
-            <div class="price">{{ pistol.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+  <div class="recommended_accessories group">
 
-  {% if page.accessories.accessory1.type=="grip" %}
-    {% for grip in site.grips %}
-        {% if page.accessories.accessory1.name contains grip.name %}
-        <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
-            <div class="product_group"><span>Grip</span></div>
-            <h4>{{ grip.display_name }}</h4>
-            <div class="description">{{ grip.content }}</div>
-            <div class="price">{{ grip.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+    {% if content and page.accessories.accessory1 %}
 
-  {% if page.accessories.accessory1.type=="port" %}
-    {% for port in site.ports %}
-        {% if page.accessories.accessory1.name contains port.name %}
-        <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
-            <div class="product_group"><span>Port</span></div>
-            <h4>{{ port.name }}</h4>
-            <div class="description">{{ port.content }}</div>
-            <div class="price">{{ port.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% if page.accessories.accessory1.type=="pistol" %}
 
-{% endif %}
+        {% for pistol in site.pistols %}
+            {% if page.accessories.accessory1.name contains pistol.name %}
+            <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
+              <div class="product_block">
+                <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
+                <div class="product_group"><span>Pistol Grip</span></div>
+                <h4>{{ pistol.name }}</h4>
+                <div class="description">{{ pistol.content }}</div>
+                <div class="price">{{ pistol.price }}</div>
+              </div>
+            </a>
+            {% endif %}
+        {% endfor %}
 
+      {% endif %}
 
+      {% if page.accessories.accessory1.type=="grip" %}
 
+        {% for grip in site.grips %}
+            {% if page.accessories.accessory1.name contains grip.name %}
+            <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
+              <div class="product_block">
+                <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
+                <div class="product_group"><span>Grip</span></div>
+                <h4>{{ grip.display_name }}</h4>
+                <div class="description">{{ grip.content }}</div>
+                <div class="price">{{ grip.price }}</div>
+              </div>
+            </a>
+            {% endif %}
+        {% endfor %}
 
-{% if content and page.accessories.accessory2 %}
+      {% endif %}
 
-  {% if page.accessories.accessory2.type=="pistol" %}
-    {% for pistol in site.pistols %}
-        {% if page.accessories.accessory2.name contains pistol.name %}
-        <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
-            <div class="product_group"><span>Pistol Grip</span></div>
-            <h4>{{ pistol.name }}</h4>
-            <div class="description">{{ pistol.content }}</div>
-            <div class="price">{{ pistol.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% if page.accessories.accessory1.type=="port" %}
 
-  {% if page.accessories.accessory2.type=="grip" %}
-    {% for grip in site.grips %}
-        {% if page.accessories.accessory2.name contains grip.name %}
-        <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
-            <div class="product_group"><span>Grip</span></div>
-            <h4>{{ grip.display_name }}</h4>
-            <div class="description">{{ grip.content }}</div>
-            <div class="price">{{ grip.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+        {% for port in site.ports %}
+            {% if page.accessories.accessory1.name contains port.name %}
+            <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
+              <div class="product_block">
+                <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
+                <div class="product_group"><span>Port</span></div>
+                <h4>{{ port.name }}</h4>
+                <div class="description">{{ port.content }}</div>
+                <div class="price">{{ port.price }}</div>
+              </div>
+            </a>
+            {% endif %}
+        {% endfor %}
 
-  {% if page.accessories.accessory2.type=="port" %}
-    {% for port in site.ports %}
-        {% if page.accessories.accessory2.name contains port.name %}
-        <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
-            <div class="product_group"><span>Port</span></div>
-            <h4>{{ port.name }}</h4>
-            <div class="description">{{ port.content }}</div>
-            <div class="price">{{ port.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% endif %}
 
-{% endif %}
+    {% endif %}
 
 
 
+    {% if content and page.accessories.accessory2 %}
 
-{% if content and page.accessories.accessory3 %}
+      {% if page.accessories.accessory2.type=="pistol" %}
 
-  {% if page.accessories.accessory3.type=="pistol" %}
-    {% for pistol in site.pistols %}
-        {% if page.accessories.accessory3.name contains pistol.name %}
-        <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
-            <div class="product_group"><span>Pistol Grip</span></div>
-            <h4>{{ pistol.name }}</h4>
-            <div class="description">{{ pistol.content }}</div>
-            <div class="price">{{ pistol.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+        {% for pistol in site.pistols %}
+          {% if page.accessories.accessory2.name contains pistol.name %}
+          <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
+              <div class="product_group"><span>Pistol Grip</span></div>
+              <h4>{{ pistol.name }}</h4>
+              <div class="description">{{ pistol.content }}</div>
+              <div class="price">{{ pistol.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
 
-  {% if page.accessories.accessory3.type=="grip" %}
-    {% for grip in site.grips %}
-        {% if page.accessories.accessory3.name contains grip.name %}
-        <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
-            <div class="product_group"><span>Grip</span></div>
-            <h4>{{ grip.display_name }}</h4>
-            <div class="description">{{ grip.content }}</div>
-            <div class="price">{{ grip.price }}</div>
+      {% endif %}
 
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% if page.accessories.accessory2.type=="grip" %}
 
-  {% if page.accessories.accessory3.type=="port" %}
-    {% for port in site.ports %}
-        {% if page.accessories.accessory3.name contains port.name %}
-        <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
-            <div class="product_group"><span>Port</span></div>
-            <h4>{{ port.name }}</h4>
-            <div class="description">{{ port.content }}</div>
-            <div class="price">{{ port.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+        {% for grip in site.grips %}
+          {% if page.accessories.accessory2.name contains grip.name %}
+          <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
+              <div class="product_group"><span>Grip</span></div>
+              <h4>{{ grip.display_name }}</h4>
+              <div class="description">{{ grip.content }}</div>
+              <div class="price">{{ grip.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
 
-{% endif %}
+      {% endif %}
+
+      {% if page.accessories.accessory2.type=="port" %}
+
+        {% for port in site.ports %}
+          {% if page.accessories.accessory2.name contains port.name %}
+          <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
+              <div class="product_group"><span>Port</span></div>
+              <h4>{{ port.name }}</h4>
+              <div class="description">{{ port.content }}</div>
+              <div class="price">{{ port.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+    {% endif %}
 
 
 
+    {% if content and page.accessories.accessory3 %}
 
-{% if content and page.accessories.accessory4 %}
+      {% if page.accessories.accessory3.type=="pistol" %}
 
-  {% if page.accessories.accessory4.type=="pistol" %}
-    {% for pistol in site.pistols %}
-        {% if page.accessories.accessory4.name contains pistol.name %}
-        <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
-            <div class="product_group"><span>Pistol Grip</span></div>
-            <h4>{{ pistol.name }}</h4>
-            <div class="description">{{ pistol.content }}</div>
-            <div class="price">{{ pistol.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+        {% for pistol in site.pistols %}
+          {% if page.accessories.accessory3.name contains pistol.name %}
+          <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
+              <div class="product_group"><span>Pistol Grip</span></div>
+              <h4>{{ pistol.name }}</h4>
+              <div class="description">{{ pistol.content }}</div>
+              <div class="price">{{ pistol.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
 
-  {% if page.accessories.accessory4.type=="grip" %}
-    {% for grip in site.grips %}
-        {% if page.accessories.accessory4.name contains grip.name %}
-        <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
-            <div class="product_group"><span>Grip</span></div>
-            <h4>{{ grip.display_name }}</h4>
-            <div class="description">{{ grip.content }}</div>
-            <div class="price">{{ grip.price }}</div>
+      {% endif %}
 
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% if page.accessories.accessory3.type=="grip" %}
 
-  {% if page.accessories.accessory4.type=="port" %}
-    {% for port in site.ports %}
-        {% if page.accessories.accessory4.name contains port.name %}
-        <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-          <div class="product_block">
-            <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
-            <div class="product_group"><span>Port</span></div>
-            <h4>{{ port.name }}</h4>
-            <div class="description">{{ port.content }}</div>
-            <div class="price">{{ port.price }}</div>
-          </div>
-        </a>
-        {% endif %}
-    {% endfor %}
-  {% endif %}
+        {% for grip in site.grips %}
+          {% if page.accessories.accessory3.name contains grip.name %}
+          <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
+              <div class="product_group"><span>Grip</span></div>
+              <h4>{{ grip.display_name }}</h4>
+              <div class="description">{{ grip.content }}</div>
+              <div class="price">{{ grip.price }}</div>
 
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+      {% if page.accessories.accessory3.type=="port" %}
+
+        {% for port in site.ports %}
+          {% if page.accessories.accessory3.name contains port.name %}
+          <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
+              <div class="product_group"><span>Port</span></div>
+              <h4>{{ port.name }}</h4>
+              <div class="description">{{ port.content }}</div>
+              <div class="price">{{ port.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+    {% endif %}
+
+
+
+    {% if content and page.accessories.accessory4 %}
+
+      {% if page.accessories.accessory4.type=="pistol" %}
+
+        {% for pistol in site.pistols %}
+          {% if page.accessories.accessory4.name contains pistol.name %}
+          <a class="looper__link pistol have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/pistols/{{ pistol.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/pistols/{{ pistol.name}}/01.jpg" alt="Liquid Eye Pistols: {{ pistol.name }}">
+              <div class="product_group"><span>Pistol Grip</span></div>
+              <h4>{{ pistol.name }}</h4>
+              <div class="description">{{ pistol.content }}</div>
+              <div class="price">{{ pistol.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+      {% if page.accessories.accessory4.type=="grip" %}
+
+        {% for grip in site.grips %}
+          {% if page.accessories.accessory4.name contains grip.name %}
+          <a class="looper__link grip have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/grips/{{ grip.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/grips/{{ grip.name}}/01.jpg" alt="Liquid Eye Grip: {{ grip.display_name }}">
+              <div class="product_group"><span>Grip</span></div>
+              <h4>{{ grip.display_name }}</h4>
+              <div class="description">{{ grip.content }}</div>
+              <div class="price">{{ grip.price }}</div>
+
+            </div>
+          </a>
+          {% endif %}
+
+        {% endfor %}
+
+      {% endif %}
+
+      {% if page.accessories.accessory4.type=="port" %}
+
+        {% for port in site.ports %}
+          {% if page.accessories.accessory4.name contains port.name %}
+          <a class="looper__link port have{{page.accessories.number_of_accessories}}" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
+            <div class="product_block">
+              <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name}}/01.jpg" alt="Liquid Eye Port: {{ port.name }}">
+              <div class="product_group"><span>Port</span></div>
+              <h4>{{ port.name }}</h4>
+              <div class="description">{{ port.content }}</div>
+              <div class="price">{{ port.price }}</div>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+    {% endif %}
+
+  </div>
+
+</div>
 {% endif %}
