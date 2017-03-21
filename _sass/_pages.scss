@@ -26,7 +26,7 @@ em { color: lighten($black, 30%);}
 }
 .team_balls {
   //max-width: 1100px;
-  margin: 0 auto;
+  //margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,10 +34,14 @@ em { color: lighten($black, 30%);}
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+   margin: 0 10%;
   @include media( "screen", ">minWidth") {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  @media all and (min-width: 1450px) {
+    margin: 0 auto;
   }
 
   .photographer_name {/*h4*/
