@@ -1,13 +1,13 @@
 ---
 layout: housing
-name: c6000II
+name: c6000spII
 level: professional
-price: 600
+price: 750
 backplate: Sony α6000
 backplate_variants: none # many | none
 status: new # new | sale
 number_of_photos: 4
-photos_dir: c6000II
+photos_dir: c6000spII
 features:
   feature1: ...
   feature2:
@@ -22,7 +22,7 @@ specifications:
    - Polyurethane Body, Ports, Side Grip, Base Plate and Tray.
    - Plexiglas Back Plate.
    - Stainless Steel and Durable Composite Controls.
-   - Polyester Resin and Fiberglass Pistol Grip (optional).
+   - Polyester Resin and Fiberglass Pistol Grip.
   depth_rating: 10m (33ft.)
 controls:
   housing:
@@ -64,8 +64,8 @@ A Plexiglas back plate is secured using 4 recessed and captured hex drive stainl
 
 Flash Control is optional.
 
-The C6000 II package includes the S-LP/55 port and features an interchangeable port system for the Sony lens series.  The S-LP/55 may be exchanged for any of our other Sony ports of equal value or we apply USD 150 credit towards the port of your choice. This water housing uses the S-LP Series Lens Port system.
+The C6000 package includes the S-LP/55 port and features an interchangeable port system for the Sony lens series.  The S-LP/55 may be exchanged for any of our other Sony ports of equal value or we apply USD 150 credit towards the port of your choice. This water housing uses the S-LP Series Lens Port system.
 
-An optional detachable 2-stage pistol grip PGS1 is available USD 150 extra. Because the housing is small, a pistol grip is not essential.
+The detachable 2-stage pistol grip PGS1 is included.
 
 We also have Spare Parts Kits available, please inquire.
