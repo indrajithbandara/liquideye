@@ -1,15 +1,13 @@
 ---
 layout: housing
-name: c1794x2
+name: c1794xII
 level: professional
 price: 1690
-backplate: basic
+backplate: Canon 1DX Mk II
 backplate_variants: many # many | none
-pro_model01: Canon 1DX
-pro_model02: Canon 1DX Mk II
 status: new # new | sale
 number_of_photos: 4
-photos_dir: c1794x2
+photos_dir: c1794xII-canon-1dx-mk-II
 features:
   feature1: Designed to fit a variety of camera bodies, including the Canon EOS 1D.
   feature2: An ergonomic glove-fit design that makes this housing feel and operate like your DLSR.
@@ -32,15 +30,20 @@ controls:
   control1: Zoom control
   control2: Shutter
  backplate:
-   control1: Plain back plate with no controls.
+   control1: Star Button
+   control2: Quick Control (Q Menu)
+   control3: Multi-Controller 1-Way (R)
+   control4: Playback
+   control5: Rear Quick Control Dial
+   control6: Live View Movie Shooting Switch
+   control7: Soft Ergonomic Rubber Eye Cup
 included:
   item1: C1794X2 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
-  item2: Back Plate with No Controls.
+  item2: Back Plate with Controls.
   item3: PG5 Dual Stage AF Pistol Grip with Wrist Leash.
-  item4: 1 year limited warranty.
-  item5: Left side Grip.
-  item6: L-LP/65 Port. (Or credit of USD 180 towards the port of your choice).
-  item7: Tool kit – 3 Hex Keys (1.5 mm, 2 mm, 4 mm),  Spare Camera Plug and ILS Switch, 2 Spare 5x16  SS Hex screws, 2 spare 5x12 mm  SS Flat Head Machine Screws, Packet of Marine Grease
+  item4: Left side Grip.
+  item5: L-LP/65 Port. (Or credit of USD 180 towards the port of your choice).
+  item6: Tool kit – 3 Hex Keys (1.5mm, 2mm, 4mm), Spare Camera Plug and ILS Switch, 2 Spare 5x16  SS Hex screws, 2 spare 5x12mm SS Flat Head Machine Screws, Packet of Marine Grease.
 ---
 The housing is made from high- strength, extremely durable sandwich epoxy fiberglass construction. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control.
 

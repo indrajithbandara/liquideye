@@ -7,7 +7,7 @@ level: professional
 price: 1590
 status: new # new | sale
 number_of_photos: 3
-photos_dir: c2100-canon-5d-mk-ii
+photos_dir: c2100-canon-5d-mk-II
 features:
   feature1: High-strength, extremely durable polyurethane.
   feature2: Ergonomically designed stainless steel controls.
