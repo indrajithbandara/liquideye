@@ -7,7 +7,7 @@ level: professional
 price: 1590
 status: new # new | sale
 number_of_photos: 4
-photos_dir: c2100-canon-7d-mk-II
+photos_dir: c2100-canon-7d-mk-ii
 features:
   feature1: High-strength, extremely durable polyurethane.
   feature2: Ergonomically designed stainless steel controls.
