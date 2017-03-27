@@ -38,7 +38,7 @@ controls:
    control6: Live View Movie Shooting Switch
    control7: Soft Ergonomic Rubber Eye Cup
 included:
-  item1: C1794X2 Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
+  item1: C1794XII Water Housing with Front Shutter, Zoom Control and Electronic Cabling.
   item2: Back Plate with Controls.
   item3: PG5 Dual Stage AF Pistol Grip with Wrist Leash.
   item4: Left side Grip.
@@ -49,6 +49,6 @@ The housing is made from high- strength, extremely durable sandwich epoxy fiberg
 
 A Plexiglas back plate is secured using 6 recessed and captured hex drive stainless steel bolts. Our 6-screw closure system insures a tight, even seal, while eliminating the problems of screw loss, corrosion, accidental opening and dangerous exposed metal edges.
 
-The C1794X2 package includes the L-LP/65 port and features an interchangeable port system for the Canon lens series. This water housing uses the LP Series Lens Port system.
+The C1794XII package includes the L-LP/65 port and features an interchangeable port system for the Canon lens series. This water housing uses the LP Series Lens Port system.
 
 The proprietary PG5 AF Dual Stage Pistol Grip allows for both focusing and firing using one button. The initial AF portion of the trigger stroke has been lengthened relative the shutter release portion of the trigger stroke to give you greater AF control. This helps you avoid accidental mis-fires while swimming.
