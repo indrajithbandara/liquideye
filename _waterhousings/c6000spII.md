@@ -1,13 +1,13 @@
 ---
 layout: housing
-name: c6000spII
+name: c6000spii
 level: professional
 price: 750
 backplate: Sony α6000
 backplate_variants: none # many | none
 status: new # new | sale
 number_of_photos: 4
-photos_dir: c6000spII
+photos_dir: c6000spii
 features:
   feature1: ...
   feature2:
