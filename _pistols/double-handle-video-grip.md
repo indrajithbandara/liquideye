@@ -1,5 +1,5 @@
 ---
-layout: grip
+layout: pistol
 name: double-handle-video-grip
 display_name: double handle video grip
 accessory_group: grips
