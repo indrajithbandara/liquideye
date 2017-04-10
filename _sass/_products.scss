@@ -92,18 +92,25 @@
 
   }
 
-  .sale_items .looper__link {/*a*/
-    width: 55%;
-    @include media( "screen", ">minWidth") {
-      display: block;
-      margin-left: $vertical-space-small/4;
-      width: 25%;
-    }
-    @media screen and (min-width: 650px) {
-      margin-left: 0;
-      width: 12%;
+  .sale_items {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    .looper__link { /*a*/
+      width: 55%;
+      min-width: 160px;
+      @include media( "screen", ">minWidth") {
+        display: block;
+        margin-left: $vertical-space-small/4;
+        width: 25%;
+      }
+      @media screen and (min-width: 650px) {
+        margin-left: 0;
+        width: 12%;
+      }
     }
   }
+
 
   .product_data {
     ul {
