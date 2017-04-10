@@ -36,6 +36,7 @@
           align-items: flex-end;
     }
   }
+
   .looper__link {/*a*/
     position: relative;
     padding-bottom: $vertical-space-small;
@@ -90,17 +91,31 @@
     }
 
   }
+
+  .sale_items .looper__link {/*a*/
+    width: 55%;
+    @include media( "screen", ">minWidth") {
+      display: block;
+      margin-left: $vertical-space-small/4;
+      width: 25%;
+    }
+    @media screen and (min-width: 650px) {
+      margin-left: 0;
+      width: 12%;
+    }
+  }
+
   .product_data {
     ul {
       list-style-type: disc;
       padding-left: $vertical-space-small;
-
     }
     li {
       padding-top: $vertical-space-small/6;
       padding-bottom: $vertical-space-small/6;
     }
   }
+
 }
 
 .product_block  {
