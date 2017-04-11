@@ -1,7 +1,7 @@
 ---
 layout: housing
 name: c1794xii
-level: professional
+level: expert
 price: 1690
 backplate: Canon 1DX Mk II
 backplate_variants: many # many | none

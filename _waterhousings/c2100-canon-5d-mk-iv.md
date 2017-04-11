@@ -1,10 +1,10 @@
 ---
 layout: housing
 name: c2100
-level: professional
-price: 1590
 backplate: Canon 5D Mk IV
 backplate_variants: many # many | none
+level: advanced
+price: 1590
 status: new # new | sale
 number_of_photos: 4
 photos_dir: c2100-canon-5d-mk-iv

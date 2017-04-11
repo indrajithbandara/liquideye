@@ -3,7 +3,7 @@ layout: housing
 name: c2100
 backplate: Canon 5D
 backplate_variants: many # many | none
-level: professional
+level: advanced
 price: 1495
 status: new # new | sale
 number_of_photos: 3
@@ -24,7 +24,7 @@ specifications:
    - Plexiglas Back Plate.
    - Stainless Steel and Durable Composite Controls.
    - Polyester Resin and Fiberglass Pistol Grip.
-  depth_rating: 10m (33ft.) 
+  depth_rating: 10m (33ft.)
 controls:
  housing:
   control1: Front shutter button
