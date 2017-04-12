@@ -66,6 +66,9 @@
   .form_block {
     flex-direction: column;
     justify-content: flex-start;
+    @include media( "screen", ">minWidth") {
+      flex-direction: row;
+    }
   }
 
   form {

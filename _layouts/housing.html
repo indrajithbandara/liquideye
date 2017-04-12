@@ -18,7 +18,7 @@
         <div class="content side_padded">
 
           <div class="fat_headers_block">
-            <h3 class="center">{{ site.slogan }}</h3>
+            <h4 class="center">{{ site.slogan }}</h4>
             <h1 class="center">{{ page.name | upcase }} {{ page.level | capitalize }} Housing</h1>
             {% if page.backplate != "basic" %}
             <h2 class="center">With Back Plate controls for {{page.backplate}}</h2>
@@ -103,7 +103,7 @@
 
                         <div class="form_block">
 
-                          <div class="row">
+                          <!-- <div class="row"> -->
                             <h4 class="form_title inline-block">Back Plate for&nbsp;&nbsp;</h4>
 
                             <form action="camera_to_housing">
@@ -112,7 +112,7 @@
                                 {% include backplates_{{page.name}}.html %}
                               </select>
                             </form>
-                          </div>
+                          <!-- </div> -->
 
                         </div>
 
