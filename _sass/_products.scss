@@ -342,12 +342,19 @@
       border-top-color:  $hr_color;
       text-align: left;
     }
-
+  }
+  .row {
+    //margin-top: $vertical-space;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
 .version_title {
   text-align: center;
+  display: block;
+  padding-bottom: $vertical-space;
   @include media( "screen", ">minWidth") {
     text-align: left;
     display: inline;
@@ -409,4 +416,8 @@
   .product_block img {
     min-width: 1px;
   }
+}
+
+.see_basic_model {
+  padding-top: $vertical-space-small;
 }

@@ -62,15 +62,16 @@
 
                         <div class="form_block">
 
-                          <h4 class="form_title inline-block">Choose Back Plate for&nbsp;&nbsp;</h4>
+                          <div class="row">
+                            <h4 class="form_title inline-block">Choose Back Plate for&nbsp;&nbsp;</h4>
 
-                          <form action="camera_to_housing">
+                            <form action="camera_to_housing">
                             <select name="newurl" onchange="menu_goto(this.form)">
                               <option value="" selected="selected">&nbsp;camera</option>
                               {% include backplates_{{page.name}}.html %}
                             </select>
                           </form>
-
+                          </div>
                         </div>
 
                       </div>
@@ -83,6 +84,8 @@
                     {% include backplate_pro.html %}
 
                     <div class="pro section group">
+
+                      <h3 class="version_title with_borders">Change Back Plate</h3>
 
                       <div class="backplate_chooser group">
 
@@ -100,14 +103,16 @@
 
                         <div class="form_block">
 
-                          <h4 class="form_title inline-block">This Housing with Back Plate for&nbsp;&nbsp;</h4>
+                          <div class="row">
+                            <h4 class="form_title inline-block">Back Plate for&nbsp;&nbsp;</h4>
 
-                          <form action="camera_to_housing">
-                            <select name="newurl" onchange="menu_goto(this.form)">
-                              <option value="" selected="selected">&nbsp;camera</option>
-                              {% include backplates_{{page.name}}.html %}
-                            </select>
-                          </form>
+                            <form action="camera_to_housing">
+                              <select name="newurl" onchange="menu_goto(this.form)">
+                                <option value="" selected="selected">&nbsp;camera</option>
+                                {% include backplates_{{page.name}}.html %}
+                              </select>
+                            </form>
+                          </div>
 
                         </div>
 
