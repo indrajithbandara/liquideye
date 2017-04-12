@@ -1,7 +1,12 @@
 <div class="pro section group">
   <h3 class="version_title with_borders">Pro Back Plate</h3>
-  <span class="version_detail">Back Plate with controls for {{page.backplate}}</span>
 
+  {% if page.status == "sale" %}
+    <span class="version_detail">Back Plate with controls</span>
+  {% else %}
+    <span class="version_detail">Back Plate with controls for {{page.backplate}}</span>
+  {% endif %}
+  
   <div class="price">{{page.price}}</div>
   <div class="order_button">
     <a href="{{site.baseurl}}/contact/"><span>Order Now</span></a>
