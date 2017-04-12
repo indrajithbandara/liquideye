@@ -1,10 +1,10 @@
 ---
 layout: housing
 name: c2100
-backplate: Canon 7D Mk II
-backplate_variants: many # many | none
 level: advanced
 price: 1590
+backplate: Canon 7D Mk II
+backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 4
 photos_dir: c2100-canon-7d-mk-ii

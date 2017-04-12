@@ -40,11 +40,80 @@
 
                     {% include backplate_basic.html %}
 
-                    {% include backplate_chooser.html %}
+                    <div class="pro section group">
+
+                      <h3 class="version_title with_borders">Pro Back Plate</h3>
+
+                      <span class="version_detail">Back Plate with functions controls</span>
+
+                      <div class="backplate_chooser group">
+
+                        <script language="javascript" type="text/javascript">
+                          // see thesitewizard.com/archive/navigation.shtml
+                          function menu_goto( menuform ){
+                            var baseurl = "{{site.baseurl}}" ;
+                            selecteditem = menuform.newurl.selectedIndex ;
+                            newurl = menuform.newurl.options[ selecteditem ].value ;
+                            if (newurl.length != 0) {
+                              location.href = baseurl + newurl ;
+                            }
+                          }
+                        </script>
+
+                        <div class="form_block">
+
+                          <h4 class="form_title inline-block">Choose Back Plate for&nbsp;&nbsp;</h4>
+
+                          <form action="camera_to_housing">
+                            <select name="newurl" onchange="menu_goto(this.form)">
+                              <option value="" selected="selected">&nbsp;camera</option>
+                              {% include backplates_{{page.name}}.html %}
+                            </select>
+                          </form>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
 
                   {% else %}
 
                     {% include backplate_pro.html %}
+
+                    <div class="pro section group">
+
+                      <div class="backplate_chooser group">
+
+                        <script language="javascript" type="text/javascript">
+                          // see thesitewizard.com/archive/navigation.shtml
+                          function menu_goto( menuform ){
+                            var baseurl = "{{site.baseurl}}" ;
+                            selecteditem = menuform.newurl.selectedIndex ;
+                            newurl = menuform.newurl.options[ selecteditem ].value ;
+                            if (newurl.length != 0) {
+                              location.href = baseurl + newurl ;
+                            }
+                          }
+                        </script>
+
+                        <div class="form_block">
+
+                          <h4 class="form_title inline-block">Same Housing with Back Plate for&nbsp;&nbsp;</h4>
+
+                          <form action="camera_to_housing">
+                            <select name="newurl" onchange="menu_goto(this.form)">
+                              <option value="" selected="selected">&nbsp;camera</option>
+                              {% include backplates_{{page.name}}.html %}
+                            </select>
+                          </form>
+
+                        </div>
+
+                      </div>
+
+                    </div>
 
                     {% include backplate_see_basic.html %}
 

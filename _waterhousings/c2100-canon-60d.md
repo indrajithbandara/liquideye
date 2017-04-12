@@ -1,10 +1,10 @@
 ---
 layout: housing
 name: c2100
-backplate: Canon 60D
-backplate_variants: many # many | none
 level: advanced
 price: 1495
+backplate: Canon 60D
+backplate_variants: many # many | none
 status: new # new | sale
 number_of_photos: 3
 photos_dir: c2100-canon-60d

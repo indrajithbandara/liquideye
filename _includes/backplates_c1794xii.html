@@ -1,0 +1,3 @@
+{% for backplates in site.data.backplates_c1794xii %}
+  <option value="/water-housings/{{page.name}}-{{ backplates.backplate_for_camera | slugify }}/">{{ backplates.backplate_for_camera }}</option>
+{% endfor %}
