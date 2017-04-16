@@ -9,10 +9,10 @@ status: new # new | sale
 number_of_photos: 4
 photos_dir: c6000spii
 features:
-  feature1: ...
-  feature2:
-  feature3:
-  feature4:
+feature1: Include a front shutter button and zoom control.
+feature2: Interchangeable port system for the Sony lens series.
+feature3: Small and compact can be used without a pistol grip.
+feature4: Uses the S-LP Series Lens Port system.
 specifications:
   width: 168mm (6.6”)
   height: 100mm (3.94”)
