@@ -48,6 +48,7 @@ included:
   item8: Tool kit – 1 Hex Keys (4mm).
 accessories:
   number_of_accessories: 3
+  display_accessories: notyet # notyet | "null"
   accessory1:
     type: pistol
     name: pgs1

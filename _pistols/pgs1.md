@@ -3,6 +3,7 @@ layout: pistol
 name: pgs1
 accessory_group: pistols
 price: 150
+publish: notyet # notyet | "null"
 number_of_photos: 3
 features:
   feature1: Dual Stage AF Pistol Grip allows for both focusing and firing using one button.

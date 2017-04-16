@@ -26,7 +26,7 @@
           <div class="looper" >
 
             {% for housing in site.waterhousings %}
-              {% unless housing.status=="sale" %}
+              {% unless housing.status=="sale" or housing.publish=="notyet" %}
 
                 {% if housing.backplate=="basic" or housing.backplate_variants=="none" or housing.backplate=="Canon 1DX" %}
                 <a class="looper__link" href="{{ site.baseurl }}/water-housings/{{housing.photos_dir}}">

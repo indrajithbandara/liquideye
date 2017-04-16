@@ -4,6 +4,7 @@ name: double-handle-video-grip
 display_name: double handle video grip
 accessory_group: grips
 price: 200
+publish: notyet # notyet | "null"
 number_of_photos: 4
 features:
   feature1: Maintain level horizons and minimizes camera shake.

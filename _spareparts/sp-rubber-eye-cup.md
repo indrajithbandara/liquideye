@@ -3,6 +3,7 @@ layout: sparepart
 name: sp-rubber-eye-cup
 display_name: rubber eye cup
 accessory_group: spare parts
+publish: notyet # notyet | "null"
 features:
   feature1: Designed to fit all our E-models and Pro-models.
 specifications:
