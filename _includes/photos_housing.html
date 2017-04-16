@@ -1,9 +1,11 @@
 
 <div class="product_photos slideshow">
-  
+
+  {% if page.status %}
   <span class="status {{ page.status }}">
     <span class="status_text">{{ page.status }}</span>
   </span>
+  {% endif %}
 
   <div class="slideshow-slide-list">
 
