@@ -1,6 +1,7 @@
 ---
 layout: port
 name: l-lp-80
+serie: L
 accessory_group: ports
 price: ...
 features:

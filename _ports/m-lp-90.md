@@ -1,6 +1,7 @@
 ---
 layout: port
 name: m-lp-90
+serie: M
 accessory_group: ports
 price: ...
 features:
@@ -25,4 +26,4 @@ Canon	35 f2 IS USM, Canon	50 f1.2 L USM
 
 Nikon	50 f1.4D AF
 
-Sigma	30 f1.4 DC ART 
+Sigma	30 f1.4 DC ART

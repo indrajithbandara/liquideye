@@ -1,6 +1,7 @@
 ---
 layout: port
 name: l-lp-65
+serie: L
 accessory_group: ports
 price: ...
 features:

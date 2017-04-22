@@ -19,9 +19,11 @@
 
           <div class="fat_headers_block">
             <h3 class="center">{{ site.slogan }}</h3>
-            <h1 class="center">Pistols and Grips</h1>
+            <h1 class="center">Pistols, Ports, Grips and Accessories.</h1>
           </div>
 
+
+          <!-- accessories-looper -->
           <div class="looper" >
 
             <!-- pistols-looper -->
@@ -37,6 +39,7 @@
               {% endunless %}
             {% endfor %}
 
+
             <!-- grips-looper -->
             {% for grip in site.grips %}
               {% unless grip.publish=="notyet" %}
@@ -50,21 +53,10 @@
               {% endunless %}
             {% endfor %}
 
-          </div>
 
-          <hr>
-
-          <div class="fat_headers_block">
-            <h1 class="center">S Ports</h1>
-          </div>
-
-          <!-- S ports-looper -->
-          <div class="looper" >
-
+            <!-- ports-looper -->
             {% for port in site.ports %}
               {% unless port.publish=="notyet" %}
-
-                {% if port.serie=="S" %}
                 <a class="looper__link port" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
                   <div class="product_block">
                     <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.jpg" alt="Liquid Eye Front Ports: {{ port.name }}">
@@ -72,74 +64,9 @@
                     <h3>{{ port.name }}</h3>
                   </div>
                 </a>
-                {% endif %}
-
               {% endunless %}
             {% endfor %}
 
-          </div>
-
-          <hr>
-
-          <div class="fat_headers_block">
-            <h1 class="center">M Ports</h1>
-          </div>
-
-          <!-- M ports-looper -->
-          <div class="looper" >
-
-            {% for port in site.ports %}
-              {% unless port.publish=="notyet" %}
-
-                {% if port.serie=="M" %}
-                <a class="looper__link port" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-                  <div class="product_block">
-                    <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.jpg" alt="Liquid Eye Front Ports: {{ port.name }}">
-                    <div class="product_group"><span>Front Port</span></div>
-                    <h3>{{ port.name }}</h3>
-                  </div>
-                </a>
-                {% endif %}
-
-              {% endunless %}
-            {% endfor %}
-
-          </div>
-
-          <hr>
-
-          <div class="fat_headers_block">
-            <h1 class="center">L Ports</h1>
-          </div>
-
-          <!-- L ports-looper -->
-          <div class="looper" >
-
-            {% for port in site.ports %}
-              {% unless port.publish=="notyet" %}
-
-                {% if port.serie=="L" %}
-                <a class="looper__link port" href="{{ site.baseurl }}/accessories/ports/{{ port.name}}">
-                  <div class="product_block">
-                    <img  class="product_thumb" src="{{ site.baseurl }}/assets/p/accessories/ports/{{ port.name | downcase }}/01.jpg" alt="Liquid Eye Front Ports: {{ port.name }}">
-                    <div class="product_group"><span>Front Port</span></div>
-                    <h3>{{ port.name }}</h3>
-                  </div>
-                </a>
-                {% endif %}
-
-              {% endunless %}
-            {% endfor %}
-
-          </div>
-
-          <hr>
-
-          <div class="fat_headers_block">
-            <h1 class="center">Gearsleeves</h1>
-          </div>
-
-          <div class="looper" >
 
             <!-- gear-sleeves-looper -->
             {% for gearsleeve in site.gearsleeves %}
@@ -156,15 +83,6 @@
               {% endunless %}
             {% endfor %}
 
-          </div>
-
-          <hr>
-          
-          <div class="fat_headers_block">
-            <h1 class="center">Spare Parts</h1>
-          </div>
-
-          <div class="looper" >
 
             <!-- spare-parts-looper -->
             {% for sparepart in site.spareparts %}
@@ -179,6 +97,7 @@
               {% endunless %}
             {% endfor %}
 
+          </div>
 
         </div>
       </div>
