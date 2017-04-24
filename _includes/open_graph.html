@@ -23,7 +23,11 @@
 	{% if page.layout == 'home' %}
 	<meta name="twitter:description" content="{{ site.description }}">
 	{% else %}
-	<meta name="twitter:description" content="{{ page.description }}">
+		{% if page.description %}
+		<meta name="twitter:description" content="{{ page.description }}">
+		{% else %}
+		<meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncatewords:40 }}">
+		{% endif %}
 	{% endif %}
 
 
@@ -48,7 +52,11 @@
 	{% if page.layout == 'home' %}
 	<meta property="og:description" content="{{ site.description }}">
 	{% else %}
-	<meta property="og:description" content="{{ page.description }}">
+		{% if page.description %}
+		<meta name="og:description" content="{{ page.description }}">
+		{% else %}
+		<meta name="og:description" content="{{ page.content | strip_html | strip_newlines | truncatewords:40 }}">
+		{% endif %}
 	{% endif %}
 
 	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
