@@ -1,6 +1,6 @@
 ---
 layout: port
-name: s-ld-35
+name: s-lp-35
 serie: S
 accessory_group: ports
 price: ...
