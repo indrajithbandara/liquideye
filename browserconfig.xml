@@ -2,10 +2,10 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="https://toybreaker.github.io/liquideye/mstile-70x70.png?v=3"/>
-            <square150x150logo src="https://toybreaker.github.io/liquideye/mstile-150x150.png?v=3"/>
-            <square310x310logo src="https://toybreaker.github.io/liquideye/mstile-310x310.png?v=3"/>
-            <wide310x150logo src="https://toybreaker.github.io/liquideye/mstile-310x150.png?v=3"/>
+            <square70x70logo src="http://liquideye.co/mstile-70x70.png?v=3"/>
+            <square150x150logo src="http://liquideye.co/mstile-150x150.png?v=3"/>
+            <square310x310logo src="http://liquideye.co/mstile-310x310.png?v=3"/>
+            <wide310x150logo src="http://liquideye.co/mstile-310x150.png?v=3"/>
             <TileColor>#33a0ff</TileColor>
         </tile>
     </msapplication>
