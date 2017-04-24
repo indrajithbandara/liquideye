@@ -3,7 +3,7 @@ layout: port
 name: l-lp-90
 serie: L
 accessory_group: ports
-price: ...
+price: 170
 features:
   feature1: Optically correct acrylic element.
   feature2: Mechanically sealed, no adhesives used.

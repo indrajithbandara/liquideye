@@ -3,7 +3,7 @@ layout: port
 name: m-lp-65
 serie: M
 accessory_group: ports
-price: ...
+price: 170
 features:
   feature1: Optically correct acrylic element.
   feature2: Mechanically sealed, no adhesives used.

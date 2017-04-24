@@ -2,7 +2,7 @@
 layout: pistol
 name: pg5
 accessory_group: pistols
-price: ...
+price: 150
 number_of_photos: 4
 features:
   feature1: Designed to fit all our E-models and Pro-models
