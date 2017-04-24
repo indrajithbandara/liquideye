@@ -5,9 +5,8 @@ serie: M
 accessory_group: ports
 price: 170
 features:
-  feature1: Optically correct acrylic element.
-  feature2: Mechanically sealed, no adhesives used.
-  feature3: Element replaceable.
+  feature1: Optically correct acrylic lens.
+  feature2: Adhesive sealed.
 specifications:
   diameter: 120mm
   height: 47mm
@@ -16,9 +15,9 @@ specifications:
    - Acrylic Element
    - Polyurethane Base
 ---
-The Liquid Eye M-LP 65 Lens Port is used with a range of Canon, Nikon and other lenses.  It is designed for use with prime lenses that measure less than 63 mm in physical length.
+The Liquid Eye M-LP 65 Lens Port is used with a range of Canon, Nikon and other lenses. It is designed for use with prime lenses that measure less than 63mm in physical length.
 
-Our M-LP Lens Ports feature a threaded system that is interchangeable with our C2050, C1795, and C1892 Water Housings.  No tools are required to attach or remove the port.  The Element is replaceable, so if damaged, please contact Liquid Eye.
+Our M-LP Lens Ports feature a threaded system that is interchangeable with our C2050, C1795, and C1892 Water Housings. No tools are required to attach or remove the port.
 
 **Supports the following lenses and more:**
 
