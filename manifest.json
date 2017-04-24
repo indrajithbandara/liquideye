@@ -39,5 +39,8 @@
     ],
     "theme_color": "#33a0ff",
     "background_color": "#33a0ff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "http:\/\/liquideye.co",
+    "name": "Liquid Eye water housings",
+    "short_name": "Liquideye"
 }
