@@ -7,6 +7,7 @@ price: ...
 features:
   feature1: Optically correct acrylic element.
   feature2: Mechanically sealed, no adhesives used.
+  feature3: Element replaceable.
 specifications:
   diameter: 90mm
   height: 48mm
@@ -17,7 +18,9 @@ specifications:
 ---
 The Liquid Eye S-LP 55 Lens Port is used with a range of Sony, Sigma, Zeiss and other lenses.  It is designed for use with prime lenses that measure less than 55mm in physical length.
 
-Our S-LP Lens Ports feature a threaded system that is interchangeable with our C6000, C6300, and C6500 Water Housings.  No tools are required to attach or remove the port.  
+The port features a threaded system that is designed specifically for use with Liquid Eye’s Sony α6000 series water housings. No tools are required to attach or remove the port.
+
+The port’s acrylic lens is removable and replaceable in the event of damage. Change over does not require factory installation, it can quickly and easily be replaced by the user. 
 
 **Supports the following lenses and more:**
 
