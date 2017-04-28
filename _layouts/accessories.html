@@ -61,7 +61,8 @@
           <!-- S ports-looper -->
           <div class="looper" >
 
-            {% for port in site.ports %}
+            {% assign ports = site.ports | sort: 'display_order'  %}
+            {% for port in ports %}
               {% unless port.publish=="notyet" %}
 
                 {% if port.serie=="S" %}
@@ -88,7 +89,8 @@
           <!-- M ports-looper -->
           <div class="looper" >
 
-            {% for port in site.ports %}
+            {% assign ports = site.ports | sort: 'display_order'  %}
+            {% for port in ports %}
               {% unless port.publish=="notyet" %}
 
                 {% if port.serie=="M" %}
@@ -115,7 +117,8 @@
           <!-- L ports-looper -->
           <div class="looper" >
 
-            {% for port in site.ports %}
+            {% assign ports = site.ports | sort: 'display_order'  %}
+            {% for port in ports %}
               {% unless port.publish=="notyet" %}
 
                 {% if port.serie=="L" %}

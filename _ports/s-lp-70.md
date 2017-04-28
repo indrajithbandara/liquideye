@@ -3,6 +3,7 @@ layout: port
 name: s-lp-70
 serie: S
 accessory_group: ports
+display_order: 4
 price: ...
 features:
   feature1: Optically correct acrylic element.
@@ -18,9 +19,9 @@ specifications:
 ---
 The Liquid Eye S-LP 70 Lens Port is used with a range of Sony, Sigma, Zeiss and other lenses.  It is designed for use with prime lenses that measure less than 68mm in physical length.
 
-The port features a threaded system that is designed specifically for use with Liquid Eye’s Sony α6000 series water housings. No tools are required to attach or remove the port.
+The port features a threaded system that is designed specifically for use with Liquid Eye’s Sony α6000 series water housings.
 
-The port’s acrylic lens is removable and replaceable in the event of damage. Change over does not require factory installation, it can quickly and easily be replaced by the user. 
+No tools are required to attach or remove the port. The port’s acrylic lens is removable and replaceable in the event of damage. Change over does not require factory installation, it can quickly and easily be replaced by the user. 
 
 **Supports the following lenses and more:**
 

@@ -3,6 +3,7 @@ layout: port
 name: l-lp-90
 serie: L
 accessory_group: ports
+display_order: 3
 price: 170
 features:
   feature1: Optically correct acrylic element.
@@ -18,7 +19,9 @@ specifications:
 ---
 The Liquid Eye L-LP 90 Lens Port is used with a range of Canon, Nikon and other lenses.  It is designed for use with prime lenses that measure less than 87 mm in physical length.
 
-Our L-LP Lens Ports feature a threaded system that is interchangeable with our C1794X II, C1893, and C2100 Water Housings.  No tools are required to attach or remove the port. The Element is replaceable, so if damaged, please contact Liquid Eye for parts and instructions.
+Our L-LP Lens Ports feature a threaded system that is interchangeable with our C1794X II, C1893, and C2100 Water Housings.  
+
+No tools are required to attach or remove the port. The Element is replaceable, so if damaged, please contact Liquid Eye for parts and instructions.
 
 **Supports the following lenses and more:**
 
