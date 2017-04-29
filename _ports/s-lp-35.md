@@ -17,7 +17,7 @@ specifications:
    - Acrylic Element
    - Polyurethane Base
 ---
-The Liquid Eye S-LP 35 Lens Port is used with a range of Sony and other lenses. It is designed for use with prime lenses that measure less than 35mm in physical length.
+The Liquid Eye S-LP-35 Lens Port is used with a range of Sony and other lenses. It is designed for use with prime lenses that measure less than 35mm in physical length.
 
 The port features a threaded system that is designed specifically for use with Liquid Eye’s Sony α6000 series water housings.
 

@@ -17,7 +17,7 @@ specifications:
    - Acrylic Element
    - Polyurethane Base
 ---
-The Liquid Eye M-LP 70 Lens Port is used with a range of Canon, Nikon and other lenses.  It is designed for use with prime lenses that measure less than 68mm in physical length.
+The Liquid Eye M-LP-70 Lens Port is used with a range of Canon, Nikon and other lenses.  It is designed for use with prime lenses that measure less than 68mm in physical length.
 
 Our M-LP Lens Ports feature a threaded system that is interchangeable with our C2050, C1795, and C1892 Water Housings.  
 
