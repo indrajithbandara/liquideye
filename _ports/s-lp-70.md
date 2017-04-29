@@ -3,7 +3,7 @@ layout: port
 name: s-lp-70
 serie: S
 accessory_group: ports
-display_order: 4
+display_order: 3
 price: ...
 features:
   feature1: Optically correct acrylic element.
