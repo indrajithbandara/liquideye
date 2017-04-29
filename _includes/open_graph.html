@@ -11,7 +11,15 @@
 	{% if page.preview_image %}
 	<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ page.preview_image }}">
 	{% else %}
-	<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+		{% if page.layout == 'housing' %}
+		<meta name="twitter:image:src" content="{{ site.url }}/assets/p/housings/{{page.photos_dir}}/01.jpg">
+		{% else %}
+			{% if page.layout == 'port' %}
+			<meta name="twitter:image:src" content="{{ site.url }}/assets/p/accessories/ports/{{page.name}}/01.jpg">
+			{% else %}
+			<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+			{% endif %}
+		{% endif %}
 	{% endif %}
 
 	{% if page.layout == 'home' %}
@@ -46,7 +54,15 @@
 	{% if page.preview_image %}
 	<meta property="og:image" content="{{ site.url }}/assets/p/{{ page.preview_image }}">
 	{% else %}
-	<meta property="og:image" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+		{% if page.layout == 'housing' %}
+		<meta name="og:image" content="{{ site.url }}/assets/p/housings/{{page.photos_dir}}/01.jpg">
+		{% else %}
+			{% if page.layout == 'port' %}
+			<meta name="og:image" content="{{ site.url }}/assets/p/accessories/ports/{{page.name}}/01.jpg">
+			{% else %}
+			<meta name="og:image" content="{{ site.url }}/assets/p/{{ site.preview_image }}">
+			{% endif %}
+		{% endif %}
 	{% endif %}
 
 	{% if page.layout == 'home' %}

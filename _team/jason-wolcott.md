@@ -3,6 +3,7 @@ layout: team_photographer
 name: jason wolcott
 quote: "Liquid Eye water-housing system will become and integral part of your photographic process. Light weight, strong, and elegant. I could not ask for more with a water-housing system."
 description: "Liquid Eye team photographer: As a photographer Jason has experienced success personally and professionally while his love of the ocean has inspired his craft. While his subject matter is diverse he draws from his 20 years as a waterman and affinity for the ocean to evoke an emotional response to his photographs."
+preview_image: teamshots/jason-wolcott/01.jpg
 photo01: 01.jpg
 caption01: Kevin Langaree
 photo02: 02.jpg

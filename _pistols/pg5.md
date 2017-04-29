@@ -4,6 +4,7 @@ name: pg5
 accessory_group: pistols
 price: 150
 number_of_photos: 4
+preview_image: accessories/pistols/pg5/01.jpg
 features:
   feature1: Designed to fit all our E-models and Pro-models
   feature2: Constructed using Liquid Eye’s proprietary hight strength and ultra weight epoxy resin sandwiched core technology

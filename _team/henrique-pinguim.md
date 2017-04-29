@@ -3,6 +3,7 @@ layout: team_photographer
 name: henrique pinguim
 number_of_photos: 10
 description: "Liquid Eye team photographer: Henrique Pinguim or Penguin is above all a love by the sea. The distinctive look and amazing images generated in a short time it was touted as one of the greatest revelations of aquatic photography."
+preview_image: teamshots/henrique-pinguim/01.jpg
 photo01: 01.jpg
 caption01: Damien Hobgood | Tahiti
 photo02: 02.jpg
@@ -22,7 +23,7 @@ caption08: Lucas Silveira | Cacimba Do Padre Noronha
 photo09: 09.jpg
 caption09: Fabio Gouveia | Cacimba Do Padre Noronha
 photo10: 10.jpg
-caption10: John John Florence | Teahupoo 
+caption10: John John Florence | Teahupoo
 ---
 Henrique Pinguim or "Penguin" is above all a love by the sea. Saw the photo birth unpretentiously, on any given day, recording the performance of friends.
 
