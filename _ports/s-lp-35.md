@@ -4,7 +4,7 @@ name: s-lp-35
 serie: S
 accessory_group: ports
 display_order: 1
-price: ...
+price: 150
 features:
   feature1: Optically correct acrylic element.
   feature2: Mechanically sealed, no adhesives used.

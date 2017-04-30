@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "http://liquideye.co"
 preview_image: liquideye_preview_image.jpg
-version: 0.9.3
+version: 0.9.4
 
 github_url: "https://toybreaker.github.io/liquideye"
 github_username:  toybreaker
