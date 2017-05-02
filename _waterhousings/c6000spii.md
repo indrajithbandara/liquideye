@@ -44,7 +44,7 @@ included:
   item4: Control Dial and Electronic Cabling.
   item5: Back Plate with Controls.
   item6: Wrist Leash.
-  item7: S-LP/55 Port. (Or credit of USD 150 towards the port of your choice).
+  item7: S-LP-55 Port. (Or credit of USD 150 towards the port of your choice).
   item8: Tool kit – 1 Hex Keys (4mm).
 accessories:
   number_of_accessories: 3
@@ -58,6 +58,7 @@ accessories:
   accessory3:
     type: port
     name: s-ld-4916
+description: "The housing is constructed from high-strength, extremely durable polyurethane. A Plexiglas back plate is secured using 5 recessed and captured hex drive stainless steel bolts. The detachable 2-stage pistol grip PGS1 is included. The C6000SPII package includes the S-LP-55 port and features an interchangeable port system for the Sony lens series. This water housing uses the S-LP Series Lens Port system."
 ---
 The housing is constructed from high-strength, extremely durable polyurethane. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control.
 
@@ -65,7 +66,7 @@ A Plexiglas back plate is secured using 4 recessed and captured hex drive stainl
 
 Flash Control is optional.
 
-The C6000 package includes the S-LP/55 port and features an interchangeable port system for the Sony lens series.  The S-LP/55 may be exchanged for any of our other Sony ports of equal value or we apply USD 150 credit towards the port of your choice. This water housing uses the S-LP Series Lens Port system.
+The C6000 package includes the S-LP-55 port and features an interchangeable port system for the Sony lens series.  The S-LP-55 may be exchanged for any of our other Sony ports of equal value or we apply USD 150 credit towards the port of your choice. This water housing uses the S-LP Series Lens Port system.
 
 The detachable 2-stage pistol grip PGS1 is included.
 
