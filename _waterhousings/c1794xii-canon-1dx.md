@@ -44,7 +44,7 @@ included:
   item4: Left side Grip.
   item5: L-LP-65 Port. (Or credit of USD 180 towards the port of your choice).
   item6: Tool kit – 3 Hex Keys (1.5mm, 2mm, 4mm), Spare Camera Plug and ILS Switch, 2 Spare 5x16  SS Hex screws, 2 spare 5x12mm SS Flat Head Machine Screws, Packet of Marine Grease.
-description: "The housing is constructed from high-strength, extremely durable polyurethane. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control and backplate with controls for Canon 1DX. The C1794XII package includes the L-LP-65 port and features an interchangeable port system for the Canon lens series. This water housing uses the LP Series Lens Port system."
+description: "The housing is constructed from high-strength, extremely durable polyurethane. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control and backplate with controls for Canon 1DX. The C1794XII package includes the L-LP-65 port and features an interchangeable port system for the Canon lens series, the LP Series Lens Port system."
 ---
 The housing is made from high-strength, extremely durable sandwich epoxy fiberglass construction. The controls are ergonomically designed and built using marine grade stainless steel, and tough composites. The housing controls include a front shutter button and zoom control.
 
