@@ -4,11 +4,11 @@ title_long: Liquid Eye Water Housing Systems
 slogan: Rock solid yet light as a feather!
 email: contact@liquideye.co
 description: > # this means to ignore newlines until "baseurl:"
-  Liquid Eye produces light and strong water housing systems for both DSLR and mirrorless cameras. Whether you shooting photos of surfing, windsurfing, bodyboarding, swimming, kayaking and you are a beginner or an expert surf photographer Liquid Eye has a waterhousing solution to suit your needs.
+  Liquid Eye produces light and strong waterproof housing systems for both DSLR and mirrorless cameras. Whether you shooting surfing, windsurfing, bodyboarding, swimming, kayaking and you are a beginner or an expert surf photographer, Liquid Eye has the waterhousing solution to suit your needs. Our housing are conceived and designed by professional photographers and manufactured to last a lifetime. We ship internationally!
 baseurl: ""
 url: "http://liquideye.co"
 preview_image: liquideye_social.jpg
-version: 0.9.5
+version: 0.9.6
 
 github_url: "https://toybreaker.github.io/liquideye"
 github_username:  toybreaker
@@ -21,7 +21,7 @@ twitter_creator: rokmatwit
 google:
   youtube: LiquidEyeWHS
   analytics: UA-32074745-1
-  verification: 2TUcbNnmlT1zmtREN6_kNcFYbfkWTunSuai0CcnfA8I #Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
+  verification: 2TUcbNnmlT1zmtREN6_kNcFYbfkWTunSuai0CcnfA8I
 
 # i
 ui: '256466927'
