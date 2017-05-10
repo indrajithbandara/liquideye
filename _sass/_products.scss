@@ -132,13 +132,8 @@
     }
   }
 }
-/* .accessories .looper {*/
-/*   @include media( "screen", ">minWidth") {*/
-/*     -webkit-box-pack: center;*/
-/*     -ms-flex-pack: center;*/
-/*     justify-content: center;*/
-/*   }*/
-/* }*/
+
+
 .status_text {
   text-transform: uppercase;
   display: block;
@@ -406,6 +401,7 @@
     border: 1px solid $hr_color;
   }
 }
+
 /*pro or basic blocks*/
 .section {
   margin-top: $vertical-space;
@@ -429,7 +425,6 @@
   }
 
   .row {
-    /*margin-top: $vertical-space;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

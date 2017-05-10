@@ -5,7 +5,6 @@
     overflow: hidden;
   }
   &.slideshow-padding {
-    //padding-bottom: 40px;
     margin-bottom: 40px;
   }
   .slideshow-slide-list {
@@ -122,7 +121,6 @@
   position: absolute;
   top: 50%!important;
   padding: 0;
-  /* background-color: rgba(20,20,20,0.4);*/
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -135,7 +133,6 @@
   }
   &:not(.slideshow-bottom):hover, &:not(.slideshow-bottom):focus {
     background-color: transparent;
-    /* background-color: rgba(20,20,20,0.75);*/
   }
 }
 
