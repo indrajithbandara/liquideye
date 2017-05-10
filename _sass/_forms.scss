@@ -31,9 +31,6 @@
     margin-left: 0;
     margin-bottom: $vertical-space-small;
     padding: 0;
-    // @include media( "screen", ">minWidth") {
-    //   display: inline-block;
-    // }
   }
 
   form {
@@ -53,9 +50,11 @@
     border: 0 none;
     font-size: 20px;
     background-color: transparent;
-    text-align: center!important;
+    padding-left: 5px;
+    //text-align: center!important;
     option {
-      text-align: center!important;
+      padding-left: 5px;
+      //text-align: center!important;
     }
   }
 }
