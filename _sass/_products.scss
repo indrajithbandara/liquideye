@@ -455,10 +455,6 @@
   @include media( "screen", ">minWidth") {
     text-align: left;
   }
-  @include media( "screen", ">maxWidth") {
-    padding-top: 0;
-    display: inline;
-  }
 }
 
 .housing .slideshow-slide {
