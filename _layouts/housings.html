@@ -25,7 +25,8 @@
           <!-- housings-looper -->
           <div class="looper" >
 
-            {% for housing in site.waterhousings %}
+            {% assign housings = site.waterhousings | sort: 'display_order'  %}
+            {% for housing in housings %}
               {% unless housing.status=="sale" or housing.publish=="notyet" %}
 
                 {% if housing.backplate=="basic" or housing.backplate_variants=="none" or housing.backplate=="Canon 1DX" %}
