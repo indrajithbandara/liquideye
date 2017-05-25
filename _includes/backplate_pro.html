@@ -8,6 +8,10 @@
   {% endif %}
 
   <div class="price">{{page.price}}</div>
+  {% if page.status=="sale" %}
+    <div class="full_price">{{page.old_price}}</div>
+  {% endif %}
+  
   <div class="order_button">
     <a href="{{site.baseurl}}/contact/"><span>Order Now</span></a>
   </div>

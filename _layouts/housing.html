@@ -103,16 +103,14 @@
 
                         <div class="form_block">
 
-                          <!-- <div class="row"> -->
-                            <h4 class="form_title inline-block">Show Back Plate for&nbsp;&nbsp;</h4>
+                          <h4 class="form_title inline-block">Show Back Plate for&nbsp;&nbsp;</h4>
 
-                            <form action="camera_to_housing">
-                              <select name="newurl" onchange="menu_goto(this.form)">
-                                <option value="" selected="selected">&nbsp;camera</option>
-                                {% include backplates_{{page.name}}.html %}
-                              </select>
-                            </form>
-                          <!-- </div> -->
+                          <form action="camera_to_housing">
+                            <select name="newurl" onchange="menu_goto(this.form)">
+                              <option value="" selected="selected">&nbsp;camera</option>
+                              {% include backplates_{{page.name}}.html %}
+                            </select>
+                          </form>
 
                         </div>
 
