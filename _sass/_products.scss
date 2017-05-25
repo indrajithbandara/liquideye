@@ -43,6 +43,7 @@
     /*a*/
     position: relative;
     padding-bottom: $vertical-space-small;
+    //flex-grow: 1;
     @include media( "screen", ">minWidth") {
       display: block;
       width: 40%;
@@ -531,5 +532,13 @@
 
 
 .product_block img.s-ld-4916 {
-  min-width: 250px;
+  width: 140%;
+
+}
+
+.products.accessories .looper__link  {
+  @include media( "screen", ">minWidth") {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
 }
