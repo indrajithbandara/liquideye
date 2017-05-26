@@ -162,11 +162,11 @@
     }
   }
   padding: 22px;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid $brand_blue;
+  border-left: 2px solid $brand_blue;
   border-radius: 50%;
   width: 10px;
-  background-color: red;
+  background-color: $brand_blue;
   opacity: 0.75;
 
   &.sale {
