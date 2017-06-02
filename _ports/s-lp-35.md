@@ -23,7 +23,7 @@ The port features a threaded system that is designed specifically for use with L
 
 No tools are required to attach or remove the port. The port’s acrylic lens is removable and replaceable in the event of damage. Change over does not require factory installation, it can quickly and easily be replaced by the user.
 
-Our S-LP/35 port will work on the following Water Housings: C6000, C6300, C6500.
+Our S-LP-35 port will work on the following Water Housings: C6000, C6300, C6500.
 
 **Supports the following lenses and more:**
 

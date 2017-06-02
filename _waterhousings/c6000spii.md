@@ -3,7 +3,7 @@ layout: housing
 name: c6000spii
 level: advanced
 price: 750
-display_order: 2
+display_order: 6
 backplate: Sony α6000
 backplate_variants: none # many | none
 status: new # new | sale
