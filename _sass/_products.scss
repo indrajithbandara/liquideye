@@ -55,6 +55,26 @@
     }
   }
 
+
+  .advanced_backplate {
+    padding-left: $vertical-space-small/2;
+    padding-right: $vertical-space-small/2;
+    .looper__link {
+      font-size: 18px;
+      @include media( "screen", ">bp1Width") {
+        padding-left: $vertical-space-small/4;
+        font-size: 2.15vw;
+      }
+      @include media( "screen", ">maxWidth") {
+        padding-left: $vertical-space-small/4;
+        font-size: 24px;
+      }
+    }
+  }
+
+
+
+
   .status_text {
     text-transform: uppercase;
     display: block;
