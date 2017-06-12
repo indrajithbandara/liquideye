@@ -65,7 +65,6 @@ a.link_underline {
 }
 
 
-
 input,
 textarea,
 button,
@@ -85,7 +84,6 @@ p {
 strong {
   font-weight: 600;
 }
-
 
 ul, ol, dl {
   margin-top: 0;
@@ -211,8 +209,6 @@ h4, h5, h6 {
   }
 }
 
-
-
 .side_padded {
   padding-left: $vertical-space-small;
   padding-right: $vertical-space-small;
@@ -262,7 +258,11 @@ br.maybe {
   text-transform: capitalize;
 }
 
-
 .inline {
   display: inline;
+}
+
+.no_break {
+  word-break: keep-all;
+  white-space: nowrap;
 }

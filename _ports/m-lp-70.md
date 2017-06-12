@@ -25,8 +25,8 @@ No tools are required to attach or remove the port.  
 
 **Supports the following lenses and more:**
 
-Canon	35 f2 IS USM, Canon	50 f1.2 L USM
+Canon	35mm f2 IS USM, Canon	50mm f1.2 L USM
 
-Nikon	50 f1.4D AF
+Nikon	50mm f1.4 D AF
 
-Sigma	30 f1.4 DC ART
+Sigma	30mmf1.4 DC ART

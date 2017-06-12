@@ -25,10 +25,10 @@ No tools are required to attach or remove the port. The Element is replaceable,
 
 **Supports the following lenses and more:**
 
-Canon	85 f1.2 L II USM, Canon	18-55 f3.5-5.6 IS STM, Canon 18-55 f3.5-5.6 IS II, Canon 35 f1.4 L, Canon	24 f1.4 L II USM
+Canon	85mm f1.2 L II USM, Canon	18-55mm f3.5-5.6 IS STM, Canon 18-55mm f3.5-5.6 IS II, Canon 35mm f1.4 L, Canon 24mm f1.4 L II USM
 
-Nikon	28 f2.8 G, Nikon	24 f1.8 G, Nikon 85 f1.4G
+Nikon	28mm f2.8 G, Nikon 24mm f1.8 G, Nikon 85mm f1.4G
 
-Rokinon  24  f1.4
+Rokinon 24mm f1.4
 
-Sigma 10-20 f4-5.6
+Sigma 10-20mm f4-5.6

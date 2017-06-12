@@ -1,0 +1,35 @@
+<hr>
+
+<div class="charts">
+
+  <!-- s-ports -->
+  <div class="fat_headers_block side_padded toggler" id="s_ports_chart_toggler">
+
+    <div class="title">
+      <h2>Port & Lens</h2>
+      <h4>Quickly find the S port you need for your lens.</h4>
+    </div>
+
+    <div class="plus" id="s_ports_plus">
+      {% include svg/use.html id="icn--plus" class="icon_plus" %}
+    </div>
+
+  </div>
+
+  <div id="s_ports_chart" class="chart s_ports">
+
+    {% assign lenses = site.data.charts.s_ports  %}
+    {% for lens in lenses %}
+      {% unless lens.publish == "hide" %}
+      <a class="chart_row" href="{{site.baseurl}}/accessories/ports/{{lens.port}}">
+        <div class="chart_row_inner">
+          <span><strong>{{lens.brand}}</strong> {{lens.mm}}mm {{lens.aperture}}</span>
+          <span class="no_break">{{lens.port}} {%if lens.addon%}+ {{lens.addon}}{% endif %}</span>
+        </div>
+      </a>
+      {% endunless %}
+    {% endfor %}
+
+  </div>
+
+</div>

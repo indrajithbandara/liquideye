@@ -81,6 +81,8 @@
 
           </div>
 
+          {% include chart-S-ports.html %}
+
           <hr>
 
           <div class="fat_headers_block">
@@ -109,6 +111,8 @@
             {% endfor %}
 
           </div>
+
+          {% include chart-M-ports.html %}
 
           <hr>
 
@@ -140,7 +144,9 @@
           </div>
 
 
+          {% include chart-L-ports.html %}
 
+          <hr>
           <!-- Gearsleeves-looper
           <hr>
 
@@ -196,12 +202,17 @@
 
           -->
 
+
+
         </div>
       </div>
 
       {% include footer.html %}
 
     </div>
+
+    {% include script_toggle_S_ports.html %}
+    {% include script_toggle_L_ports.html %}
 
     {% include script_ext_link.html %}
 

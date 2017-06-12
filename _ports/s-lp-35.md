@@ -27,4 +27,4 @@ Our S-LP-35 port will work on the following Water Housings: C6000, C6300, C6500
 
 **Supports the following lenses and more:**
 
-Sony NEX E-mount 16mm F2.8, Sony NEX 20mm F2.8
+Sony NEX E-mount 16mm f2.8, Sony NEX 20mm f2.8

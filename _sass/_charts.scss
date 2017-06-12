@@ -1,0 +1,63 @@
+//charts
+
+.icon_plus {
+  width: 50px;
+  height: 50px;
+}
+
+.toggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    .title h2,
+    .title h4 { color: $brand_blue; }
+    .plus { max-width: 30%; }
+  }
+  .title {
+    max-width: 70%;
+  }
+  .plus {
+    max-width: 30%;
+  }
+}
+
+.turned_x {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.charts {
+  .fat_headers_block {
+    margin-top: $vertical-space;
+    margin-bottom: $vertical-space;
+  }
+}
+
+.s_ports,
+.l_ports { display: none; }
+
+.chart.s_ports.now_visibile,
+.chart.l_ports.now_visibile {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.chart_row {//a
+  display: block;
+  padding-top: $vertical-space-small;
+  padding-bottom: $vertical-space-small;
+  @include media( "screen", ">minWidth") {
+    font-size: 22px;
+  }
+}
+
+.chart_row_inner {
+  span:first-of-type { padding-right: $vertical-space-small; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

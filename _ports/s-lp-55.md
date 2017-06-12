@@ -25,10 +25,10 @@ No tools are required to attach or remove the port. The port’s acrylic lens is
 
 **Supports the following lenses and more:**
 
-Sony NEX PZ 16-50mm F3.5-5.6 OSS (Kit Lens)
+Sony NEX PZ 16-50mm f3.5-5.6 OSS (Kit Lens)
 
-Sigma NEX 19mm F2.8 EX DN, Sigma NEX 30mm F2.8 EX DN
+Sigma NEX 19mm f2.8 EX DN, Sigma NEX 30mm f2.8 EX DN
 
-Zeiss Touit 32mm F1.8 'E' mount
+Zeiss Touit 32mm f1.8 'E' mount
 
-Sony NEX 35mm F1.8 OSS, Sony Zeiss F 35mm F2.8
+Sony NEX 35mm f1.8 OSS, Sony Zeiss F 35mm f2.8

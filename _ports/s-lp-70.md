@@ -25,6 +25,6 @@ No tools are required to attach or remove the port. The port’s acrylic lens is
 
 **Supports the following lenses and more:**
 
-Sony NEX Carl Zeiss 24mm F1.8, Sony NEX 30mm F3.5 Macro, Sony NEX 50mm F1.8 OSS
+Sony NEX Carl Zeiss 24mm f1.8, Sony NEX 30mm f3.5 Macro, Sony NEX 50mm f1.8 OSS
 
-Sigma NEX 60mm F2.8 DNA
+Sigma NEX 60mm f2.8 DNA
