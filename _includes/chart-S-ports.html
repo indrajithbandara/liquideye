@@ -1,35 +1,105 @@
-<hr>
+
 
 <div class="charts">
 
-  <!-- s-ports -->
-  <div class="fat_headers_block side_padded toggler" id="s_ports_chart_toggler">
+  <hr>
 
+  <!-- <div class="fat_headers_block">
+    <h2>Port & Lens</h2>
+    <h4>Quickly find the S port you need for your lens.</h4>
+  </div> -->
+
+  <!-- s-ports-sony -->
+  <div class="toggler" id="s_ports_chart_toggler_sony">
     <div class="title">
-      <h2>Port & Lens</h2>
-      <h4>Quickly find the S port you need for your lens.</h4>
+      <h2>Sony</h2>
     </div>
-
-    <div class="plus" id="s_ports_plus">
+    <div class="plus" id="s_ports_plus_sony">
       {% include svg/use.html id="icn--plus" class="icon_plus" %}
     </div>
-
   </div>
 
-  <div id="s_ports_chart" class="chart s_ports">
+  <div id="s_ports_chart_sony" class="chart s_ports_sony">
 
-    {% assign lenses = site.data.charts.s_ports  %}
+    {% assign lenses = site.data.charts.s_ports_sony  %}
     {% for lens in lenses %}
       {% unless lens.publish == "hide" %}
       <a class="chart_row" href="{{site.baseurl}}/accessories/ports/{{lens.port | downcase}}">
-        <div class="chart_row_inner">
-          <span><strong>{{lens.brand}}</strong> {{lens.mm}}mm {{lens.aperture}}</span>
-          <span class="no_break">{{lens.port}} {%if lens.addon%}+ {{lens.addon}}{% endif %}</span>
+        <div class="chart_row_lens">
+          <span><strong>{{lens.brand}} </strong></span>
+          <span>{{lens.mm}}mm {{lens.aperture}}</span>
+        </div>
+        <div class="chart_row_port">
+          <span>{{lens.port}}</span>
         </div>
       </a>
       {% endunless %}
     {% endfor %}
 
   </div>
+
+  <hr>
+
+  <!-- s-ports-sigma -->
+  <div class="toggler" id="s_ports_chart_toggler_sigma">
+    <div class="title">
+      <h2>Sigma</h2>
+    </div>
+    <div class="plus" id="s_ports_plus_sigma">
+      {% include svg/use.html id="icn--plus" class="icon_plus" %}
+    </div>
+  </div>
+
+  <div id="s_ports_chart_sigma" class="chart s_ports_sigma">
+
+    {% assign lenses = site.data.charts.s_ports_sigma  %}
+    {% for lens in lenses %}
+      {% unless lens.publish == "hide" %}
+      <a class="chart_row" href="{{site.baseurl}}/accessories/ports/{{lens.port | downcase}}">
+        <div class="chart_row_lens">
+          <span><strong>{{lens.brand}} </strong></span>
+          <span>{{lens.mm}}mm {{lens.aperture}}</span>
+        </div>
+        <div class="chart_row_port">
+          <span>{{lens.port}}</span>
+        </div>
+      </a>
+      {% endunless %}
+    {% endfor %}
+
+  </div>
+
+  <hr>
+
+  <!-- s-ports-others -->
+  <div class="toggler" id="s_ports_chart_toggler_others">
+    <div class="title">
+      <h2>Others</h2>
+    </div>
+    <div class="plus" id="s_ports_plus_others">
+      {% include svg/use.html id="icn--plus" class="icon_plus" %}
+    </div>
+  </div>
+
+  <div id="s_ports_chart_others" class="chart s_ports_others">
+
+    {% assign lenses = site.data.charts.s_ports_others  %}
+    {% for lens in lenses %}
+      {% unless lens.publish == "hide" %}
+      <a class="chart_row" href="{{site.baseurl}}/accessories/ports/{{lens.port | downcase}}">
+        <div class="chart_row_lens">
+          <span><strong>{{lens.brand}} </strong></span>
+          <span>{{lens.mm}}mm {{lens.aperture}}</span>
+        </div>
+        <div class="chart_row_port">
+          <span>{{lens.port}}</span>
+        </div>
+      </a>
+      {% endunless %}
+    {% endfor %}
+
+  </div>
+
+  <hr>
 
 </div>

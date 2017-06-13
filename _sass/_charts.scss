@@ -16,12 +16,8 @@
     .title h4 { color: $brand_blue; }
     .plus { max-width: 30%; }
   }
-  .title {
-    max-width: 70%;
-  }
-  .plus {
-    max-width: 30%;
-  }
+  .title { max-width: 70%; }
+  .plus { max-width: 30%; }
 }
 
 .turned_x {
@@ -30,16 +26,31 @@
 }
 
 .charts {
-  .fat_headers_block {
-    margin-top: $vertical-space;
-    margin-bottom: $vertical-space;
+  hr { margin: $vertical-space-small 0; }
+  h2 { padding-top: $vertical-space-small;}
+  @include media( "screen", ">bp1Width") {
+    margin: 0 $vertical-space;
+  }
+  @include media( "screen", ">maxWidth") {
+    margin: 0 $vertical-space*3;
   }
 }
 
-.s_ports,
-.l_ports { display: none; }
+.s_ports_sony,
+.s_ports_sigma,
+.s_ports_others,
+.l_ports_canon,
+.l_ports_nikon,
+.l_ports_sigma,
+.l_ports_tokina { display: none; }
 
-.chart.s_ports.now_visibile,
+.chart.s_ports_sony.now_visibile,
+.chart.s_ports_sigma.now_visibile,
+.chart.s_ports_others.now_visibile,
+.chart.l_ports_canon.now_visibile,
+.chart.l_ports_nikon.now_visibile,
+.chart.l_ports_sigma.now_visibile,
+.chart.l_ports_tokina.now_visibile,
 .chart.l_ports.now_visibile {
   display: block;
   max-width: 700px;
@@ -47,17 +58,22 @@
 }
 
 .chart_row {//a
-  display: block;
-  padding-top: $vertical-space-small;
-  padding-bottom: $vertical-space-small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: $vertical-space-small/2;
+  padding-bottom: $vertical-space-small/2;
   @include media( "screen", ">minWidth") {
     font-size: 22px;
   }
 }
 
-.chart_row_inner {
-  span:first-of-type { padding-right: $vertical-space-small; }
+.chart_row_lens {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  @include media( "screen", ">bp1Width") {
+    flex-direction: row;
+    strong { padding-right: 5px;}
+  }
 }
