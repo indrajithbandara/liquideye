@@ -42,7 +42,8 @@
   .looper__link {
     /*a*/
     position: relative;
-    padding-bottom: $vertical-space-small;
+    padding-top: $vertical-space-small/2;
+    padding-bottom: $vertical-space-small/2;
     //flex-grow: 1;
     @include media( "screen", ">minWidth") {
       display: block;
@@ -59,14 +60,29 @@
   .advanced_backplate {
     padding-left: $vertical-space-small/2;
     padding-right: $vertical-space-small/2;
+    @include media( "screen", ">minWidth") {
+      padding-left: $vertical-space-small*1.5;
+    }
+    @media all and (min-width: 600px) {
+      padding-left: $vertical-space-small*3;
+    }
+    @include media( "screen", ">bp1Width") {
+      padding-left: $vertical-space-small*2;
+    }
+    @include media( "screen", ">maxWidth") {
+      padding-left: $vertical-space-small*4;
+    }
     .looper__link {
-      font-size: 18px;
+      font-size: 16px;
+      text-align: left;
+      padding-right: $vertical-space-small/2;
+      @include media( "screen", ">minWidth") {
+        font-size: 2.75vw;
+      }
       @include media( "screen", ">bp1Width") {
-        padding-left: $vertical-space-small/4;
-        font-size: 2.15vw;
+        font-size: 2vw;
       }
       @include media( "screen", ">maxWidth") {
-        padding-left: $vertical-space-small/4;
         font-size: 24px;
       }
     }
