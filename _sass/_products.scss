@@ -567,10 +567,15 @@
 }
 
 
-.product_block img.s-ld-4916,
-.product_block img.l-ld-6022 {
+.s-ld-4916 .product_block img,
+.l-ld-6022 .product_block img {
   width: 140%;
+}
 
+.port.s-ld-4916 {
+  @include media( "screen", ">bp1Width") {
+    margin-left: $vertical-space-small*2.5;
+  }
 }
 
 .products.accessories .looper__link  {
