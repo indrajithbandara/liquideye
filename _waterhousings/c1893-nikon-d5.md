@@ -3,7 +3,7 @@ layout: housing
 name: c1893
 level: expert
 price: 1690
-backplate: basic
+backplate: Nikon D5
 backplate_variants: none # many | none
 status: new # new | sale
 number_of_photos: 2
