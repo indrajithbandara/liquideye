@@ -19,7 +19,7 @@ specifications:
   width: 205mm (8.07”)
   height: 210mm (8.27”)
   depth: 114mm (4.49”)
-  weight: 1800gr. (3.7 lbs.) Housing with Back Plate, PG5 Pistol Grip, L-Side Grip and L-LP-65 Port.  
+  weight: 880gr. (1.94 lbs.) Housing Only. - 1800gr. (3.7 lbs.) Housing with Back Plate, PG5 Pistol Grip, L-Side Grip and L-LP-65 Port.  
   material: |
    - Sandwich epoxy fiberglass body.
    - Plexiglas Back Plate.
