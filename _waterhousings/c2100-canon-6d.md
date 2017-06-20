@@ -18,7 +18,7 @@ specifications:
   width: 200mm (7.75”)
   height: 180mm (7”)
   depth: 110mm (4.25”)
-  weight: 1693gr. (3.7lbs.) Complete with Back Plate, Pistol, Side Grip and Port.
+  weight: 1700gr. (3.7lbs.) Housing with Back Plate, PG5 Pistol Grip, L-Side Grip and L-LP-65 Port.
   material: |
    - Polyurethane Body, Ports, Side Grip, Base Plate and Tray.
    - Plexiglas Back Plate.
